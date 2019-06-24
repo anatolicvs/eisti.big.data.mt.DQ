@@ -1,9 +1,3 @@
-# Copyright 2004 Chris Monson (shiblon@gmail.com)
-#           2011 Andrew McNabb
-#           2013 Krishna Kumar
-#           2017 Holger Nahrstaedt
-# Latest version available at http://www.bouncingchairs.net/oss
-#
 #    This file is part of ``Chris Monson's Free Software''.
 #
 #    ``Chris Monson's Free Software'' is free software; you can redistribute it

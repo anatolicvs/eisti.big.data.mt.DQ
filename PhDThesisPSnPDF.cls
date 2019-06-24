@@ -1,15 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%                                                                            %%
-%% Class ``PhD Thesis PSnPDF''                                                %%
-%%                                                                            %%
-%% A PhD thesis LaTeX template for Cambridge University Engineering Department%%
-%%                                                                            %%
-%% Version: v2.4                                                              %%
-%% Authors: Krishna Kumar                                                     %%
-%% License: MIT License (c) 2016-2018 Krishna Kumar                           %%
-%% GitHub Repo: https://github.com/kks32/phd-thesis-template/                 %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 % ************************** Class Identification ******************************
 \newcommand\fileversion{2.4}
 \newcommand\filedate{2018/04/12}
