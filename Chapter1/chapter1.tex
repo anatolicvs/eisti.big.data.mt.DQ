@@ -52,8 +52,8 @@ be expressed as follows:
     L(y) = k(y-m)^2
 \end{equation*}
 
-where $k$ is a factor that is expressed in dollars, based on direct costs, indi-
-rect costs, warranty costs, reputational costs, loss due to lost customers,
+where $k$ is a factor that is expressed in dollars, based on direct costs, indirect costs, 
+warranty costs, reputational costs, loss due to lost customers,
 and costs associated with rework and rejection. There are prescribed ways
 to determine the value of $k$.
 The loss function is usually not symmetrical-sometimes it is steep on
@@ -72,12 +72,33 @@ referred to as critical data elements (CDEs).
 
 \section{Data Quality and Types of Information Systems}
 
-Data are collected, stored, elabroted, retrieved, and exchanged in information systems used in organizations to 
-provide services to business processes. 
-Different criteria can be adopted for classifiying the different types of information systems, and their 
-corresponding archirectures; they are usually related to the overall organizational model adopted by the organization or the set of the organizations that make use of the information system.
+Data are collected, stored, elaborated, retrieved, and exchanged in informa-
+tion systems used in organizations to provide services to business processes.
+Different criteria can be adopted for classifying the different types of informa-
+tion systems, and their corresponding architectures; they are usually related to
+the overall organizational model adopted by the organization or the set of the
+organizations that make use of the information system.
 
+The three classifications are represented together in the classification space of Figure 1.2.
+Among all possible combinations, five main types of information systems are highlighted in the figur:
+Monolithic, Disributed, Data Warehouses,Cooperative, and Peer-to-Peer.
 
+\begin{itemize}
+    \item{In a \textit{monolithic information system} presentation, application logic, and data management are merged into a single computational node.
+    Many monolithic information systems are still in use. While being extremly rigid, they provide advantages to organizations, such as reduced costs due to homogenetiy of solutions and centralization of managemennt.
+    In monolithic systems data flows have a common format, and data quality control is facilitated by the homogenetiy and centralization of procedures and management rules.}
+    \item {A \textit{data warehouse} (DW) is a centraliwed set of data collected from different sources, designed to support management decision making. THe most critical problem in DW design concerns the cleaning an integration of 
+    the different data sources that are loaded into the DW, in that much of the implementation budget is spent on data cleaning activities.}
+    \item{A \textit{distributed information system} relaxes the rigid centralization of monolithic systems, in that it allows the distribution of resources and applications across
+    network of geographically distributed systems.}  
+\end{itemize}
+
+\begin{figure}[h]
+\vspace*{-3.5in}
+\centering
+\includegraphics[scale=.50]{types-of-information-systems}
+\caption{Quality Loss Function (QLF)}    
+\end{figure}
 
 
 
