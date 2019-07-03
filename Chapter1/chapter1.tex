@@ -58,12 +58,11 @@ and costs associated with rework and rejection. There are prescribed ways
 to determine the value of $k$.
 The loss function is usually not symmetrical-sometimes it is steep on
 one side or on both sides. Deming ~\citep{Deming} says that the loss function need
-not be exact and that it is diffi cult to obtain the exact function. As most
+not be exact and that it is difficult to obtain the exact function. As most
 cost calculations are based on estimations or predictions, an approximate
-function is suffi cient-that is, close approximation is good enough.
+function is sufficient-that is, close approximation is good enough.
 
-The concept of the loss function aptly applies in the DQ context, espe-
-cially when we are measuring data quality associated with various data
+The concept of the loss function aptly applies in the DQ context, especially when we are measuring data quality associated with various data
 elements such as customer IDs, social security numbers, and account bal-
 ances. Usually, the data elements are prioritized based on certain criteria,
 and the quality levels for data elements are measured in terms of percent-
@@ -81,28 +80,49 @@ organizations that make use of the information system.
 
 The three classifications are represented together in the classification space of Figure 1.2.
 Among all possible combinations, five main types of information systems are highlighted in the figur:
-Monolithic, Disributed, Data Warehouses,Cooperative, and Peer-to-Peer.
+Monolithic, Distributed, Data Warehouses,Cooperative, and Peer-to-Peer.
 
 \begin{itemize}
     \item{In a \textit{monolithic information system} presentation, application logic, and data management are merged into a single computational node.
-    Many monolithic information systems are still in use. While being extremly rigid, they provide advantages to organizations, such as reduced costs due to homogenetiy of solutions and centralization of managemennt.
+    Many monolithic information systems are still in use. While being extremely rigid, they provide advantages to organizations, such as reduced costs due to homogenetiy of solutions and centralization of management.
     In monolithic systems data flows have a common format, and data quality control is facilitated by the homogenetiy and centralization of procedures and management rules.}
-    \item {A \textit{data warehouse} (DW) is a centraliwed set of data collected from different sources, designed to support management decision making. THe most critical problem in DW design concerns the cleaning an integration of 
+    \item {A \textit{data warehouse} (DW) is a centralized set of data collected from different sources, designed to support management decision making. THe most critical problem in DW design concerns the cleaning an integration of 
     the different data sources that are loaded into the DW, in that much of the implementation budget is spent on data cleaning activities.}
     \item{A \textit{distributed information system} relaxes the rigid centralization of monolithic systems, in that it allows the distribution of resources and applications across
-    network of geographically distributed systems.}  
+    network of geographically distributed systems.
+    The network can be organized in terms of several tiers, each made of one or more computational nodes. Presentation, application logic, and data management are distributed across tiers. Usually, the different tiers and nodes have a limited degree of autonomy, 
+    data design is usually performed centrally, but to a certain extent some degree of heterogenetiy can occur, due to the impossibility of establishing unified procedures.
+    Problems of data management are more complex than in monolithic systems, due to the reduced level of centralization.
+    }  
 \end{itemize}
 
 \begin{figure}[h]
-\vspace*{-3.5in}
+\vspace*{.0in}
 \centering
 \includegraphics[scale=.50]{types-of-information-systems}
-\caption{Quality Loss Function (QLF)}    
+\caption{Types of information systems}    
 \end{figure}
 
+\begin{itemize}
+    \item{A \textit{coorparative information system} (CIS) can be defined as a large-scale information system that interconnects various systems of different and autonomous organizations, 
+    while sharing common objectives.}
+    \item{In a \textit{peerto peer information system} (usually abbreviated P2P), the traditional distinction between clients and servers typical of distributed systems is disappearing.
+    A P2P system can be characterized by a number of properties: peers are highly autonomous and higly heterogeneous, they have no obligation for the quality of their services
+    and data, no central coordidation and no central database exist, no peer has a global view of the system, global behavior emerges from local intreactions.    
+    }
+\end{itemize}
 
 
+\section{Main Research Issues and Application Domains in Data Quality}
+Due to the relevance if data quality, its nature, and the variety of data types and information systems, achieving data quality is a complex, multidisciplinary 
+area of investigation. I involves several research topics and real-life application areas
 
+\begin{figure}[h]
+\vspace*{.0in}
+\centering
+\includegraphics[scale=.50]{main-issues-in-dq}
+\caption{Main issues in data quality}    
+\end{figure}
 
 
 

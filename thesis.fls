@@ -352,11 +352,14 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8c.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri8t.tfm
-INPUT /home/aozkan/works/eisti.big.data.mt.DQ/Chapter1/Figs/Raster/types-of-information-systems.png
-INPUT /home/aozkan/works/eisti.big.data.mt.DQ/Chapter1/Figs/Raster/types-of-information-systems.png
-INPUT /home/aozkan/works/eisti.big.data.mt.DQ/Chapter1/Figs/Raster/types-of-information-systems.png
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr8c.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmri8t.vf
+INPUT /home/aozkan/works/eisti.big.data.mt.DQ/Chapter1/Figs/Raster/types-of-information-systems.png
+INPUT /home/aozkan/works/eisti.big.data.mt.DQ/Chapter1/Figs/Raster/types-of-information-systems.png
+INPUT /home/aozkan/works/eisti.big.data.mt.DQ/Chapter1/Figs/Raster/types-of-information-systems.png
+INPUT /home/aozkan/works/eisti.big.data.mt.DQ/Chapter1/Figs/Raster/main-issues-in-dq.png
+INPUT /home/aozkan/works/eisti.big.data.mt.DQ/Chapter1/Figs/Raster/main-issues-in-dq.png
+INPUT /home/aozkan/works/eisti.big.data.mt.DQ/Chapter1/Figs/Raster/main-issues-in-dq.png
 OUTPUT /home/aozkan/works/eisti.big.data.mt.DQ/Chapter2/chapter2.aux
 INPUT /home/aozkan/works/eisti.big.data.mt.DQ/Chapter2/chapter2.tex
 INPUT /home/aozkan/works/eisti.big.data.mt.DQ/Chapter2/chapter2.tex
