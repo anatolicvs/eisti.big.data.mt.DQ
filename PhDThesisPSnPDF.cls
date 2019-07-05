@@ -3,8 +3,8 @@
 \newcommand\filedate{2018/04/12}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{PhDThesisPSnPDF}[\filedate\space A PhD thesis class file
- by Krishna Kumar (v\fileversion)]
-\typeout{https://github.com/kks32/phd-thesis-template/}
+ Aytac Ozkan (v\fileversion)]
+\typeout{https://github.com/aytacozkan/eisti.big.data.mt.DQ/}
 
 
 % ******************************************************************************

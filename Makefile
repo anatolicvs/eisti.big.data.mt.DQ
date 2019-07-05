@@ -123,9 +123,7 @@ export LC_ALL		?= C
 # * Added all Authors to Copyright section
 # * Added asymptote file generation
 # * Added shell-escape to pdflatex, xelatex and lualatex
-# Krishna Kumar (2013-11-27):
 # * Added PS to rm_ext to remove PS files generated during LaTeX output
-# Krishna Kumar (2013-11-26):
 # * Changed PS_EMBED_OPTION ?= -dPDFSETTINGS=/prepress from /printer
 #
 # Chris Monson (2012-06-25):

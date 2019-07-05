@@ -1,5 +1,12 @@
 % First Chapter
 
+
+\ifpdf
+    \graphicspath{{Chapter1/Figs/Raster/}{Chapter1/Figs/PDF/}{Chapter1/Figs/}}
+\else
+    \graphicspath{{Chapter1/Figs/Vector/}{Chapter1/Figs/}}
+\fi
+
 \chapter{Introduction to Data Quality}
 
 A Web search of terms "data quality" through the search engine Google, returns about three millions of pages
@@ -10,7 +17,6 @@ and indicator that data quality issues are real and increasingly important (the 
 \else
     \graphicspath{{Chapter1/Figs/Vector/}{Chapter1/Figs/}}
 \fi
-
 
 \section{Why Data Quality is Relevant}
 
@@ -123,8 +129,3 @@ area of investigation. I involves several research topics and real-life applicat
 \includegraphics[scale=.50]{main-issues-in-dq}
 \caption{Main issues in data quality}    
 \end{figure}
-
-
-
-
-
