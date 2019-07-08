@@ -10,7 +10,6 @@
     \graphicspath{{Chapter2/Figs/Vector/}{Chapter2/Figs/}}
 \fi
 
-
 More specifically, quality dimensions can refer either to the extension of data, i.e., to data values, or to their 
 intension, i.e., to their schema. Both data dimensions are usually defined in qualitative way, referring to general properties of data and schemas,
 and and related definitions do not provide any facility for assigning values to dimensions themselves. 
@@ -282,3 +281,26 @@ where the notation $t_1.X$ means the projection of the tuple $t_1$ onto the
 attributes in $X$.
 
 \section{Other Data Quality Dimensions}
+There are general proposals for sets of dimensions that aim to fully specify
+the data quality concept in a general setting Some other
+proposals are related to specific domains that need ad hoc dimensions in order
+to capture the peculiarities of the domain. For instance, specific data quality
+dimensions are proposed in the following domains:
+
+\begin{enumerate}
+    \item {The archival domain (see ~\cite{wiszniewskib.krawczykh.2003} and ~\cite{krawczykh.wiszniewskib.2003})
+    which makes use of dimensions such as condition (of a document) that
+    refers to the physical suitability of the document for scanning.}
+    \item {The statistical domain; every National bureau of census and international
+organizations such as the European Union or the International Monetary Fund define several dimensions for statistical and scientific data,
+such as integrity, on the notion that statistical systems should be based on adherence to the principle of objectivity in the collection, compilation,
+and dissemination of statistics
+    }
+    \item{ The geographical and geospatial domain (see ~\cite{ostmana.1997} ~\cite{guptilc.morrisonj.1995}), where
+the following dimensions are proposed: (i) positional accuracy, defined as a
+quality parameter indicating the accuracy of geographical positions, and
+(ii) attribute/thematic accuracy, defined as the positional and/or value
+accuracy of properties such as sociodemographic attributes in thematic maps.
+    }
+\end{enumerate}
+
