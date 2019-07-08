@@ -21,8 +21,8 @@ properties. For each metric, one or more measurement methods are to be provided 
 
 According to the literature, at times we will distinguish between dimensions and metrics, while other times we will directly metrics.
 
-\begin{table}
-\caption{Data Quality Dimensions II}
+\begin{table}[H]
+\caption{Data Quality Dimensions I}
 \centering
 \begin{tabular}{p{4.0cm} p{10cm}}
 \toprule
@@ -33,31 +33,25 @@ Do organization-wide data standards exist and are they enforced? Do clearly
 defined roles and responsibilities exist for data quality related activities? Does
 data governance strive to acquire and maintain high-quality data through proactive
 management? \\
-
 Data Specifications &
 Are data standards documented in the form of a data dictionary, 
 data models, meta data, and integrity constraints?  
 \\
-
 Data Integrity & 
 How is data integrity maintained? How are data integrity violations detected and
 resolved ?   
 \\
-
 Data Consistency & 
 If data redundancy exists, how is data consistency achieved? What methods
 are used to bring consistency to data that has become inconsistent? If data is
 geographically replicated, how is the consistency and latency managed? 
 \\
-
 Data Currency & 
 Is the data current? Do procedures exists to keep the data current and purge stale
 data? 
 \\
-
 Data Duplication & Are there effective procedures in place to detect and remove duplicate data? 
 \\
-
 Data Completeness & 
 Is the data about entities complete? How is missing data managed? 
 \\
@@ -85,23 +79,23 @@ Feature Selection &
 Do datasets have versions that exclude features that are either redundant, highly
 correlated, or irrelevant? How many versions are available? 
 \\
-Feature Extraction & 
-Do the datasets provide a set of derived features that are informative and non-
-redundant, in addition to the original set of variables/features? How many such
-derived feature sets are available? 
-\\
 \bottomrule
 \end{tabular}
 \end{table}
 
 \begin{table}
-\vspace*{-3.5in}
-\caption{Data Quality Dimensions I}
+% \vspace*{-3.5in}
+\caption{Data Quality Dimensions II}
 \centering
 \begin{tabular}{p{4.0cm} p{10cm}}
 \toprule
-\textbf{Dimension Name} &  \textbf{Description} \\ 
+\textbf{Dimension Name} & \textbf{Description} \\ 
 \bottomrule
+Feature Extraction & 
+Do the datasets provide a set of derived features that are informative and non-
+redundant, in addition to the original set of variables/features? How many such
+derived feature sets are available? 
+\\
 Business Rules & 
 Does a process exist to identify, refine, consolidate, and maintain business
 rules that pertain to data quality? Do rules exist to govern data cleaning and
@@ -128,3 +122,61 @@ and modifications defined and implemented? \\
 \end{tabular}
 \end{table}
 
+
+\section{Accuracy}
+
+Accuracy ~\citep{Falorsi} is defined as the closeness between a value v and a value v' , considered as 
+the correct representation of the real-life phenomenon that v aims to
+represent. As an example if the name of a person is John, the value v' = Aytaç
+is correct, while the value v = Ayt is incorrect. Two kinds of accuracy can be
+identified, namely a syntactic accuracy and a semantic accuracy.
+
+Let us consider a relation schema \textbf{R} consisting of \textbf{K}
+attributes and a relational table \textbf{r} consisting of N tuples. 
+
+Let $q_{ij}(i=1..N, j=1..K)$ be a boolean variable defined to correspond to the cell values 
+$y_{ij}$, is syntactically accurate, while otherwise it is equal to 1. 
+
+In order to identify whether or not accuracy errors affect a matching of 
+relational table \textbf{r} with a reference table \textbf{r'} containing correct
+values, we introduce a further boolean variable $s_i$ equal to 0 if the tuple $t_i$ 
+matches a tuple in \textbf{r'}, and otherwise equal to 1. We can introduce three metrics to distinguish
+the relative importance of value accuracy in context of the tuple.
+The first two metrics have the purpose of giving a different importance to 
+errors on attributes that have a higher identification power, in line with 
+the above discussion.
+
+The first metric called \textit{weak accuracy error,} and is defined:
+
+\begin{equation*}
+    \sum_{i = 1}^{N} \frac{\beta(q_i > 0)\wedge(s_i=0)}{N}
+\end{equation*}
+
+where $\beta(.)$ is a boolean variable equal to 1 if the condition in parentheses is 
+\textit{true}, 0 otherwise, and $q_i =\sum\nolimits_{j=1}^K q_{ij}$. Such metric considers the case in 
+which for a tuple $t_i$ accuracy errors occur $(q_i > 0)$ but do not affect identification
+$(s_i = 0)$.
+
+The second metric is called \textit{strong accuracy error}, and is defined assigning
+
+\begin{equation*}
+    \sum_{i = 1}^{N} \frac{\beta(q_i > 0)\wedge(s_i=1)}{N}
+\end{equation*}
+
+where $\beta(.)$ and $q_i$ have the same meaning as above. Such a metric considers
+the case which accuracy errors occur $(q_i > 0)$ for a tuple $t_i$ and actually 
+do affect identification $(s_i = 1)$.
+
+The third metric gives the percentage of accurate tuples matched with
+the reference table. It is expressed by the degree of syntactic accuracy of the
+relational instance \textbf{r}
+
+\begin{equation*}
+    \sum_{i = 1}^{N} \frac{\beta(q_i =0)\wedge(s_i=0)}{N}
+\end{equation*}
+
+by actually considering the fraction of accurate $(q_i = 0)$ matched $(s_i =0)$ tuples.
+
+\section{Completeness}
+Completeness can be generically defined as the extent to which data are
+of sufficient breadth, depth, and scope for the task at hand ~\citep{Wang} \citep{Jaro1985}
