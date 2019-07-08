@@ -179,4 +179,40 @@ by actually considering the fraction of accurate $(q_i = 0)$ matched $(s_i =0)$ 
 
 \section{Completeness}
 Completeness can be generically defined as the extent to which data are
-of sufficient breadth, depth, and scope for the task at hand ~\citep{Wang} \citep{Jaro1985}
+of sufficient breadth, depth, and scope for the task at hand ~\cite{Wang}
+three types of completeness are identified. Schema completeness is defined as
+the degree to which concepts and their properties are not missing from the
+schema. Column completeness is defined as a measure of the missing values for
+a specific property or column in a table. Population completeness evaluates
+missing values with respect to a reference population.
+If focusing on a specific data model, a more precise characterization of
+completeness can be given. In the following we refer to the relational model.
+
+\subsection{Completeness of Web Data}
+
+Data that are published in Web information systems can be characterized by
+evolution in time. While in the traditional paper-based media, information
+is published once and for all, Web information systems are characterized by
+information that is continuously published.
+
+We consider a function $C(t)$, defined as the value of completeness at the
+instant \textit{t}, with $t\in$ $[t\textunderscore pub, t\textunderscore max]$ , where t pub is the initial 
+instant of publication of data and $t\textunderscore max$ corresponds to the maximum time within which the
+series of the different scheduled updates will be completed. Starting from the
+function $C(t)$, we can define the completability of the published data as
+
+\begin{equation*}
+    \int\nolimits_{t\_curr}^{t\_max} C(t),
+\end{equation*}
+
+where ${t\_curr}$ is the time at which completability is evaluated and ${t\_curr}$ <
+${t\_max}$.
+
+Completability, as shown in Figure 2.5, can be graphically depicted as an
+area Cb of a function that represents how completeness evolves between an
+instant ${t\_curr}$ of observation and t max. Observe that the value corresponding
+to ${t\_curr}$ is indicated as ${c\_curr}$; ${c\_max}$ is the value for completeness estimated
+for t max. The value ${c\_max}$ is a real reachable limit that can be specified for
+the completeness of the series of elements; if this real limit does not exist,
+${c\_max}$ is equal to 1. In Figure 2.5, a reference area A is also shown, defined as
+
