@@ -11,7 +11,7 @@
 \fi
 
 
-More specifically, quality dimensions can refer either to the extension of data, i.e., to data values, or to heir 
+More specifically, quality dimensions can refer either to the extension of data, i.e., to data values, or to their 
 intension, i.e., to their schema. Both data dimensions are usually defined in qualitative way, referring to general properties of data and schemas,
 and and related definitions do not provide any facility for assigning values to dimensions themselves. 
 
@@ -196,8 +196,8 @@ is published once and for all, Web information systems are characterized by
 information that is continuously published.
 
 We consider a function $C(t)$, defined as the value of completeness at the
-instant \textit{t}, with $t\in$ $[t\textunderscore pub, t\textunderscore max]$ , where t pub is the initial 
-instant of publication of data and $t\textunderscore max$ corresponds to the maximum time within which the
+instant \textit{t}, with $t\in$ $[t\_pub, t\_max]$ , where t pub is the initial 
+instant of publication of data and ${t\_max}$ corresponds to the maximum time within which the
 series of the different scheduled updates will be completed. Starting from the
 function $C(t)$, we can define the completability of the published data as
 
@@ -208,7 +208,7 @@ function $C(t)$, we can define the completability of the published data as
 where ${t\_curr}$ is the time at which completability is evaluated and ${t\_curr}$ <
 ${t\_max}$.
 
-Completability, as shown in Figure 2.5, can be graphically depicted as an
+Completability, as shown in Figure 2.1, can be graphically depicted as an
 area Cb of a function that represents how completeness evolves between an
 instant ${t\_curr}$ of observation and t max. Observe that the value corresponding
 to ${t\_curr}$ is indicated as ${c\_curr}$; ${c\_max}$ is the value for completeness estimated
@@ -216,3 +216,69 @@ for t max. The value ${c\_max}$ is a real reachable limit that can be specified 
 the completeness of the series of elements; if this real limit does not exist,
 ${c\_max}$ is equal to 1. In Figure 2.5, a reference area A is also shown, defined as
 
+\begin{equation*}
+    ({t\_max}-{t\_curr}) * \frac{{c\_max - {c\_pub}}}{2},
+\end{equation*}
+
+that, by comparison with Cb, allows us to define ranges [High, Medium, Low]
+for completability.
+
+\begin{figure}[H]
+    \vspace*{.0in}
+    \centering
+    \includegraphics[scale=.50]{completeness_of_web_data}
+    \caption{A graphical representation of completability}    
+\end{figure}
+
+With respect to the example above, considering the list of courses published on a university Web site, the completeness dimension gives information
+about the current degree of completeness; the completability information gives
+the information about how fast this degree will grow in time, i.e., how fast
+the list of courses will be completed. The interested reader can find further
+details in ~\cite{pernicib.scannapiecom.2003}.
+
+\section{Consistency}
+
+The consistency dimension captures the violation of semantic rules defined
+over (a set of) data items, where items can be tuples of relational tables or
+records in a file. With reference to relational theory, integrity constraints are
+an instantiation of such semantic rules. In statistics, data edits are another
+example of semantic rules that allow for the checking of consistency.
+
+\subsection{Integrity Constraints}
+Integrity constraints are properties that must be satisfied by all instances
+of a database schema. Although integrity constraints are typically defined on
+schemas, they can at the same time be checked on a specific instance of the
+schema that presently represents the extension of the database. Therefore,
+we may define integrity constraints for schemas, describing a schema quality
+dimension, and for instances, representing a data dimension.
+
+Most of the considered integrity constraints are dependencies. The follow-
+ing main types of dependencies can be considered:
+
+\begin{itemize}
+    \item{\textit{Key Dependency.} This is the simplest type of dependency. Given a relation
+    instance r, defined over a set of attributes, we say that for a subset K of
+    the attributes a key dependency holds in r, if no two rows of r have the
+    same K-values. For instance, an attribute like SocialSecurityNumber can
+    serve as a key in any relation instance of a relation schema Person.}
+    \item{\textit{Inclusion Dependency.} Inclusion dependency is a very common type of
+    constraint, and is also known as referential constraint. An inclusion de-
+    pendency over a relational instance r states that some columns of r are
+    contained in other columns of r or in the instances of another relational in-
+    stance s. A foreign key constraint is an example of inclusion dependency,
+    stating that the referring columns in one relation must be contained in the
+    primary key columns of the referenced relation.}
+    \item{\textit{Functional Dependency.} Given a relational instance \textbf{r}, let \textbf{X} and \textbf{Y} be two
+    nonempty sets of attributes in \textbf{r}. \textbf{r} satisfies the functional dependency
+    ${\textbf{X} \rightarrow \textbf{Y}}$ if the following holds for every pair of tuples \textbf{$t_1$} and \textbf{$t_2$} in \textbf{r}:
+    }
+\end{itemize}
+
+\begin{equation*}
+    \boxed{If, t_1.X = t_2.X, then, t_1.Y = t_2.Y,}
+\end{equation*}
+
+where the notation $t_1.X$ means the projection of the tuple $t_1$ onto the
+attributes in $X$.
+
+\section{Other Data Quality Dimensions}
