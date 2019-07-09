@@ -38,7 +38,7 @@ compute these attributes. This will apply to many quality dimensions such as acc
 	\label{tab:my-table}
 \end{table}
 
-The DQDs must be relevant to the DQ problems as identified In Table 3.1 Therefore DQ Metrics are 
+The DQDs (Data Quality Dimensions) must be relevant to the DQ problems as identified In Table 3.1 Therefore DQ Metrics are 
 designed for each DQD to measure if the attributes respect the previously defined DQD. These measures
 are done for each attribute given it type, data ranges values, and if it is collected from data profiling.
 
@@ -52,6 +52,67 @@ For example a metric that calculates the accuracy of a data attribute is defined
     Any other values are incorrect.
   }
   \item {
-
+	The accuracy of an attribute is calculated based on the number of correct values divided by number of observations or rows.
+  }
+  \item{
+	  For another data types/formats like images, videos, audio files, another type of metrics must be defined to evaluate
+	  accuracy or any other quality dimensions. The authors of ~\cite{Firmani2015} describe usefulness as an aspect of data quality
+	  for images. For this kind of data, feature extraction functions are defined on the data and extracted 
+	  for each data item. These features have constraints that characterize the goodness or badness 
+	  of data values. Some of quality metrics functions are designed based on the extracted features such as, usefulness, accuracy
+	  , completeness and any other data quality dimensions judged by domain experts to be candidate for 
+	  such data type. 
   }
 \end{itemize}
+
+\section{DQ Issues and Big Data Characteristics}
+
+Data characteristics commonly named V's are initially, Volume, Velocity, Variety, and Veracity. Since the Big Data inception; 
+we reached now 7 V's and probably we will keep going ~\cite{Gupta}. The veracity tends more to express and describe
+trust and certainty of data that can be expressed mostly as quality of the data. 
+The DQD accuracy is often related to precision, reliability and veracity ~\cite{Laboisse}.
+
+A mapping tentative between these characteristics, data and data quality is complied in ~\citep{Caballero} ~\cite{Firmani2015} ~\cite{Zhu}.
+The authors attempted to link the V's to the quality dimensions.
+
+\begin{table}[H]
+	\centering
+	\resizebox{\textwidth}{!}{%
+	\begin{tabular}{|c|l|}
+	\hline
+	\rowcolor[HTML]{EFEFEF} 
+	\textbf{DQ Dimensions}             & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}\textbf{Metric functions}} \\ \hline
+	\multicolumn{1}{|l|}{Accuracy}     & \multicolumn{1}{c|}{Acc = ( Ncv / N )}                                 \\ \hline
+	\multicolumn{1}{|l|}{Completeness} & \multicolumn{1}{c|}{Comp = ( Nmv / N )}                                \\ \hline
+	\multicolumn{1}{|l|}{Consistency}  & \multicolumn{1}{c|}{Cons = ( Nvrc / N )}                               \\ \hline
+	Ncv                                & Number of correct values                                               \\ \hline
+	Nmv                                & Number of missing values                                               \\ \hline
+	Nvrc                               & Number of values that respects the constraints                         \\ \hline
+	N                                  & Total number of values (rows) of the sample Dataset                    \\ \hline
+	\end{tabular}%
+	}
+\caption{DQD metric functions}
+\label{tab:my-table}
+\end{table}
+
+\begin{figure}[h]
+	\vspace*{.1in}
+	\hspace*{-.7in}
+	\centering
+	\includegraphics[scale=.55]{big_data_quality_evaluation_scheme}
+	\caption{Big Data Quality Evaluation Scheme}    
+\end{figure}
+
+\section{Big Data Quality Evaluation Scheme}
+
+The purpose of Big Data Quality Evaluation (BDQ) Scheme is to address the data quality before starting data analytics.
+This is done by estimating the quality of data attributes or features by applying a DQD metric to measure the quality characterized by its
+accuracy, completeness or/and consistency. The expected result is data quality assessment suggestions indicating the quality 
+constraints that will increase or decrease the data quality.
+
+The BDQ Evaluation scheme is illustrated in Figure 3.1 where the data goes through many module to estimate its quality.
+The key modules of our scheme consist of: (a) data sampling; and data profiling, (b) DQD vs attributes selection, 
+(c) data quality Metric selection, (d) samples data quality evaluation. In the following sections, we describe each module, its input(s), output(s),
+and the main functions.
+
+\subsection{A. Big Data Sampling}

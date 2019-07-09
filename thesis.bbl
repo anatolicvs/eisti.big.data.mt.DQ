@@ -5,6 +5,17 @@ C.~Batini, M.~S. (2006).
 \newblock {\em Data Quality Concepts, Methodologies and Techniques}.
 \newblock Springer-Verlag, Berlin Heidelberg.
 
+\bibitem[Cai and Zhu, ]{Zhu}
+Cai, L. and Zhu, Y.
+\newblock The challenges of data quality and data quality assessment in the big
+  data era.
+\newblock 14:2.
+
+\bibitem[D.~Firmani and Batini, 2015]{Firmani2015}
+D.~Firmani, M.~Mecella, M.~S. and Batini, C. (2015).
+\newblock {\em On the Meaningfulness of ‘Big Data Quality}.
+\newblock Springer Berlin Heidelberg.
+
 \bibitem[Deming, 1960]{Deming}
 Deming, W.~E. (1960).
 \newblock {\em Sample Design in Business Research}.
@@ -20,6 +31,10 @@ Guptil, C. and Morrison, J. (1995).
 \newblock {\em Elements of Spatial Data Quality.}
 \newblock Elsevier Science Ltd, Oxford, UK.
 
+\bibitem[I.~Caballero and Piattini, 2014]{Caballero}
+I.~Caballero, M.~S. and Piattini, M. (2014).
+\newblock A data quality in use model for big data.
+
 \bibitem[Jugulum, 2014]{Jugulum14}
 Jugulum, R. (2014).
 \newblock {\em Computing with High Quality Data}, page~1.
@@ -30,6 +45,12 @@ Krawczyk, H. and Wiszniewski, B. (2003).
 \newblock Visual gqm approach to quality-driven development of electronic
   documents.
 \newblock Edinburgh UK. 2nd International Workshop on Web Document Analysis.
+
+\bibitem[M.~Ali-ud-din Khan and Gupta, 2014]{Gupta}
+M.~Ali-ud-din Khan, M. F.~U. and Gupta, N. (2014).
+\newblock Seven v’s of big data understanding big data to extract value.
+\newblock page 1–5. American Society for Engineering Education (ASEE Zone 1),
+  2014 Zone 1 Conference of the, 2014.
 
 \bibitem[Ostman, 1997]{ostmana.1997}
 Ostman, A. (1997).
@@ -46,6 +67,11 @@ S., J. (2015).
 \newblock Overview of data quality challenges in the context of big data.
 \newblock pages 1--9. International Conference on Computing Communication and
   Security.
+
+\bibitem[V.~Goasdoué and Laboisse, 2007]{Laboisse}
+V.~Goasdoué, S.~Nugier, D.~D. and Laboisse, B. (2007).
+\newblock An evaluation framework for data quality tools.
+\newblock page 280–294.
 
 \bibitem[Wang and Strong, 1996]{Wang}
 Wang and Strong, D.~M. (1996).
