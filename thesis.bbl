@@ -1,0 +1,61 @@
+\begin{thebibliography}{}
+
+\bibitem[C.~Batini, 2006]{CBMS}
+C.~Batini, M.~S. (2006).
+\newblock {\em Data Quality Concepts, Methodologies and Techniques}.
+\newblock Springer-Verlag, Berlin Heidelberg.
+
+\bibitem[Deming, 1960]{Deming}
+Deming, W.~E. (1960).
+\newblock {\em Sample Design in Business Research}.
+\newblock ohn Wiley and Sons, Inc., New York.
+
+\bibitem[Falorsi and Scannapieco, 2006]{Falorsi}
+Falorsi and Scannapieco (2006).
+\newblock {\em Principi Guida per la Qualità dei Dati Toponomastici nella
+  Pubblica Amministrazione}, 12.
+
+\bibitem[Guptil and Morrison, 1995]{guptilc.morrisonj.1995}
+Guptil, C. and Morrison, J. (1995).
+\newblock {\em Elements of Spatial Data Quality.}
+\newblock Elsevier Science Ltd, Oxford, UK.
+
+\bibitem[Jugulum, 2014]{Jugulum14}
+Jugulum, R. (2014).
+\newblock {\em Computing with High Quality Data}, page~1.
+\newblock John Wiley and Sons, Inc., New Jersey.
+
+\bibitem[Krawczyk and Wiszniewski, 2003]{krawczykh.wiszniewskib.2003}
+Krawczyk, H. and Wiszniewski, B. (2003).
+\newblock Visual gqm approach to quality-driven development of electronic
+  documents.
+\newblock Edinburgh UK. 2nd International Workshop on Web Document Analysis.
+
+\bibitem[Ostman, 1997]{ostmana.1997}
+Ostman, A. (1997).
+\newblock The specifications and evaluation of spatial data quality.
+\newblock In {\em 18th ICA/ACI International Conference}, Stockholm, Sweden.
+
+\bibitem[Pernici and Scannapieco, 2003]{pernicib.scannapiecom.2003}
+Pernici and Scannapieco, M. (2003).
+\newblock Data quality in web information systems.
+\newblock {\em Journal of Data Semantics}.
+
+\bibitem[S., 2015]{Juddoo}
+S., J. (2015).
+\newblock Overview of data quality challenges in the context of big data.
+\newblock pages 1--9. International Conference on Computing Communication and
+  Security.
+
+\bibitem[Wang and Strong, 1996]{Wang}
+Wang and Strong, D.~M. (1996).
+\newblock Beyond accuracy: What data quality means to data consumers.
+\newblock {\em Journal of Management Information Systems}, page~12.
+
+\bibitem[Wiszniewski and Krawczyk, 2003]{wiszniewskib.krawczykh.2003}
+Wiszniewski, B. and Krawczyk, H. (2003).
+\newblock Digital document life cycle development.
+\newblock In {\em 1st International Symposium on Information and Communica-
+  tion Technologies}, Dublin Ireland.
+
+\end{thebibliography}
