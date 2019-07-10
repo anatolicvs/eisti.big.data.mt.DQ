@@ -27,6 +27,12 @@ Deming, W.~E. (1960).
 \newblock {\em Sample Design in Business Research}.
 \newblock ohn Wiley and Sons, Inc., New York.
 
+\bibitem[F.~Liang and Song, 2016]{Liang2016}
+F.~Liang, J.~K. and Song, Q. (2016).
+\newblock {\em A Bootstrap Metropolis- Hastings Algorithm for Bayesian Analysis
+  of Big Data}.
+\newblock Technometrics.
+
 \bibitem[Falorsi and Scannapieco, 2006]{Falorsi}
 Falorsi and Scannapieco (2006).
 \newblock {\em Principi Guida per la Qualità dei Dati Toponomastici nella
@@ -73,6 +79,13 @@ S., J. (2015).
 \newblock Overview of data quality challenges in the context of big data.
 \newblock pages 1--9. International Conference on Computing Communication and
   Security.
+
+\bibitem[Satyanarayana, 2014]{Satyanarayana2014}
+Satyanarayana, A. (2014).
+\newblock Intelligent sampling for big data using bootstrap sampling and
+  chebyshev inequality.
+\newblock pages 1--6. 27th Canadian Conference on Electrical and Computer
+  Engineering (CCECE).
 
 \bibitem[V.~Gadepally and Miller, 2015]{Asilomar}
 V.~Gadepally, T.~Herr, L. J. L. M. M.~M. and Miller, B.~A. (2015).

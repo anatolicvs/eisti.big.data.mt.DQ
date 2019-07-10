@@ -115,7 +115,7 @@ The key modules of our scheme consist of: (a) data sampling; and data profiling,
 (c) data quality Metric selection, (d) samples data quality evaluation. In the following sections, we describe each module, its input(s), output(s),
 and the main functions.
 
-\subsection{A. Big Data Sampling}
+\subsection{Big Data Sampling}
 
 A sample is representative of a whole population. Based on a sample, we make several decision about a population. 
 A sample is also called a subgroup. The number of observations or units in a sample is called sample size. 
@@ -125,4 +125,7 @@ specify both of these parameters. ~\cite{Jugulum14}
 THere are several sampling strategies that can be applied on Big Data as expressed in ~\cite{Asilomar} ~\cite{SIGKDD}.
 They evaluated the effect of sampling methods on Big Data and believed that sampling large datasets reduces run time and computational footprint of link 
 prediction algorithms though maintaining sufficient prediction performance. In statistic, Bootstrap sampling technique evaluates the sampling distribution of an 
-estimator by sampling with replacement from the original sample. In the context of Big Data, Bootstrap sampling has been addressed in many works
+estimator by sampling with replacement from the original sample. In the context of Big Data, Bootstrap sampling has been addressed in many works 
+~\cite{Liang2016} ~\cite{Satyanarayana2014}. 
+In our data evaluation scheme will used the Bag of Little Bootstrap (BLB), which combines the results of bootstrapping multiple small subsets of a 
+Big data dataset. 

@@ -37,10 +37,16 @@ Too many commas in name 1 of "V. Gadepally, T. Herr, L. Johnson, L. Milechin, M.
 while executing---line 1023 of file apalike.bst
 Too many commas in name 1 of "V. Gadepally, T. Herr, L. Johnson, L. Milechin, M. Milosavljevic, and B. A. Miller" for entry Asilomar
 while executing---line 1023 of file apalike.bst
+Name 1 in "F. Liang, J. Kim, and Q. Song" has a comma at the end for entry Liang2016
+while executing---line 1023 of file apalike.bst
+Name 1 in "F. Liang, J. Kim, and Q. Song" has a comma at the end for entry Liang2016
+while executing---line 1023 of file apalike.bst
 Warning--empty year in Zhu
 Warning--empty journal in Zhu
 Warning--empty booktitle in SIGKDD
 Name 1 in "D. Firmani, M. Mecella, M. Scannapieco, and C. Batini" has a comma at the end for entry Firmani2015
+while executing---line 1098 of file apalike.bst
+Name 1 in "F. Liang, J. Kim, and Q. Song" has a comma at the end for entry Liang2016
 while executing---line 1098 of file apalike.bst
 Warning--empty title in Falorsi
 Name 1 in "I. Caballero, M. Serrano, and M. Piattini" has a comma at the end for entry Caballero
@@ -50,6 +56,7 @@ Name 1 in "M. Ali-ud-din Khan, M. F. Uddin, and N. Gupta" has a comma at the end
 while executing---line 1098 of file apalike.bst
 Warning--empty booktitle in Gupta
 Warning--empty booktitle in Juddoo
+Warning--empty booktitle in Satyanarayana2014
 Name 1 in "V. Gadepally, T. Herr, L. Johnson, L. Milechin, M. Milosavljevic, and B. A. Miller" has a comma at the end for entry Asilomar
 while executing---line 1098 of file apalike.bst
 Too many commas in name 1 of "V. Gadepally, T. Herr, L. Johnson, L. Milechin, M. Milosavljevic, and B. A. Miller" for entry Asilomar
@@ -60,45 +67,45 @@ Warning--empty booktitle in Asilomar
 Name 1 in "V. Goasdoué, S. Nugier, D. Duquennoy, and B. Laboisse" has a comma at the end for entry Laboisse
 while executing---line 1098 of file apalike.bst
 Warning--empty journal in Laboisse
-You've used 18 entries,
+You've used 20 entries,
             1935 wiz_defined-function locations,
-            585 strings with 6400 characters,
-and the built_in function-call counts, 6711 in all, are:
-= -- 678
-> -- 204
-< -- 25
-+ -- 70
-- -- 62
-* -- 427
-:= -- 1097
-add.period$ -- 57
-call.type$ -- 18
-change.case$ -- 115
-chr.to.int$ -- 18
-cite$ -- 27
-duplicate$ -- 359
-empty$ -- 486
-format.name$ -- 106
-if$ -- 1421
+            597 strings with 6747 characters,
+and the built_in function-call counts, 7428 in all, are:
+= -- 748
+> -- 224
+< -- 28
++ -- 78
+- -- 68
+* -- 474
+:= -- 1217
+add.period$ -- 64
+call.type$ -- 20
+change.case$ -- 127
+chr.to.int$ -- 20
+cite$ -- 30
+duplicate$ -- 395
+empty$ -- 543
+format.name$ -- 116
+if$ -- 1572
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 22
-newline$ -- 91
-num.names$ -- 54
-pop$ -- 153
+missing$ -- 25
+newline$ -- 101
+num.names$ -- 60
+pop$ -- 171
 preamble$ -- 1
-purify$ -- 121
+purify$ -- 134
 quote$ -- 0
-skip$ -- 295
+skip$ -- 321
 stack$ -- 0
-substring$ -- 317
-swap$ -- 99
-text.length$ -- 7
+substring$ -- 355
+swap$ -- 105
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 98
-warning$ -- 9
-while$ -- 45
+type$ -- 108
+warning$ -- 10
+while$ -- 51
 width$ -- 0
-write$ -- 228
-(There were 21 error messages)
+write$ -- 253
+(There were 24 error messages)

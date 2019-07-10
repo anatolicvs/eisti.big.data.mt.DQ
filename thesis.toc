@@ -17,5 +17,5 @@
 \contentsline {section}{\numberline {3.1}Metrics and Measurement}{15}{section.3.1}
 \contentsline {section}{\numberline {3.2}DQ Issues and Big Data Characteristics}{16}{section.3.2}
 \contentsline {section}{\numberline {3.3}Big Data Quality Evaluation Scheme}{17}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}A. Big Data Sampling}{18}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.1}Big Data Sampling}{18}{subsection.3.3.1}
 \contentsline {chapter}{References}{19}{chapter*.14}
