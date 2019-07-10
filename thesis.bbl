@@ -11,6 +11,12 @@ Cai, L. and Zhu, Y.
   data era.
 \newblock 14:2.
 
+\bibitem[Cormode and Duffield, 2014]{SIGKDD}
+Cormode, G. and Duffield, N. (2014).
+\newblock Sampling for big data: A tutorial.
+\newblock page 1975–1975, New York, NY, USA. 20th ACM SIGKDD International
+  Conference on Knowledge Discovery and Data Mining.
+
 \bibitem[D.~Firmani and Batini, 2015]{Firmani2015}
 D.~Firmani, M.~Mecella, M.~S. and Batini, C. (2015).
 \newblock {\em On the Meaningfulness of ‘Big Data Quality}.
@@ -67,6 +73,12 @@ S., J. (2015).
 \newblock Overview of data quality challenges in the context of big data.
 \newblock pages 1--9. International Conference on Computing Communication and
   Security.
+
+\bibitem[V.~Gadepally and Miller, 2015]{Asilomar}
+V.~Gadepally, T.~Herr, L. J. L. M. M.~M. and Miller, B.~A. (2015).
+\newblock Sampling operations on big data.
+\newblock page 1515–1519. 49th Asilomar Conference on Signals, Systems and
+  Computers.
 
 \bibitem[V.~Goasdoué and Laboisse, 2007]{Laboisse}
 V.~Goasdoué, S.~Nugier, D.~D. and Laboisse, B. (2007).

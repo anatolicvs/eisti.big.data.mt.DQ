@@ -22,3 +22,16 @@ data quality issues in the dataset and solve it using DL/ML.
 
 Cloudera/Hortonworks(either using VM, AWS, Dockers, Kubernetes etc...). PySpark/ Scikitlearn, machine learning, deep learning models (Convolutional neural network, Long short-term memory
 (LSTM), Deep Residual Networks with Tensorflow or Keras to test and improve the data quality
+
+```
+@thesis{aozkan2019,
+	author = {A. Ozkan},
+	title = {Improving data quality for big data using advanced analytics},
+	type = {Master Thesis},
+	institution = {École internationale des sciences du traitement de l'information},
+	month = {July},
+	url = {https://github.com/aytacozkan/eisti.big.data.mt.DQ},
+	address = {Avignon,France},
+	year = {2019},
+}
+```
