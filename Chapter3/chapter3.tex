@@ -175,9 +175,80 @@ follows these steps:
 
 \begin{figure}[h]
 	\vspace*{-.1in}
-	\hspace*{-.7in}
+	\hspace*{-.6in}
 	\centering
-	\includegraphics[scale=.40]{big-data-quality-sampling-evaluation}
+	\includegraphics[scale=.38]{big-data-quality-sampling-evaluation}
 	\caption{Big Data Quality Sampling Evaluation}    
 \end{figure}
+
+\begin{table}
+	\caption{Big Data Quality Evaluation Algorithm}
+	\centering
+	\begin{tabular}{p{15cm}}
+	\toprule
+	\textbf{Algorithm: Big Data Quality Evaluation} \\ 
+	\bottomrule
+	\IncMargin{1em}
+	\begin{algorithm}[H]
+	\SetKwData{Letds}{\textit{\textbf{let ds}}}
+	\SetKwData{Letss}{\textit{\textbf{let ss}}}
+	\SetKwData{Letn}{\textit{\textbf{let n}}}
+	\SetKwData{Letd}{\textit{\textbf{let D}}}
+	\SetKwData{Letf}{\textit{\textbf{let F}}}
+	\SetKwData{Letcc}{\textit{\textbf{let cc}}}
+	\SetKwData{Lets}{\textit{\textbf{let S}}}
+
+	\SetKwData{This}{this}
+	\SetKwData{Up}{up}
+	\SetKwFunction{Union}{Union}
+	\SetKwFunction{MetricFunctionTuple}{MetricFunctionTuple}
+	
+	
+	\SetKwInOut{Input}{input}
+	\SetKwInOut{Output}{output}
+	
+	\Letds a Original Data Set with size \textbf{SS and Observation (N-SS)}\; 
+	\Letss  (\textbf{b(SS)}) the samples with ss < SS \;
+	\Letn  samples \textbf{$s_i$} of size \textbf{ss} and \textbf{\textit{M}} Observation \textbf{(M-ss)}\;
+
+	\Letd a set of DQD  \textbf{{$D=\{d_0,...d_k,...d_q\}$}}\;
+	\Letf a metric function \textbf{F (completeness, accuracy,...)} \;
+	\Letcc $\leftarrow$ 0 counter of correct valid attribute value(when \textbf{F} \textit{is true} $cc=cc+1$)\;
+	\Lets \textbf{=\{ $DS_0$,...$DS_i$,...$DS_n$  \}} without replacement \;
+	\BlankLine
+
+	\For{$i\leftarrow 0$ \KwTo $n$}{
+		\emph{Generate sample $s_{i}$ of size SS from ds}\;
+
+		\For{$j\leftarrow 0$ \KwTo $n'$} {
+
+			\emph{Generate a sample $_{ij}$ of size SS from sample $si$}\;
+
+			\For{$k\leftarrow 0$ \KwTo $j$}{
+				\MetricFunctionTuple{$d_k,F$} 
+				 
+				 \For{$a\leftarrow 0$ \KwTo $j$} {
+
+				 	\For{$a_{ij}(x)$ \textbf{ss} values}{ 
+						 \If{\textbf{F($a_{ij}(x)$, value) == 1}}{
+							\emph{measure metric} \;
+							$c\leftarrow$ cc + 1 \; 
+							\emph{\textbf{Calculate the scores vector DQD(F, $d_k$,$a_{ij}$, $DS_i$})= $\frac{cc}{N}$}
+							$cc\leftarrow$0 \emph{counter of correct valid attribute value \textbf{($d_k$,F)}}
+						 }
+					 }
+					 \emph{DQD $d_k$ computed for all attributes for a sample $ds_{ij}$ }
+				 }
+				 \emph{$DQS_{ijk}$ is the $D_K$ scores for an attribute $a_ij$ for sample $DS_{ij}$}
+				 \emph{$Q_{ijk}$ sum of all $d_k$ scores for attributes $a_{ij}$ for $DS_{ij}$ }
+			}
+			$Q_{ik} += 1/n'(Q_{ijk})$ 
+		 }	
+	}
+	\emph{$Q_k$ is the mean of all $Q_{ik}$ for a specif $d_k$}
+	$Q_k += 1/n(Q_{ik})$
+\end{algorithm}\DecMargin{1em}
+\\
+\end{tabular}
+\end{table}
 
