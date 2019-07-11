@@ -122,10 +122,28 @@ A sample is also called a subgroup. The number of observations or units in a sam
 The number of times a sample is collected is usually referred to as the sampling frequency. In designing a control chart, we must 
 specify both of these parameters. ~\cite{Jugulum14}
 
-THere are several sampling strategies that can be applied on Big Data as expressed in ~\cite{Asilomar} ~\cite{SIGKDD}.
+There are several sampling strategies that can be applied on Big Data as expressed in ~\cite{Asilomar} ~\cite{SIGKDD}.
 They evaluated the effect of sampling methods on Big Data and believed that sampling large datasets reduces run time and computational footprint of link 
 prediction algorithms though maintaining sufficient prediction performance. In statistic, Bootstrap sampling technique evaluates the sampling distribution of an 
 estimator by sampling with replacement from the original sample. In the context of Big Data, Bootstrap sampling has been addressed in many works 
 ~\cite{Liang2016} ~\cite{Satyanarayana2014}. 
-In our data evaluation scheme will used the Bag of Little Bootstrap (BLB), which combines the results of bootstrapping multiple small subsets of a 
-Big data dataset. 
+In our data evaluation scheme will used the Bag of Little Bootstrap (BLB) ~\cite{ArXiv12066415}, which combines the results of bootstrapping multiple small subsets of a 
+Big data dataset. THe BLB algorithm use an original Big dataset used generate small samples without replacements. 
+For each generated sample another set of samples are created by resampling with replacement.
+
+\subsection{Data Profiling}
+
+Data profiling is an exploratory approach to data quality analysis. Statistical approaches are used to reveal 
+data usage patterns as well as patterns in the data ~\cite{Osborne2013} ~\cite{Maydanchik2007}. Several tools exist for data quality assessment using data profiling 
+and exploratory data analysis. Such tools include Tableau and Talend Open Studio. 
+
+Data profiling module performs screening of data quality
+based on statistics and information summary. Since
+profiling is meant to discover data characteristics from data sources. It is considered as data assessment process that
+provides a first summary of the data quality. Such information include: data format description, different
+attributes, their types and values. data constraints (if any),
+data range, max and min. More precisely information about
+the data are presented in two types; technical and functional. This information can be extracted from the data itself
+without any additional representation using it metadata or any descriptive header file, or by parsing the data using any
+analysis tools. This task may become very costly in Big Data. To avoid costs generated due the data size we will use
+the same sampling process BLB to reduce the data into a representative population sample, in addition to the combination of profiling results.

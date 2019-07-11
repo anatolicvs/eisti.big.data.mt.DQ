@@ -9,6 +9,8 @@ The style file: apalike.bst
 Database file #1: References/references.bib
 Warning--entry type for "Caballero" isn't style-file defined
 --line 939 of file References/references.bib
+Warning--entry type for "ArXiv12066415" isn't style-file defined
+--line 1063 of file References/references.bib
 Name 1 in "D. Firmani, M. Mecella, M. Scannapieco, and C. Batini" has a comma at the end for entry Firmani2015
 while executing---line 1023 of file apalike.bst
 Name 1 in "D. Firmani, M. Mecella, M. Scannapieco, and C. Batini" has a comma at the end for entry Firmani2015
@@ -41,6 +43,13 @@ Name 1 in "F. Liang, J. Kim, and Q. Song" has a comma at the end for entry Liang
 while executing---line 1023 of file apalike.bst
 Name 1 in "F. Liang, J. Kim, and Q. Song" has a comma at the end for entry Liang2016
 while executing---line 1023 of file apalike.bst
+Name 1 in "A. Kleiner, A. Talwalkar, P. Sarkar, and M. Jordan" has a comma at the end for entry ArXiv12066415
+while executing---line 1023 of file apalike.bst
+Name 1 in "A. Kleiner, A. Talwalkar, P. Sarkar, and M. Jordan" has a comma at the end for entry ArXiv12066415
+while executing---line 1023 of file apalike.bst
+Name 1 in "A. Kleiner, A. Talwalkar, P. Sarkar, and M. Jordan" has a comma at the end for entry ArXiv12066415
+while executing---line 1098 of file apalike.bst
+Warning--empty year in ArXiv12066415
 Warning--empty year in Zhu
 Warning--empty journal in Zhu
 Warning--empty booktitle in SIGKDD
@@ -67,45 +76,45 @@ Warning--empty booktitle in Asilomar
 Name 1 in "V. Goasdoué, S. Nugier, D. Duquennoy, and B. Laboisse" has a comma at the end for entry Laboisse
 while executing---line 1098 of file apalike.bst
 Warning--empty journal in Laboisse
-You've used 20 entries,
+You've used 23 entries,
             1935 wiz_defined-function locations,
-            597 strings with 6747 characters,
-and the built_in function-call counts, 7428 in all, are:
-= -- 748
-> -- 224
-< -- 28
-+ -- 78
-- -- 68
-* -- 474
-:= -- 1217
-add.period$ -- 64
-call.type$ -- 20
-change.case$ -- 127
-chr.to.int$ -- 20
-cite$ -- 30
-duplicate$ -- 395
-empty$ -- 543
-format.name$ -- 116
-if$ -- 1572
+            613 strings with 7137 characters,
+and the built_in function-call counts, 8261 in all, are:
+= -- 827
+> -- 251
+< -- 31
++ -- 88
+- -- 76
+* -- 528
+:= -- 1372
+add.period$ -- 72
+call.type$ -- 23
+change.case$ -- 144
+chr.to.int$ -- 23
+cite$ -- 34
+duplicate$ -- 433
+empty$ -- 604
+format.name$ -- 129
+if$ -- 1732
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 25
-newline$ -- 101
-num.names$ -- 60
-pop$ -- 171
+missing$ -- 29
+newline$ -- 115
+num.names$ -- 69
+pop$ -- 193
 preamble$ -- 1
-purify$ -- 134
+purify$ -- 153
 quote$ -- 0
-skip$ -- 321
+skip$ -- 348
 stack$ -- 0
-substring$ -- 355
-swap$ -- 105
+substring$ -- 393
+swap$ -- 107
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 108
-warning$ -- 10
-while$ -- 51
+type$ -- 122
+warning$ -- 11
+while$ -- 57
 width$ -- 0
-write$ -- 253
-(There were 24 error messages)
+write$ -- 287
+(There were 27 error messages)
