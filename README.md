@@ -9,6 +9,9 @@
 
 ![Big Data Quality Evaluation Scheme](https://github.com/aytacozkan/eisti.big.data.mt.DQ/blob/master/Chapter3/Figs/Raster/big_data_quality_evaluation_scheme.png?raw=true)
 
+![Big Data Quality Evaluation Scheme](https://github.com/aytacozkan/eisti.big.data.mt.DQ/blob/master/Chapter3/Figs/Raster/big-data-quality-sampling-evaluation.png?raw=true)
+
+
 Each and every industry has data quality issues, it has been a major challenge to choose the right method
 to improve the data quality. Today’s machine learning / deep learning models helps us to improve the
 data quality significantly. It is important to evaluate the best methods and approaches.

@@ -147,3 +147,37 @@ the data are presented in two types; technical and functional. This information 
 without any additional representation using it metadata or any descriptive header file, or by parsing the data using any
 analysis tools. This task may become very costly in Big Data. To avoid costs generated due the data size we will use
 the same sampling process BLB to reduce the data into a representative population sample, in addition to the combination of profiling results.
+
+\subsection{Data Quality Evaluation}
+
+The data profiling provides information about dataset, 
+
+\begin{itemize}
+	\item { Data attributes (eg. type format)}
+	\item { Data summary (eg. max, min)}
+	\item {Big data attributes; size number of sources speed of data generation (eg. data streams)}
+	\item {What DQD evaluate.}
+\end{itemize}
+
+The previous information's are used to select the appropriate quality metrics functions \textbf{\textit{F}}
+to evaluate a data quality dimensions \textbf{\textit{$d_k$}} for an attribute \textbf{\textit{$a_i$}}
+with a weight \textbf{\textit{$w_j$}}
+
+In the Fig 3.2 we describe how data quality evaluated using bootstrap sampling for Big data. The process
+follows these steps: 
+
+\begin{enumerate}
+	\item {Sampling from the data set \textbf{S} \textbf{n} bootstrap sample size of \textbf{ss} size without replacement \textbf{$DS_j$}. }
+	\item {Each sample generated from step 1 is sampled into n' samples of size SS with replacements $DS_{ij}$}
+	\item {For the Each sample \textbf{$DS_{ij}$} generated in step 2, evaluate the data quality score $Q_{ij}$}	
+\end{enumerate}
+
+
+\begin{figure}[h]
+	\vspace*{-.1in}
+	\hspace*{-.7in}
+	\centering
+	\includegraphics[scale=.40]{big-data-quality-sampling-evaluation}
+	\caption{Big Data Quality Sampling Evaluation}    
+\end{figure}
+
