@@ -5,6 +5,7 @@ A level-1 auxiliary file: Abstract/abstract.aux
 A level-1 auxiliary file: Chapter1/chapter1.aux
 A level-1 auxiliary file: Chapter2/chapter2.aux
 A level-1 auxiliary file: Chapter3/chapter3.aux
+A level-1 auxiliary file: Chapter4/chapter4.aux
 The style file: apalike.bst
 Database file #1: References/references.bib
 Warning--entry type for "Caballero" isn't style-file defined
@@ -78,7 +79,7 @@ while executing---line 1098 of file apalike.bst
 Warning--empty journal in Laboisse
 You've used 23 entries,
             1935 wiz_defined-function locations,
-            613 strings with 7137 characters,
+            614 strings with 7158 characters,
 and the built_in function-call counts, 8261 in all, are:
 = -- 827
 > -- 251

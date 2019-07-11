@@ -20,4 +20,7 @@
 \contentsline {subsection}{\numberline {3.3.1}Big Data Sampling}{18}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Data Profiling}{18}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}Data Quality Evaluation}{19}{subsection.3.3.3}
-\contentsline {chapter}{References}{21}{chapter*.16}
+\contentsline {subsection}{\numberline {3.3.4}BDQ Evaluation Algorithm}{21}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}After Evaluation Analysis}{21}{subsection.3.3.5}
+\contentsline {chapter}{\numberline {4}EXPERIMENTATIONS , RESULTS AND ANALYSIS}{23}{chapter.4}
+\contentsline {chapter}{References}{25}{chapter*.16}

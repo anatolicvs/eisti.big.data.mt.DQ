@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2019.4.15)  11 JUL 2019 16:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2019.4.15)  11 JUL 2019 17:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1540,7 +1540,7 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 
 LaTeX Warning: Label `tab:my-table' multiply defined.
 
-))
+) (./Chapter4/chapter4.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 110.
@@ -1558,7 +1558,8 @@ LaTeX Font Info:    ... okay on input line 110.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 110.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 110.
 
- (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 110.
@@ -1734,7 +1735,7 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 114.
 \PHD@crest=\box95
 
-<Figs/Logo_EISTI.png, id=96, 677.53125pt x 1026.83624pt>
+<Figs/Logo_EISTI.png, id=108, 677.53125pt x 1026.83624pt>
 File: Figs/Logo_EISTI.png Graphic file (type png)
 
 <use Figs/Logo_EISTI.png>
@@ -1765,20 +1766,20 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 ] [4
 
 
-] (./thesis.toc)
+] (./thesis.toc
+[5
+
+])
 \tf@toc=\write6
 \openout6 = `thesis.toc'.
 
-
-[5
-
-] [6
-
-] (./thesis.lof)
+ [6] (./thesis.lof)
 \tf@lof=\write7
 \openout7 = `thesis.lof'.
 
- [7] [8
+ [7
+
+] [8
 
 ] (./thesis.lot)
 \tf@lot=\write8
@@ -1797,7 +1798,7 @@ Chapter 1.
 
 
 ]
-<Chapter1/Figs/Raster/quality-loss-function.png, id=197, 598.235pt x 324.21124p
+<Chapter1/Figs/Raster/quality-loss-function.png, id=212, 598.235pt x 324.21124p
 t>
 File: Chapter1/Figs/Raster/quality-loss-function.png Graphic file (type png)
  <use Chapter1/Figs/Raster/quality-loss-function.png>
@@ -1810,7 +1811,7 @@ LaTeX Font Info:    Try loading font information for TS1+ptm on input line 89.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [3]
-<Chapter1/Figs/Raster/types-of-information-systems.png, id=215, 785.93625pt x 5
+<Chapter1/Figs/Raster/types-of-information-systems.png, id=230, 785.93625pt x 5
 22.95375pt>
 File: Chapter1/Figs/Raster/types-of-information-systems.png Graphic file (type 
 png)
@@ -1823,7 +1824,7 @@ Overfull \hbox (4.79903pt too wide) in paragraph at lines 119--119
 []\T1/ptm/b/n/17.28 Main Re-search Is-sues and Ap-pli-ca-tion Do-mains in Data
  []
 
-<Chapter1/Figs/Raster/main-issues-in-dq.png, id=216, 788.9475pt x 481.8pt>
+<Chapter1/Figs/Raster/main-issues-in-dq.png, id=231, 788.9475pt x 481.8pt>
 File: Chapter1/Figs/Raster/main-issues-in-dq.png Graphic file (type png)
 
 <use Chapter1/Figs/Raster/main-issues-in-dq.png>
@@ -1848,7 +1849,7 @@ Overfull \vbox (44.8218pt too high) has occurred while \output is active []
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 190.
 
-<Chapter2/Figs/Raster/completeness_of_web_data.png, id=254, 655.44875pt x 380.4
+<Chapter2/Figs/Raster/completeness_of_web_data.png, id=269, 655.44875pt x 380.4
 2125pt>
 File: Chapter2/Figs/Raster/completeness_of_web_data.png Graphic file (type png)
 
@@ -1867,7 +1868,7 @@ Chapter 3.
 
 
 ] [16]
-<Chapter3/Figs/Raster/big_data_quality_evaluation_scheme.png, id=309, 983.675pt
+<Chapter3/Figs/Raster/big_data_quality_evaluation_scheme.png, id=324, 983.675pt
  x 276.03125pt>
 File: Chapter3/Figs/Raster/big_data_quality_evaluation_scheme.png Graphic file 
 (type png)
@@ -1886,7 +1887,7 @@ Overfull \hbox (55.25307pt too wide) in paragraph at lines 100--103
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 162.
 
-<Chapter3/Figs/Raster/big-data-quality-sampling-evaluation.png, id=333, 1412.27
+<Chapter3/Figs/Raster/big-data-quality-sampling-evaluation.png, id=348, 1412.27
 625pt x 435.6275pt>
 File: Chapter3/Figs/Raster/big-data-quality-sampling-evaluation.png Graphic fil
 e (type png)
@@ -1931,31 +1932,41 @@ Overfull \hbox (1.33022pt too wide) in paragraph at lines 187--253
 Overfull \vbox (5.29083pt too high) has occurred while \output is active []
 
 
-[20]) (./thesis.bbl [21
+[20]) [21]
+\openout2 = `Chapter4/chapter4.aux'.
+
+ (./Chapter4/chapter4.tex [22
 
 
 
-]) [22] (./thesis.ind)
+]
+Chapter 4.
+) [23] [24
+
+
+] (./thesis.bbl [25
+
+]) [26] (./thesis.ind)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 187.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 187.
  (./thesis.aux
 (./Abstract/abstract.aux) (./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux)
-(./Chapter3/chapter3.aux))
+(./Chapter3/chapter3.aux) (./Chapter4/chapter4.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 187.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 187.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: E5D3C9D8A04B5E10816E874F3C070FA8;4667.
+(rerunfilecheck)             Checksum: 50CC20A6D5017975C1433FEDB02FE21D;5375.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 27842 strings out of 493013
- 484443 string characters out of 6135682
- 570898 words of memory out of 5000000
- 30616 multiletter control sequences out of 15000+600000
- 74094 words of font info for 221 fonts, out of 8000000 for 9000
+ 27867 strings out of 493013
+ 484761 string characters out of 6135682
+ 571466 words of memory out of 5000000
+ 30620 multiletter control sequences out of 15000+600000
+ 77666 words of font info for 227 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,38n,92p,10383b,1077s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texliv
@@ -1970,10 +1981,10 @@ e1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utm
 b8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (32 pages, 460508 bytes).
+Output written on thesis.pdf (36 pages, 466764 bytes).
 PDF statistics:
- 470 PDF objects out of 1000 (max. 8388607)
- 396 compressed objects within 4 object streams
- 128 named destinations out of 1000 (max. 500000)
- 39132 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 503 PDF objects out of 1000 (max. 8388607)
+ 424 compressed objects within 5 object streams
+ 135 named destinations out of 1000 (max. 500000)
+ 39156 words of extra memory for PDF output out of 42996 (max. 10000000)
 

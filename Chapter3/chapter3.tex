@@ -252,3 +252,55 @@ follows these steps:
 \end{tabular}
 \end{table}
 
+\subsection{BDQ Evaluation Algorithm}
+
+Let \textbf{\textit{F}} represents a set of data quality metrics, \textbf{\textit{F=\{$f_0$...$f_1$,...$f_m\}$}} 
+where \textit{$f_1$} a quality metric function that will measure and evaluate a DQD \textbf{$d_k$}
+for each value of an attribute $a_i$ in the sample $s_i$ and returns 1 if correct, 0 if not. 
+Each $f_1$ function will compute if the value of the attribute reflects the $d_k$ constraints. 
+For example, the metric accuracy of an attribute is defined as a range of values between 0 and 100,
+otherwise it is correct. Similarly, it can be defined to satisfy a certain number of constraints
+related to the type of data such as a zip code, email, social security number, or an address. 
+If we are evaluating the same DQD $d_k$ for a set of attributes, if the weights are all equal, a simple mean 
+is computed. The metric $f_i$ will be evaluated to measure if all the attributes individually 
+have their $f_i$ correct. This is done for each instance (cell or row) of the sample $s_i$.
+
+In Table 3.3, we describe the detail of BDQ Evaluation Algorithm. THe $Q_k$ represents the mean
+quality score for a DQD $d_k$ for measurable attributes. For data set let note. 
+A as a set of attributes or features. THe $Q_k$ values respectively for each attribute are represented
+by a set of quality scores: 
+
+\begin{equation*}
+	V = \{Q_{ka_1},... Q_{ka_m} \}
+\end{equation*}
+
+where \textbf{A} is set of m attributes. With this evaluation, we have more insights, statistics and benefits 
+about the Big data quality to ensure a well-refined analytics that targets the best precision.
+
+\subsection{After Evaluation Analysis}
+
+The data evaluation process done on Big data set provides
+data quality information and scores of quality dimensions of
+each attributes or features. These scores are used to identify
+the data that must be targeted and omitted. A set of
+proposals actions is generated based on many parameters,
+like DQD, or data quality issue. If a data attribute got a
+lower score than the required level (\%) of accuracy or
+completeness the following actions are proposed:
+
+\begin{itemize}
+	\item{
+		Discard it from the dataset.
+	}
+	\item {
+		Tune, reformat, and normalize its values.
+	}
+	\item {
+		Replace values, as in missing data.
+	}
+\end{itemize}
+
+Whatever the Quality evaluation results, it always contains
+actions to be taken on the dataset to remove any
+irregularities using techniques like cleaning, filtering and
+pre-processing based on the quality assessment.

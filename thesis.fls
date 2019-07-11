@@ -240,6 +240,8 @@ INPUT Chapter2/chapter2.aux
 INPUT Chapter2/chapter2.aux
 INPUT Chapter3/chapter3.aux
 INPUT Chapter3/chapter3.aux
+INPUT Chapter4/chapter4.aux
+INPUT Chapter4/chapter4.aux
 OUTPUT thesis.aux
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
@@ -429,6 +431,17 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/zptmcm7y.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/zptmcm7t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/zptmcm7m.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/psyro.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
+OUTPUT Chapter4/chapter4.aux
+INPUT Chapter4/chapter4.tex
+INPUT Chapter4/chapter4.tex
 INPUT thesis.bbl
 INPUT thesis.bbl
 INPUT thesis.ind
@@ -442,6 +455,8 @@ INPUT Chapter2/chapter2.aux
 INPUT Chapter2/chapter2.aux
 INPUT Chapter3/chapter3.aux
 INPUT Chapter3/chapter3.aux
+INPUT Chapter4/chapter4.aux
+INPUT Chapter4/chapter4.aux
 INPUT ./thesis.out
 INPUT ./thesis.out
 INPUT /usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc
