@@ -13,7 +13,7 @@
 
 
 Each and every industry has data quality issues, it has been a major challenge to choose the right method
-to improve the data quality. Today’s machine learning / deep learning models helps us to improve the
+to improve the data quality. Today machine learning / deep learning models helps us to improve the
 data quality significantly. It is important to evaluate the best methods and approaches.
 
 ### Topic:
@@ -31,7 +31,7 @@ Cloudera/Hortonworks(either using VM, AWS, Dockers, Kubernetes etc...). PySpark/
 	author = {A. Ozkan},
 	title = {Improving data quality for big data using advanced analytics},
 	type = {Master Thesis},
-	institution = {�cole internationale des sciences du traitement de l'information},
+	institution = {École internationale des sciences du traitement de l'information},
 	month = {July},
 	url = {https://github.com/aytacozkan/eisti.big.data.mt.DQ},
 	address = {Avignon,France},
