@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2019.4.15)  11 JUL 2019 16:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2019.4.15)  11 JUL 2019 16:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1926,8 +1926,12 @@ Overfull \hbox (1.33022pt too wide) in paragraph at lines 187--253
  [][] 
  []
 
-) [19 <./Chapter3/Figs/Raster/big-data-quality-sampling-evaluation.png (PNG cop
-y)>] [20] (./thesis.bbl [21
+[19 <./Chapter3/Figs/Raster/big-data-quality-sampling-evaluation.png (PNG copy)
+>]
+Overfull \vbox (5.29083pt too high) has occurred while \output is active []
+
+
+[20]) (./thesis.bbl [21
 
 
 
@@ -1953,7 +1957,7 @@ Here is how much of TeX's memory you used:
  30616 multiletter control sequences out of 15000+600000
  74094 words of font info for 221 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,38n,92p,10383b,1081s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,38n,92p,10383b,1077s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texliv
 e/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
@@ -1966,7 +1970,7 @@ e1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utm
 b8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (32 pages, 460531 bytes).
+Output written on thesis.pdf (32 pages, 460508 bytes).
 PDF statistics:
  470 PDF objects out of 1000 (max. 8388607)
  396 compressed objects within 4 object streams
