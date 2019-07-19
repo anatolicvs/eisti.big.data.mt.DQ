@@ -18,14 +18,6 @@ and indicator that data quality issues are real and increasingly important (the 
     \graphicspath{{Chapter1/Figs/Vector/}{Chapter1/Figs/}}
 \fi
 
-\section{Why Data Quality is Relevant}
-
-The consequences of poor quality of data are often experienced in everyday life, but often, without making the necessary connections to their causes.
-
-For example, the late or mistaken delivery of a letter is often blamed on a postal service, although  a closer look often reveals data-related causes, typically an error in the address, orginating in the address database.
-
-Data quality has serious consequences of far-reaching significance, for the efficiency and effectiveness of organizations and business.
-
 \section{Introduction to the Concept of Data Quality}
 
 From a research perspective, data quality has been addressed in different
@@ -74,6 +66,31 @@ and the quality levels for data elements are measured in terms of percent-
 ages (of accuracy, completeness, etc.). The prioritized data elements are
 referred to as critical data elements (CDEs).
 
+\section{Why Data Quality is Relevant}
+
+The consequences of poor quality of data are often experienced in everyday life, but often, without making the necessary connections to their causes.
+
+For example, the late or mistaken delivery of a letter is often blamed on a postal service, although  a closer look often reveals data-related causes, typically an error in the address, orginating in the address database.
+
+Data quality has serious consequences of far-reaching significance, for the efficiency and effectiveness of organizations and business.
+
+
+\section{Why Data Quality is Matters}
+
+Poor data quality is enemy number one to the widespread, profitable use of machine learning. While the caustic observation, “garbage-in, garbage-out” has plagued analytics and decision-making for generations, it carries a special warning for machine learning. The quality demands of machine learning are steep, 
+and bad data can rear its ugly head twice - first in the historical data used to train the predictive model and second in the new data used by that model to make future decisions. ~\cite{RedmanHBR2018}
+
+Data quality is no less troublesome in implementation. Consider an organization seeking productivity gains with its machine learning program. While the data science team that developed the predictive model may have done a solid job cleaning the training data, it can still be compromised by bad data going forward. Again, it takes people — lots of them — to find and correct the errors. This in turns subverts the hoped-for productivity gains. Further, as machine learning technologies penetrate organizations, 
+the output of one predictive model will feed the next, and the next, and so on, even crossing company boundaries. The risk is that a minor error at one step will cascade, causing more errors and growing ever larger across an entire process.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[angle=-90,scale=.3]{4-Vs-of-big-data}
+    \caption{IBM data scientists break big data into four dimensions: volume, variety, velocity and veracity. This infographic explains and gives examples of each. ~\cite{ibmInfoGraphic}}
+\end{figure}
+
+
+
 \section{Data Quality and Types of Information Systems}
 
 Data are collected, stored, elaborated, retrieved, and exchanged in information systems used in organizations to provide services to business processes.
@@ -99,8 +116,8 @@ Monolithic, Distributed, Data Warehouses,Cooperative, and Peer-to-Peer.
     }  
 \end{itemize}
 
-\begin{figure}[h]
-\vspace*{.0in}
+\begin{figure}[H]
+% \vspace*{.0in}
 \centering
 \includegraphics[scale=.50]{types-of-information-systems}
 \caption{Types of information systems}    
@@ -120,8 +137,8 @@ Monolithic, Distributed, Data Warehouses,Cooperative, and Peer-to-Peer.
 Due to the relevance of data quality, its nature, and the variety of data types and information systems, achieving data quality is a complex, multidisciplinary 
 area of investigation. I involves several research topics and real-life application areas
 
-\begin{figure}[h]
-\vspace*{.0in}
+\begin{figure}[H]
+%\vspace*{.0in}
 \centering
 \includegraphics[scale=.50]{main-issues-in-dq}
 \caption{Main issues in data quality}    

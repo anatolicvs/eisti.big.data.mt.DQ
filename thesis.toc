@@ -2,25 +2,26 @@
 \contentsline {chapter}{List of figures}{vii}{chapter*.3}
 \contentsline {chapter}{List of tables}{ix}{chapter*.4}
 \contentsline {chapter}{\numberline {1}Introduction to Data Quality}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Why Data Quality is Relevant}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}Introduction to the Concept of Data Quality}{1}{section.1.2}
-\contentsline {section}{\numberline {1.3}Data Quality and Types of Information Systems}{3}{section.1.3}
-\contentsline {section}{\numberline {1.4}Main Research Issues and Application Domains in Data Quality}{5}{section.1.4}
-\contentsline {chapter}{\numberline {2}Data Quality Dimensions}{7}{chapter.2}
-\contentsline {section}{\numberline {2.1}Accuracy}{9}{section.2.1}
-\contentsline {section}{\numberline {2.2}Completeness}{10}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Completeness of Web Data}{11}{subsection.2.2.1}
-\contentsline {section}{\numberline {2.3}Consistency}{12}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Integrity Constraints}{12}{subsection.2.3.1}
-\contentsline {section}{\numberline {2.4}Other Data Quality Dimensions}{13}{section.2.4}
-\contentsline {chapter}{\numberline {3}Data Quality (DQ) Evaluation}{15}{chapter.3}
-\contentsline {section}{\numberline {3.1}Metrics and Measurement}{15}{section.3.1}
-\contentsline {section}{\numberline {3.2}DQ Issues and Big Data Characteristics}{16}{section.3.2}
-\contentsline {section}{\numberline {3.3}Big Data Quality Evaluation Scheme}{17}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Big Data Sampling}{18}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Data Profiling}{18}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Data Quality Evaluation}{19}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}BDQ Evaluation Algorithm}{21}{subsection.3.3.4}
-\contentsline {subsection}{\numberline {3.3.5}After Evaluation Analysis}{21}{subsection.3.3.5}
-\contentsline {chapter}{\numberline {4}EXPERIMENTATIONS , RESULTS AND ANALYSIS}{23}{chapter.4}
-\contentsline {chapter}{References}{25}{chapter*.16}
+\contentsline {section}{\numberline {1.1}Introduction to the Concept of Data Quality}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Why Data Quality is Relevant}{2}{section.1.2}
+\contentsline {section}{\numberline {1.3}Why Data Quality is Matters}{3}{section.1.3}
+\contentsline {section}{\numberline {1.4}Data Quality and Types of Information Systems}{5}{section.1.4}
+\contentsline {section}{\numberline {1.5}Main Research Issues and Application Domains in Data Quality}{6}{section.1.5}
+\contentsline {chapter}{\numberline {2}Data Quality Dimensions}{9}{chapter.2}
+\contentsline {section}{\numberline {2.1}Accuracy}{11}{section.2.1}
+\contentsline {section}{\numberline {2.2}Completeness}{12}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Completeness of Web Data}{13}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.3}Consistency}{14}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Integrity Constraints}{14}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.4}Other Data Quality Dimensions}{15}{section.2.4}
+\contentsline {chapter}{\numberline {3}Data Quality (DQ) Evaluation}{17}{chapter.3}
+\contentsline {section}{\numberline {3.1}Metrics and Measurement}{17}{section.3.1}
+\contentsline {section}{\numberline {3.2}DQ Issues and Big Data Characteristics}{18}{section.3.2}
+\contentsline {section}{\numberline {3.3}Big Data Quality Evaluation Scheme}{19}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Big Data Sampling}{20}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Data Profiling}{20}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Data Quality Evaluation}{21}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}BDQ Evaluation Algorithm}{23}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}After Evaluation Analysis}{23}{subsection.3.3.5}
+\contentsline {chapter}{\numberline {4}Experimentations , Results and Analysis}{25}{chapter.4}
+\contentsline {chapter}{References}{27}{chapter*.17}

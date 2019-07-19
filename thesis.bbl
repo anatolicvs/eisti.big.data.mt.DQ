@@ -89,6 +89,19 @@ Pernici and Scannapieco, M. (2003).
 \newblock Data quality in web information systems.
 \newblock {\em Journal of Data Semantics}.
 
+\bibitem[Platform, 2018]{ibmInfoGraphic}
+Platform, B. A.~T. (2018).
+\newblock Extracting business value from the 4 v's of big data.
+\newblock \url{https://www.ibmbigdatahub.com/infographic/four-vs-big-data}.
+\newblock Accessed: 2019-07-19.
+
+\bibitem[Redman, 2018]{RedmanHBR2018}
+Redman, T.~C. (2018).
+\newblock If your data is bad, your machine learning tools are useless.
+\newblock
+  \url{https://hbr.org/2018/04/if-your-data-is-bad-your-machine-learning-tools-are-useless}.
+\newblock Accessed: 2019-07-19.
+
 \bibitem[S., 2015]{Juddoo}
 S., J. (2015).
 \newblock Overview of data quality challenges in the context of big data.

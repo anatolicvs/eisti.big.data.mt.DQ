@@ -77,45 +77,45 @@ Warning--empty booktitle in Asilomar
 Name 1 in "V. Goasdoué, S. Nugier, D. Duquennoy, and B. Laboisse" has a comma at the end for entry Laboisse
 while executing---line 1098 of file apalike.bst
 Warning--empty journal in Laboisse
-You've used 23 entries,
+You've used 25 entries,
             1935 wiz_defined-function locations,
-            614 strings with 7158 characters,
-and the built_in function-call counts, 8261 in all, are:
-= -- 827
-> -- 251
-< -- 31
-+ -- 88
-- -- 76
-* -- 528
-:= -- 1372
-add.period$ -- 72
-call.type$ -- 23
-change.case$ -- 144
-chr.to.int$ -- 23
-cite$ -- 34
-duplicate$ -- 433
-empty$ -- 604
-format.name$ -- 129
-if$ -- 1732
+            626 strings with 7550 characters,
+and the built_in function-call counts, 8769 in all, are:
+= -- 883
+> -- 265
+< -- 33
++ -- 92
+- -- 80
+* -- 558
+:= -- 1474
+add.period$ -- 80
+call.type$ -- 25
+change.case$ -- 156
+chr.to.int$ -- 25
+cite$ -- 36
+duplicate$ -- 453
+empty$ -- 634
+format.name$ -- 135
+if$ -- 1826
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 29
-newline$ -- 115
-num.names$ -- 69
-pop$ -- 193
+newline$ -- 127
+num.names$ -- 75
+pop$ -- 197
 preamble$ -- 1
-purify$ -- 153
+purify$ -- 165
 quote$ -- 0
-skip$ -- 348
+skip$ -- 366
 stack$ -- 0
-substring$ -- 393
+substring$ -- 417
 swap$ -- 107
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 122
+type$ -- 134
 warning$ -- 11
-while$ -- 57
+while$ -- 61
 width$ -- 0
-write$ -- 287
+write$ -- 315
 (There were 27 error messages)
