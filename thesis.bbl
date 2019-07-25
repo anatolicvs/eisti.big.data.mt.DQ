@@ -1,8 +1,22 @@
 \begin{thebibliography}{}
 
+\bibitem[Dat, 2016]{Dataone2016}
+ (2016).
+\newblock Data observation network for earth. dentify and use relevant meta-
+  data standards.
+\newblock
+  \url{https://www.dataone.org/best-practices/identify-and-use-relevant-metadata-standards}.
+\newblock Accessed: 2019-07-19.
+
 \bibitem[A.~Kleiner and Jordan, ]{ArXiv12066415}
 A.~Kleiner, A.~Talwalkar, P.~S. and Jordan, M.
 \newblock The big data bootstrap.
+
+\bibitem[Alon~Halevy and Ordille, 2006]{Halevy2006}
+Alon~Halevy, A.~R. and Ordille, J. (2006).
+\newblock Data integration: the teenage years.
+\newblock page 9–16, Endowment. In Proceedings of the 32nd international
+  conference on Very large data bases.
 
 \bibitem[C.~Batini, 2006]{CBMS}
 C.~Batini, M.~S. (2006).
@@ -14,6 +28,12 @@ Cai, L. and Zhu, Y.
 \newblock The challenges of data quality and data quality assessment in the big
   data era.
 \newblock 14:2.
+
+\bibitem[Chen and Zhang, ]{Philip2014}
+Chen, C.~P. and Zhang, C.-Y.
+\newblock Data-intensive applications, challenges, techniques and technologies:
+  A survey on big data.
+\newblock page 314–347.
 
 \bibitem[Cormode and Duffield, 2014]{SIGKDD}
 Cormode, G. and Duffield, N. (2014).
@@ -31,6 +51,14 @@ Deming, W.~E. (1960).
 \newblock {\em Sample Design in Business Research}.
 \newblock ohn Wiley and Sons, Inc., New York.
 
+\bibitem[Divyakant~Agrawal and Widom, ]{ComputingResearchAssociation}
+Divyakant~Agrawal, Philip~Bernstein, E. B. S. D. U.-w. D.-M. F. J. G. L. H. J.
+  H. H. J. A. L. S. M. Y. P. J. P. M. R. R. K. R. C. S. D. S. S.~V. and Widom,
+  J.
+\newblock Challenges and opportunities with big data.
+\newblock A white paper prepared for the Computing Community Consortium com-
+  mittee of the Computing Research Association.
+
 \bibitem[F.~Liang and Song, 2016]{Liang2016}
 F.~Liang, J.~K. and Song, Q. (2016).
 \newblock {\em A Bootstrap Metropolis- Hastings Algorithm for Bayesian Analysis
@@ -47,6 +75,17 @@ Guptil, C. and Morrison, J. (1995).
 \newblock {\em Elements of Spatial Data Quality.}
 \newblock Elsevier Science Ltd, Oxford, UK.
 
+\bibitem[Heinrich et~al., 2018]{Heinrich:2018:RDQ:3155015.3148238}
+Heinrich, B., Hristova, D., Klier, M., Schiller, A., and Szubartowicz, M.
+  (2018).
+\newblock Requirements for data quality metrics.
+\newblock {\em J. Data and Information Quality}, 9(2):12:1--12:32.
+
+\bibitem[H.V.~Jagadish and Shahabi, ]{JagadishGehrkeLabrindisPapakonstantinou}
+H.V.~Jagadish, Johannes~Gehrke, A. L. Y. P. J. M. P.-R.~R. and Shahabi, C.
+\newblock Big data and its technical challenges.
+\newblock page 57(7):86–94.
+
 \bibitem[I.~Caballero and Piattini, 2014]{Caballero}
 I.~Caballero, M.~S. and Piattini, M. (2014).
 \newblock A data quality in use model for big data.
@@ -62,6 +101,13 @@ Krawczyk, H. and Wiszniewski, B. (2003).
   documents.
 \newblock Edinburgh UK. 2nd International Workshop on Web Document Analysis.
 
+\bibitem[Lenzerini, ]{Lenzerini2002}
+Lenzerini, M.
+\newblock Data integration: A theoretical perspective. in proceedings of the
+  twenty-first acm sigmod-sigact-sigart symposium on principles of database
+  systems.
+\newblock 23(4):233–246.
+
 \bibitem[M.~Ali-ud-din Khan and Gupta, 2014]{Gupta}
 M.~Ali-ud-din Khan, M. F.~U. and Gupta, N. (2014).
 \newblock Seven v’s of big data understanding big data to extract value.
@@ -71,7 +117,16 @@ M.~Ali-ud-din Khan, M. F.~U. and Gupta, N. (2014).
 \bibitem[Maydanchik, 2007]{Maydanchik2007}
 Maydanchik, A. (2007).
 \newblock {\em Data quality assessment}.
-\newblock Bradley Beach, Technics Publications, New Jersey.
+\newblock Bradley Beach, Technics Publications, New Jersey, USA.
+
+\bibitem[Microsoft, ]{Microsoft2016}
+Microsoft.
+
+\bibitem[Nicola~Askham and Schwarzenbach, 2013]{DAMA2013}
+Nicola~Askham, Denise~Cook, M. D. H. F. M. G. U.-r. L. R. L. C. M. G.~P. and
+  Schwarzenbach, J. (2013).
+\newblock {\em The six primary dimensions for data}.
+\newblock Data Management Association (DAMA), United Kingdom.
 
 \bibitem[Osborne, 2013]{Osborne2013}
 Osborne, J.~W. (2013).
@@ -84,16 +139,33 @@ Ostman, A. (1997).
 \newblock The specifications and evaluation of spatial data quality.
 \newblock In {\em 18th ICA/ACI International Conference}, Stockholm, Sweden.
 
+\bibitem[Paton, 2016]{NormanPaton}
+Paton, N. (2016).
+\newblock Data wrangling.
+\newblock
+  \url{http://www.cs.manchester.ac.uk/study/postgraduate-research/programmes/phd/programme-details/projects/description/?projectid=6981}.
+\newblock Accessed: 2019-07-19.
+
 \bibitem[Pernici and Scannapieco, 2003]{pernicib.scannapiecom.2003}
 Pernici and Scannapieco, M. (2003).
 \newblock Data quality in web information systems.
 \newblock {\em Journal of Data Semantics}.
 
 \bibitem[Platform, 2018]{ibmInfoGraphic}
-Platform, B. A.~T. (2018).
+Platform, I. A.~T. (2018).
 \newblock Extracting business value from the 4 v's of big data.
 \newblock \url{https://www.ibmbigdatahub.com/infographic/four-vs-big-data}.
 \newblock Accessed: 2019-07-19.
+
+\bibitem[Rahm and Do, ]{Erhard2000}
+Rahm, E. and Do, H.~H.
+\newblock Data cleaning: Problems and current approaches.
+\newblock 23(4):3–13.
+
+\bibitem[Ralph~Kimball and Thornthwaite, 2008]{Kimball2008}
+Ralph~Kimball, Laura~Reeves, M.~R. and Thornthwaite, W. (2008).
+\newblock {\em The Data Warehouse Lifecycle Toolkit}.
+\newblock Wiley.
 
 \bibitem[Redman, 2018]{RedmanHBR2018}
 Redman, T.~C. (2018).
@@ -102,11 +174,23 @@ Redman, T.~C. (2018).
   \url{https://hbr.org/2018/04/if-your-data-is-bad-your-machine-learning-tools-are-useless}.
 \newblock Accessed: 2019-07-19.
 
+\bibitem[Rouse, 2005]{MargaretRouse}
+Rouse, M. (2005).
+\newblock What is data quality?
+\newblock
+  \url{http://searchdatamanagement.techtarget.com/definition/data-quality}.
+\newblock Accessed: 2019-07-19.
+
 \bibitem[S., 2015]{Juddoo}
 S., J. (2015).
 \newblock Overview of data quality challenges in the context of big data.
 \newblock pages 1--9. International Conference on Computing Communication and
   Security.
+
+\bibitem[Sandra~de F.~Mendes~Sampaio and Sampaio, 2015]{Sandra2015}
+Sandra~de F.~Mendes~Sampaio, C.~D. and Sampaio, P. R.~F. (2015).
+\newblock {\em DQ2S - A framework for data quality-aware information
+  management}.
 
 \bibitem[Satyanarayana, 2014]{Satyanarayana2014}
 Satyanarayana, A. (2014).
@@ -114,6 +198,12 @@ Satyanarayana, A. (2014).
   chebyshev inequality.
 \newblock pages 1--6. 27th Canadian Conference on Electrical and Computer
   Engineering (CCECE).
+
+\bibitem[Usama M~Fayyad and Grinstein, 2002]{Fayyad2002}
+Usama M~Fayyad, A.~W. and Grinstein, G.~G. (2002).
+\newblock {\em Information visualization in data mining and knowledge
+  discovery}.
+\newblock Morgan Kaufmann.
 
 \bibitem[V.~Gadepally and Miller, 2015]{Asilomar}
 V.~Gadepally, T.~Herr, L. J. L. M. M.~M. and Miller, B.~A. (2015).
@@ -130,6 +220,11 @@ V.~Goasdoué, S.~Nugier, D.~D. and Laboisse, B. (2007).
 Wang and Strong, D.~M. (1996).
 \newblock Beyond accuracy: What data quality means to data consumers.
 \newblock {\em Journal of Management Information Systems}, page~12.
+
+\bibitem[Ware, 2012]{Ware2012}
+Ware, C. (2012).
+\newblock {\em Information visualization: perception for design}.
+\newblock Elsevier.
 
 \bibitem[Wiszniewski and Krawczyk, 2003]{wiszniewskib.krawczykh.2003}
 Wiszniewski, B. and Krawczyk, H. (2003).

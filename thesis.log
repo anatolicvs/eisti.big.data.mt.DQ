@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2019.4.15)  19 JUL 2019 17:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2019.4.15)  25 JUL 2019 18:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1735,7 +1735,7 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 114.
 \PHD@crest=\box95
 
-<Figs/Logo_EISTI.png, id=112, 677.53125pt x 1026.83624pt>
+<Figs/Logo_EISTI.png, id=120, 677.53125pt x 1026.83624pt>
 File: Figs/Logo_EISTI.png Graphic file (type png)
 
 <use Figs/Logo_EISTI.png>
@@ -1760,7 +1760,7 @@ Package pdftex.def Info: Figs/Logo_EISTI.png used on input line 114.
 
 ]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 27.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 30.
 ) [3
 
 ] [4
@@ -1795,7 +1795,7 @@ No file thesis.nls.
  (./Chapter1/chapter1.tex
 Chapter 1.
 
-<Chapter1/Figs/Raster/quality-loss-function.png, id=217, 598.235pt x 324.21124p
+<Chapter1/Figs/Raster/quality-loss-function.png, id=237, 598.235pt x 324.21124p
 t>
 File: Chapter1/Figs/Raster/quality-loss-function.png Graphic file (type png)
  <use Chapter1/Figs/Raster/quality-loss-function.png>
@@ -1806,64 +1806,101 @@ Package pdftex.def Info: Chapter1/Figs/Raster/quality-loss-function.png used on
 
 
 ] [2 <./Chapter1/Figs/Raster/quality-loss-function.png>]
-<Chapter1/Figs/Raster/4-Vs-of-big-data.png, id=235, 2179.14125pt x 1335.99126pt
+<Chapter1/Figs/Raster/big_data_life_cycle.png, id=262, 1305.87875pt x 861.2175p
+t>
+File: Chapter1/Figs/Raster/big_data_life_cycle.png Graphic file (type png)
+ <use Chapter1/Figs/Raster/big_data_life_cycle.png>
+Package pdftex.def Info: Chapter1/Figs/Raster/big_data_life_cycle.png used on i
+nput line 86.
+(pdftex.def)             Requested size: 391.76665pt x 258.36723pt.
+
+Underfull \hbox (badness 1521) in paragraph at lines 105--108
+\T1/ptm/m/n/12 (+20) source sys-tems is se-lected and trans-
+ []
+
+
+Underfull \hbox (badness 1308) in paragraph at lines 105--108
+\T1/ptm/m/n/12 (+20) from a set of stored satel-lite im-ages
+ []
+
+[3 <./Chapter1/Figs/Raster/big_data_life_cycle.png>]
+Overfull \vbox (27.42194pt too high) has occurred while \output is active []
+
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 140--140
+[]|\T1/ptm/m/n/12 (+20) MODELING
+ []
+
+
+Underfull \hbox (badness 3199) in paragraph at lines 140--140
+[]|\T1/ptm/m/n/12 (+20) Statistics & ma-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--166
+[]|\T1/ptm/m/n/12 (+20) Understand and
+ []
+
+[5] [6] [7] [8] [9]
+<Chapter1/Figs/Raster/4-Vs-of-big-data.png, id=327, 2179.14125pt x 1335.99126pt
 >
 File: Chapter1/Figs/Raster/4-Vs-of-big-data.png Graphic file (type png)
  <use Chapter1/Figs/Raster/4-Vs-of-big-data.png>
 Package pdftex.def Info: Chapter1/Figs/Raster/4-Vs-of-big-data.png used on inpu
-t line 88.
+t line 307.
 (pdftex.def)             Requested size: 2179.13596pt x 1335.988pt.
- [3]
+ [10]
 Overfull \vbox (58.9623pt too high) has occurred while \output is active []
 
 
-[4 <./Chapter1/Figs/Raster/4-Vs-of-big-data.png>]
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 106.
+[11 <./Chapter1/Figs/Raster/4-Vs-of-big-data.png>]
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 324.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-<Chapter1/Figs/Raster/types-of-information-systems.png, id=249, 785.93625pt x 5
+<Chapter1/Figs/Raster/types-of-information-systems.png, id=339, 785.93625pt x 5
 22.95375pt>
 File: Chapter1/Figs/Raster/types-of-information-systems.png Graphic file (type 
 png)
  <use Chapter1/Figs/Raster/types-of-information-systems.png>
 Package pdftex.def Info: Chapter1/Figs/Raster/types-of-information-systems.png 
-used on input line 122.
+used on input line 340.
 (pdftex.def)             Requested size: 392.96716pt x 261.47623pt.
 
-[5]
-Overfull \hbox (4.79903pt too wide) in paragraph at lines 136--136
+[12]
+Overfull \hbox (4.79903pt too wide) in paragraph at lines 354--354
 []\T1/ptm/b/n/17.28 Main Re-search Is-sues and Ap-pli-ca-tion Do-mains in Data
  []
 
-<Chapter1/Figs/Raster/main-issues-in-dq.png, id=254, 788.9475pt x 481.8pt>
+<Chapter1/Figs/Raster/main-issues-in-dq.png, id=344, 788.9475pt x 481.8pt>
 File: Chapter1/Figs/Raster/main-issues-in-dq.png Graphic file (type png)
 
 <use Chapter1/Figs/Raster/main-issues-in-dq.png>
 Package pdftex.def Info: Chapter1/Figs/Raster/main-issues-in-dq.png used on inp
-ut line 143.
+ut line 361.
 (pdftex.def)             Requested size: 394.47278pt x 240.8994pt.
-) [6 <./Chapter1/Figs/Raster/types-of-information-systems.png>] [7 <./Chapter1/
-Figs/Raster/main-issues-in-dq.png>]
+) [13 <./Chapter1/Figs/Raster/types-of-information-systems.png>] [14 <./Chapter
+1/Figs/Raster/main-issues-in-dq.png>]
 \openout2 = `Chapter2/chapter2.aux'.
 
- (./Chapter2/chapter2.tex [8
+ (./Chapter2/chapter2.tex
+Chapter 2.
+[15
 
 
 
 ]
-Chapter 2.
-[9]
 Overfull \vbox (44.8218pt too high) has occurred while \output is active []
 
 
-[10] [11] [12]
+[16] [17] [18]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 190.
 
-<Chapter2/Figs/Raster/completeness_of_web_data.png, id=292, 655.44875pt x 380.4
+<Chapter2/Figs/Raster/completeness_of_web_data.png, id=378, 655.44875pt x 380.4
 2125pt>
 File: Chapter2/Figs/Raster/completeness_of_web_data.png Graphic file (type png)
 
@@ -1871,18 +1908,18 @@ File: Chapter2/Figs/Raster/completeness_of_web_data.png Graphic file (type png)
 Package pdftex.def Info: Chapter2/Figs/Raster/completeness_of_web_data.png used
  on input line 228.
 (pdftex.def)             Requested size: 327.72357pt x 190.21014pt.
- [13] [14 <./Chapter2/Figs/Raster/completeness_of_web_data.png>] [15]) [16]
+ [19] [20 <./Chapter2/Figs/Raster/completeness_of_web_data.png>] [21]) [22]
 \openout2 = `Chapter3/chapter3.aux'.
 
 
 (./Chapter3/chapter3.tex
 Chapter 3.
-[17
+[23
 
 
 
-] [18]
-<Chapter3/Figs/Raster/big_data_quality_evaluation_scheme.png, id=347, 983.675pt
+] [24]
+<Chapter3/Figs/Raster/big_data_quality_evaluation_scheme.png, id=432, 983.675pt
  x 276.03125pt>
 File: Chapter3/Figs/Raster/big_data_quality_evaluation_scheme.png Graphic file 
 (type png)
@@ -1896,12 +1933,12 @@ Overfull \hbox (55.25307pt too wide) in paragraph at lines 102--105
  []|  [] 
  []
 
-[19 <./Chapter3/Figs/Raster/big_data_quality_evaluation_scheme.png (PNG copy)>]
-[20]
+[25 <./Chapter3/Figs/Raster/big_data_quality_evaluation_scheme.png (PNG copy)>]
+[26]
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 164.
 
-<Chapter3/Figs/Raster/big-data-quality-sampling-evaluation.png, id=371, 1412.27
+<Chapter3/Figs/Raster/big-data-quality-sampling-evaluation.png, id=457, 1412.27
 625pt x 435.6275pt>
 File: Chapter3/Figs/Raster/big-data-quality-sampling-evaluation.png Graphic fil
 e (type png)
@@ -1941,46 +1978,66 @@ Overfull \hbox (1.33022pt too wide) in paragraph at lines 189--255
  [][] 
  []
 
-[21 <./Chapter3/Figs/Raster/big-data-quality-sampling-evaluation.png (PNG copy)
+[27 <./Chapter3/Figs/Raster/big-data-quality-sampling-evaluation.png (PNG copy)
 >]
 Overfull \vbox (5.29083pt too high) has occurred while \output is active []
 
 
-[22]) [23]
+[28]) [29]
 \openout2 = `Chapter4/chapter4.aux'.
 
- (./Chapter4/chapter4.tex [24
+ (./Chapter4/chapter4.tex [30
 
 
 
 ]
 Chapter 4.
-) [25] [26
+) [31] [32
 
 
-] (./thesis.bbl [27
+] (./thesis.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 4--10
+[][]$\T1/ptm/m/n/12 (+20) https : / / www . dataone . org / best-[]practices / 
+identify-[]and-[]use-[]relevant-[]metadata-[]standards$[][].
+ []
 
-]) [28] (./thesis.ind)
+[33
+
+]
+Underfull \hbox (badness 2608) in paragraph at lines 143--148
+[]\T1/ptm/m/n/12 (+20) Paton, N. (2016).  Data wran-gling.  [][]$http : / / www
+ . cs . manchester . ac . uk / study /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--148
+\T1/ptm/m/n/12 (+20) postgraduate-[]research / programmes / phd / programme-[]d
+etails / projects / description /
+ []
+
+[34]) [35] [36
+
+] (./thesis.ind)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 187.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 187.
- (./thesis.aux
-(./Abstract/abstract.aux) (./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux)
-(./Chapter3/chapter3.aux) (./Chapter4/chapter4.aux))
+ (./thesis.aux (./Abstract/abstract.aux)
+(./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux) (./Chapter3/chapter3.aux)
+(./Chapter4/chapter4.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 187.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 187.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 63AADE1BB330B648BA14DDF45F1DC856;5599.
+(rerunfilecheck)             Checksum: CC8BA2D49ED7C52A2B1A14316AA2B551;6161.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 27885 strings out of 493013
- 485185 string characters out of 6135682
- 571520 words of memory out of 5000000
- 30631 multiletter control sequences out of 15000+600000
- 77666 words of font info for 227 fonts, out of 8000000 for 9000
+ 27977 strings out of 493013
+ 487197 string characters out of 6135682
+ 572372 words of memory out of 5000000
+ 30689 multiletter control sequences out of 15000+600000
+ 77796 words of font info for 229 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,38n,92p,10383b,1077s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texliv
@@ -1995,10 +2052,10 @@ e1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utm
 b8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (38 pages, 2446338 bytes).
+Output written on thesis.pdf (46 pages, 2616101 bytes).
 PDF statistics:
- 532 PDF objects out of 1000 (max. 8388607)
- 448 compressed objects within 5 object streams
- 141 named destinations out of 1000 (max. 500000)
- 39169 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 639 PDF objects out of 1000 (max. 8388607)
+ 544 compressed objects within 6 object streams
+ 171 named destinations out of 1000 (max. 500000)
+ 39190 words of extra memory for PDF output out of 42996 (max. 10000000)
 

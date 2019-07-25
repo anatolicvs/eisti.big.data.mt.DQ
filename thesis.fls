@@ -371,6 +371,9 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/zptmcm7y.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
+INPUT Chapter1/Figs/Raster/big_data_life_cycle.png
+INPUT ./Chapter1/Figs/Raster/big_data_life_cycle.png
+INPUT ./Chapter1/Figs/Raster/big_data_life_cycle.png
 INPUT Chapter1/Figs/Raster/4-Vs-of-big-data.png
 INPUT ./Chapter1/Figs/Raster/4-Vs-of-big-data.png
 INPUT ./Chapter1/Figs/Raster/4-Vs-of-big-data.png

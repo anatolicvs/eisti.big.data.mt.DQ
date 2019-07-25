@@ -12,6 +12,140 @@ Warning--entry type for "Caballero" isn't style-file defined
 --line 939 of file References/references.bib
 Warning--entry type for "ArXiv12066415" isn't style-file defined
 --line 1063 of file References/references.bib
+I was expecting a `,' or a `}'---line 1285 of file References/references.bib
+ :  
+ :  title = {Data Identification},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Name 1 in "Nicola Askham, Denise Cook, Martin Doyle, Helen Fereday, Mike Gibson, Ul- rich Landbeck, Rob Lee, Chris Maynard, Gary Palmer, and Julian Schwarzenbach" has a comma at the end for entry DAMA2013
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Nicola Askham, Denise Cook, Martin Doyle, Helen Fereday, Mike Gibson, Ul- rich Landbeck, Rob Lee, Chris Maynard, Gary Palmer, and Julian Schwarzenbach" for entry DAMA2013
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Nicola Askham, Denise Cook, Martin Doyle, Helen Fereday, Mike Gibson, Ul- rich Landbeck, Rob Lee, Chris Maynard, Gary Palmer, and Julian Schwarzenbach" for entry DAMA2013
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Nicola Askham, Denise Cook, Martin Doyle, Helen Fereday, Mike Gibson, Ul- rich Landbeck, Rob Lee, Chris Maynard, Gary Palmer, and Julian Schwarzenbach" for entry DAMA2013
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Nicola Askham, Denise Cook, Martin Doyle, Helen Fereday, Mike Gibson, Ul- rich Landbeck, Rob Lee, Chris Maynard, Gary Palmer, and Julian Schwarzenbach" for entry DAMA2013
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Nicola Askham, Denise Cook, Martin Doyle, Helen Fereday, Mike Gibson, Ul- rich Landbeck, Rob Lee, Chris Maynard, Gary Palmer, and Julian Schwarzenbach" for entry DAMA2013
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Nicola Askham, Denise Cook, Martin Doyle, Helen Fereday, Mike Gibson, Ul- rich Landbeck, Rob Lee, Chris Maynard, Gary Palmer, and Julian Schwarzenbach" for entry DAMA2013
+while executing---line 1023 of file apalike.bst
+Name 1 in "Nicola Askham, Denise Cook, Martin Doyle, Helen Fereday, Mike Gibson, Ul- rich Landbeck, Rob Lee, Chris Maynard, Gary Palmer, and Julian Schwarzenbach" has a comma at the end for entry DAMA2013
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Nicola Askham, Denise Cook, Martin Doyle, Helen Fereday, Mike Gibson, Ul- rich Landbeck, Rob Lee, Chris Maynard, Gary Palmer, and Julian Schwarzenbach" for entry DAMA2013
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Nicola Askham, Denise Cook, Martin Doyle, Helen Fereday, Mike Gibson, Ul- rich Landbeck, Rob Lee, Chris Maynard, Gary Palmer, and Julian Schwarzenbach" for entry DAMA2013
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Nicola Askham, Denise Cook, Martin Doyle, Helen Fereday, Mike Gibson, Ul- rich Landbeck, Rob Lee, Chris Maynard, Gary Palmer, and Julian Schwarzenbach" for entry DAMA2013
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Nicola Askham, Denise Cook, Martin Doyle, Helen Fereday, Mike Gibson, Ul- rich Landbeck, Rob Lee, Chris Maynard, Gary Palmer, and Julian Schwarzenbach" for entry DAMA2013
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Nicola Askham, Denise Cook, Martin Doyle, Helen Fereday, Mike Gibson, Ul- rich Landbeck, Rob Lee, Chris Maynard, Gary Palmer, and Julian Schwarzenbach" for entry DAMA2013
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Nicola Askham, Denise Cook, Martin Doyle, Helen Fereday, Mike Gibson, Ul- rich Landbeck, Rob Lee, Chris Maynard, Gary Palmer, and Julian Schwarzenbach" for entry DAMA2013
+while executing---line 1023 of file apalike.bst
+Name 1 in "H.V. Jagadish, Johannes Gehrke, Alexandros Labrindis, Yannis Papakonstantinou, Jignesh M. Patel, Raghu Ramakrishnan, and Cyrus Shahabi" has a comma at the end for entry JagadishGehrkeLabrindisPapakonstantinou
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "H.V. Jagadish, Johannes Gehrke, Alexandros Labrindis, Yannis Papakonstantinou, Jignesh M. Patel, Raghu Ramakrishnan, and Cyrus Shahabi" for entry JagadishGehrkeLabrindisPapakonstantinou
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "H.V. Jagadish, Johannes Gehrke, Alexandros Labrindis, Yannis Papakonstantinou, Jignesh M. Patel, Raghu Ramakrishnan, and Cyrus Shahabi" for entry JagadishGehrkeLabrindisPapakonstantinou
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "H.V. Jagadish, Johannes Gehrke, Alexandros Labrindis, Yannis Papakonstantinou, Jignesh M. Patel, Raghu Ramakrishnan, and Cyrus Shahabi" for entry JagadishGehrkeLabrindisPapakonstantinou
+while executing---line 1023 of file apalike.bst
+Name 1 in "H.V. Jagadish, Johannes Gehrke, Alexandros Labrindis, Yannis Papakonstantinou, Jignesh M. Patel, Raghu Ramakrishnan, and Cyrus Shahabi" has a comma at the end for entry JagadishGehrkeLabrindisPapakonstantinou
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "H.V. Jagadish, Johannes Gehrke, Alexandros Labrindis, Yannis Papakonstantinou, Jignesh M. Patel, Raghu Ramakrishnan, and Cyrus Shahabi" for entry JagadishGehrkeLabrindisPapakonstantinou
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "H.V. Jagadish, Johannes Gehrke, Alexandros Labrindis, Yannis Papakonstantinou, Jignesh M. Patel, Raghu Ramakrishnan, and Cyrus Shahabi" for entry JagadishGehrkeLabrindisPapakonstantinou
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "H.V. Jagadish, Johannes Gehrke, Alexandros Labrindis, Yannis Papakonstantinou, Jignesh M. Patel, Raghu Ramakrishnan, and Cyrus Shahabi" for entry JagadishGehrkeLabrindisPapakonstantinou
+while executing---line 1023 of file apalike.bst
+Name 1 in "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" has a comma at the end for entry ComputingResearchAssociation
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1023 of file apalike.bst
+Name 1 in "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" has a comma at the end for entry ComputingResearchAssociation
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1023 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1023 of file apalike.bst
+Warning--to sort, need author or key in Dataone2016
+Name 1 in "Sandra de F. Mendes Sampaio, Chao Dong, and Pedro R. Falcone Sampaio" has a comma at the end for entry Sandra2015
+while executing---line 1023 of file apalike.bst
+Name 1 in "Sandra de F. Mendes Sampaio, Chao Dong, and Pedro R. Falcone Sampaio" has a comma at the end for entry Sandra2015
+while executing---line 1023 of file apalike.bst
+Name 1 in "Ralph Kimball, Laura Reeves, Margy Ross, and Warren Thornthwaite" has a comma at the end for entry Kimball2008
+while executing---line 1023 of file apalike.bst
+Name 1 in "Ralph Kimball, Laura Reeves, Margy Ross, and Warren Thornthwaite" has a comma at the end for entry Kimball2008
+while executing---line 1023 of file apalike.bst
+Name 1 in "Alon Halevy, Anand Rajaraman, and Joann Ordille" has a comma at the end for entry Halevy2006
+while executing---line 1023 of file apalike.bst
+Name 1 in "Alon Halevy, Anand Rajaraman, and Joann Ordille" has a comma at the end for entry Halevy2006
+while executing---line 1023 of file apalike.bst
+Name 1 in "Usama M Fayyad, Andreas Wierse, and Georges G Grinstein" has a comma at the end for entry Fayyad2002
+while executing---line 1023 of file apalike.bst
+Name 1 in "Usama M Fayyad, Andreas Wierse, and Georges G Grinstein" has a comma at the end for entry Fayyad2002
+while executing---line 1023 of file apalike.bst
 Name 1 in "D. Firmani, M. Mecella, M. Scannapieco, and C. Batini" has a comma at the end for entry Firmani2015
 while executing---line 1023 of file apalike.bst
 Name 1 in "D. Firmani, M. Mecella, M. Scannapieco, and C. Batini" has a comma at the end for entry Firmani2015
@@ -51,22 +185,99 @@ while executing---line 1023 of file apalike.bst
 Name 1 in "A. Kleiner, A. Talwalkar, P. Sarkar, and M. Jordan" has a comma at the end for entry ArXiv12066415
 while executing---line 1098 of file apalike.bst
 Warning--empty year in ArXiv12066415
+Name 1 in "Alon Halevy, Anand Rajaraman, and Joann Ordille" has a comma at the end for entry Halevy2006
+while executing---line 1098 of file apalike.bst
+Warning--empty booktitle in Halevy2006
 Warning--empty year in Zhu
 Warning--empty journal in Zhu
+Warning--empty year in Philip2014
+Warning--empty journal in Philip2014
 Warning--empty booktitle in SIGKDD
 Name 1 in "D. Firmani, M. Mecella, M. Scannapieco, and C. Batini" has a comma at the end for entry Firmani2015
 while executing---line 1098 of file apalike.bst
+Name 1 in "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" has a comma at the end for entry ComputingResearchAssociation
+while executing---line 1098 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1098 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1098 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1098 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1098 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1098 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1098 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1098 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1098 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1098 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1098 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1098 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1098 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1098 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1098 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1098 of file apalike.bst
+Too many commas in name 1 of "Divyakant Agrawal, Philip Bernstein, Elisa Bertino, Susan Davidson, Umesh- war Dayal, Michael Franklin, Johannes Gehrke, Laura Hass, Jiawei Han, H.V. Jagadish, Alexandros Labrindis, Sam Madden, Yannis Papakonstantino, Jinesh Patel M., Raghu Ramakrishnan, Kenneth Ross, Cyrus Shahabi, Dan Suciu, Shiv Vaithyanathan, and Jennifer Widom" for entry ComputingResearchAssociation
+while executing---line 1098 of file apalike.bst
+Warning--empty year in ComputingResearchAssociation
+Warning--empty booktitle in ComputingResearchAssociation
 Name 1 in "F. Liang, J. Kim, and Q. Song" has a comma at the end for entry Liang2016
 while executing---line 1098 of file apalike.bst
 Warning--empty title in Falorsi
+Name 1 in "H.V. Jagadish, Johannes Gehrke, Alexandros Labrindis, Yannis Papakonstantinou, Jignesh M. Patel, Raghu Ramakrishnan, and Cyrus Shahabi" has a comma at the end for entry JagadishGehrkeLabrindisPapakonstantinou
+while executing---line 1098 of file apalike.bst
+Too many commas in name 1 of "H.V. Jagadish, Johannes Gehrke, Alexandros Labrindis, Yannis Papakonstantinou, Jignesh M. Patel, Raghu Ramakrishnan, and Cyrus Shahabi" for entry JagadishGehrkeLabrindisPapakonstantinou
+while executing---line 1098 of file apalike.bst
+Too many commas in name 1 of "H.V. Jagadish, Johannes Gehrke, Alexandros Labrindis, Yannis Papakonstantinou, Jignesh M. Patel, Raghu Ramakrishnan, and Cyrus Shahabi" for entry JagadishGehrkeLabrindisPapakonstantinou
+while executing---line 1098 of file apalike.bst
+Too many commas in name 1 of "H.V. Jagadish, Johannes Gehrke, Alexandros Labrindis, Yannis Papakonstantinou, Jignesh M. Patel, Raghu Ramakrishnan, and Cyrus Shahabi" for entry JagadishGehrkeLabrindisPapakonstantinou
+while executing---line 1098 of file apalike.bst
+Warning--empty year in JagadishGehrkeLabrindisPapakonstantinou
+Warning--empty journal in JagadishGehrkeLabrindisPapakonstantinou
 Name 1 in "I. Caballero, M. Serrano, and M. Piattini" has a comma at the end for entry Caballero
 while executing---line 1098 of file apalike.bst
 Warning--empty booktitle in krawczykh.wiszniewskib.2003
+Warning--empty year in Lenzerini2002
+Warning--empty journal in Lenzerini2002
 Name 1 in "M. Ali-ud-din Khan, M. F. Uddin, and N. Gupta" has a comma at the end for entry Gupta
 while executing---line 1098 of file apalike.bst
 Warning--empty booktitle in Gupta
+Warning--empty year in Microsoft2016
+Name 1 in "Nicola Askham, Denise Cook, Martin Doyle, Helen Fereday, Mike Gibson, Ul- rich Landbeck, Rob Lee, Chris Maynard, Gary Palmer, and Julian Schwarzenbach" has a comma at the end for entry DAMA2013
+while executing---line 1098 of file apalike.bst
+Too many commas in name 1 of "Nicola Askham, Denise Cook, Martin Doyle, Helen Fereday, Mike Gibson, Ul- rich Landbeck, Rob Lee, Chris Maynard, Gary Palmer, and Julian Schwarzenbach" for entry DAMA2013
+while executing---line 1098 of file apalike.bst
+Too many commas in name 1 of "Nicola Askham, Denise Cook, Martin Doyle, Helen Fereday, Mike Gibson, Ul- rich Landbeck, Rob Lee, Chris Maynard, Gary Palmer, and Julian Schwarzenbach" for entry DAMA2013
+while executing---line 1098 of file apalike.bst
+Too many commas in name 1 of "Nicola Askham, Denise Cook, Martin Doyle, Helen Fereday, Mike Gibson, Ul- rich Landbeck, Rob Lee, Chris Maynard, Gary Palmer, and Julian Schwarzenbach" for entry DAMA2013
+while executing---line 1098 of file apalike.bst
+Too many commas in name 1 of "Nicola Askham, Denise Cook, Martin Doyle, Helen Fereday, Mike Gibson, Ul- rich Landbeck, Rob Lee, Chris Maynard, Gary Palmer, and Julian Schwarzenbach" for entry DAMA2013
+while executing---line 1098 of file apalike.bst
+Too many commas in name 1 of "Nicola Askham, Denise Cook, Martin Doyle, Helen Fereday, Mike Gibson, Ul- rich Landbeck, Rob Lee, Chris Maynard, Gary Palmer, and Julian Schwarzenbach" for entry DAMA2013
+while executing---line 1098 of file apalike.bst
+Too many commas in name 1 of "Nicola Askham, Denise Cook, Martin Doyle, Helen Fereday, Mike Gibson, Ul- rich Landbeck, Rob Lee, Chris Maynard, Gary Palmer, and Julian Schwarzenbach" for entry DAMA2013
+while executing---line 1098 of file apalike.bst
+Warning--empty year in Erhard2000
+Warning--empty journal in Erhard2000
+Name 1 in "Ralph Kimball, Laura Reeves, Margy Ross, and Warren Thornthwaite" has a comma at the end for entry Kimball2008
+while executing---line 1098 of file apalike.bst
 Warning--empty booktitle in Juddoo
+Name 1 in "Sandra de F. Mendes Sampaio, Chao Dong, and Pedro R. Falcone Sampaio" has a comma at the end for entry Sandra2015
+while executing---line 1098 of file apalike.bst
+Warning--empty publisher in Sandra2015
 Warning--empty booktitle in Satyanarayana2014
+Name 1 in "Usama M Fayyad, Andreas Wierse, and Georges G Grinstein" has a comma at the end for entry Fayyad2002
+while executing---line 1098 of file apalike.bst
 Name 1 in "V. Gadepally, T. Herr, L. Johnson, L. Milechin, M. Milosavljevic, and B. A. Miller" has a comma at the end for entry Asilomar
 while executing---line 1098 of file apalike.bst
 Too many commas in name 1 of "V. Gadepally, T. Herr, L. Johnson, L. Milechin, M. Milosavljevic, and B. A. Miller" for entry Asilomar
@@ -77,45 +288,45 @@ Warning--empty booktitle in Asilomar
 Name 1 in "V. Goasdoué, S. Nugier, D. Duquennoy, and B. Laboisse" has a comma at the end for entry Laboisse
 while executing---line 1098 of file apalike.bst
 Warning--empty journal in Laboisse
-You've used 25 entries,
+You've used 41 entries,
             1935 wiz_defined-function locations,
-            626 strings with 7550 characters,
-and the built_in function-call counts, 8769 in all, are:
-= -- 883
-> -- 265
-< -- 33
-+ -- 92
-- -- 80
-* -- 558
-:= -- 1474
-add.period$ -- 80
-call.type$ -- 25
-change.case$ -- 156
-chr.to.int$ -- 25
-cite$ -- 36
-duplicate$ -- 453
-empty$ -- 634
-format.name$ -- 135
-if$ -- 1826
+            716 strings with 10627 characters,
+and the built_in function-call counts, 14439 in all, are:
+= -- 1456
+> -- 445
+< -- 50
++ -- 152
+- -- 136
+* -- 936
+:= -- 2413
+add.period$ -- 129
+call.type$ -- 41
+change.case$ -- 258
+chr.to.int$ -- 41
+cite$ -- 67
+duplicate$ -- 726
+empty$ -- 1033
+format.name$ -- 224
+if$ -- 2989
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 29
-newline$ -- 127
-num.names$ -- 75
-pop$ -- 197
+missing$ -- 46
+newline$ -- 207
+num.names$ -- 120
+pop$ -- 325
 preamble$ -- 1
-purify$ -- 165
+purify$ -- 273
 quote$ -- 0
-skip$ -- 366
+skip$ -- 591
 stack$ -- 0
-substring$ -- 417
-swap$ -- 107
-text.length$ -- 8
+substring$ -- 749
+swap$ -- 172
+text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 134
-warning$ -- 11
-while$ -- 61
+type$ -- 220
+warning$ -- 25
+while$ -- 98
 width$ -- 0
-write$ -- 315
-(There were 27 error messages)
+write$ -- 504
+(There were 124 error messages)
