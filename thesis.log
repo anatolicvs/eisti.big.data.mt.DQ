@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2019.4.15)  25 JUL 2019 18:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2019.4.15)  25 JUL 2019 18:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1843,7 +1843,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 166--166
  []
 
 [5] [6] [7] [8] [9]
-<Chapter1/Figs/Raster/4-Vs-of-big-data.png, id=327, 2179.14125pt x 1335.99126pt
+<Chapter1/Figs/Raster/4-Vs-of-big-data.png, id=329, 2179.14125pt x 1335.99126pt
 >
 File: Chapter1/Figs/Raster/4-Vs-of-big-data.png Graphic file (type png)
  <use Chapter1/Figs/Raster/4-Vs-of-big-data.png>
@@ -1861,7 +1861,7 @@ LaTeX Font Info:    Try loading font information for TS1+ptm on input line 324.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-<Chapter1/Figs/Raster/types-of-information-systems.png, id=339, 785.93625pt x 5
+<Chapter1/Figs/Raster/types-of-information-systems.png, id=341, 785.93625pt x 5
 22.95375pt>
 File: Chapter1/Figs/Raster/types-of-information-systems.png Graphic file (type 
 png)
@@ -1875,7 +1875,7 @@ Overfull \hbox (4.79903pt too wide) in paragraph at lines 354--354
 []\T1/ptm/b/n/17.28 Main Re-search Is-sues and Ap-pli-ca-tion Do-mains in Data
  []
 
-<Chapter1/Figs/Raster/main-issues-in-dq.png, id=344, 788.9475pt x 481.8pt>
+<Chapter1/Figs/Raster/main-issues-in-dq.png, id=346, 788.9475pt x 481.8pt>
 File: Chapter1/Figs/Raster/main-issues-in-dq.png Graphic file (type png)
 
 <use Chapter1/Figs/Raster/main-issues-in-dq.png>
@@ -1900,7 +1900,7 @@ Overfull \vbox (44.8218pt too high) has occurred while \output is active []
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 190.
 
-<Chapter2/Figs/Raster/completeness_of_web_data.png, id=378, 655.44875pt x 380.4
+<Chapter2/Figs/Raster/completeness_of_web_data.png, id=380, 655.44875pt x 380.4
 2125pt>
 File: Chapter2/Figs/Raster/completeness_of_web_data.png Graphic file (type png)
 
@@ -1919,7 +1919,7 @@ Chapter 3.
 
 
 ] [24]
-<Chapter3/Figs/Raster/big_data_quality_evaluation_scheme.png, id=432, 983.675pt
+<Chapter3/Figs/Raster/big_data_quality_evaluation_scheme.png, id=434, 983.675pt
  x 276.03125pt>
 File: Chapter3/Figs/Raster/big_data_quality_evaluation_scheme.png Graphic file 
 (type png)
@@ -1938,7 +1938,7 @@ Overfull \hbox (55.25307pt too wide) in paragraph at lines 102--105
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 164.
 
-<Chapter3/Figs/Raster/big-data-quality-sampling-evaluation.png, id=457, 1412.27
+<Chapter3/Figs/Raster/big-data-quality-sampling-evaluation.png, id=459, 1412.27
 625pt x 435.6275pt>
 File: Chapter3/Figs/Raster/big-data-quality-sampling-evaluation.png Graphic fil
 e (type png)
@@ -2015,7 +2015,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 143--148
 etails / projects / description /
  []
 
-[34]) [35] [36
+[34]
+./thesis.bbl:187: Misplaced alignment tab character &.
+l.187 \newblock Springer Science &
+                                   Business Media.
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+) [35] [36
 
 ] (./thesis.ind)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 187.
@@ -2033,10 +2044,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 27977 strings out of 493013
- 487197 string characters out of 6135682
- 572372 words of memory out of 5000000
- 30689 multiletter control sequences out of 15000+600000
+ 27981 strings out of 493013
+ 487270 string characters out of 6135682
+ 572424 words of memory out of 5000000
+ 30692 multiletter control sequences out of 15000+600000
  77796 words of font info for 229 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,38n,92p,10383b,1077s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2052,10 +2063,10 @@ e1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utm
 b8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (46 pages, 2616101 bytes).
+Output written on thesis.pdf (46 pages, 2616306 bytes).
 PDF statistics:
- 639 PDF objects out of 1000 (max. 8388607)
- 544 compressed objects within 6 object streams
- 171 named destinations out of 1000 (max. 500000)
+ 641 PDF objects out of 1000 (max. 8388607)
+ 546 compressed objects within 6 object streams
+ 172 named destinations out of 1000 (max. 500000)
  39190 words of extra memory for PDF output out of 42996 (max. 10000000)
 

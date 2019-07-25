@@ -12,7 +12,7 @@ Warning--entry type for "Caballero" isn't style-file defined
 --line 939 of file References/references.bib
 Warning--entry type for "ArXiv12066415" isn't style-file defined
 --line 1063 of file References/references.bib
-I was expecting a `,' or a `}'---line 1285 of file References/references.bib
+I was expecting a `,' or a `}'---line 1299 of file References/references.bib
  :  
  :  title = {Data Identification},
 (Error may have been on previous line)
@@ -146,6 +146,10 @@ Name 1 in "Usama M Fayyad, Andreas Wierse, and Georges G Grinstein" has a comma 
 while executing---line 1023 of file apalike.bst
 Name 1 in "Usama M Fayyad, Andreas Wierse, and Georges G Grinstein" has a comma at the end for entry Fayyad2002
 while executing---line 1023 of file apalike.bst
+Name 1 in "Ryszard S Michalski, Jaime G Carbonell, and Tom M Mitchell" has a comma at the end for entry Ryszard2013
+while executing---line 1023 of file apalike.bst
+Name 1 in "Ryszard S Michalski, Jaime G Carbonell, and Tom M Mitchell" has a comma at the end for entry Ryszard2013
+while executing---line 1023 of file apalike.bst
 Name 1 in "D. Firmani, M. Mecella, M. Scannapieco, and C. Batini" has a comma at the end for entry Firmani2015
 while executing---line 1023 of file apalike.bst
 Name 1 in "D. Firmani, M. Mecella, M. Scannapieco, and C. Batini" has a comma at the end for entry Firmani2015
@@ -271,6 +275,8 @@ Warning--empty year in Erhard2000
 Warning--empty journal in Erhard2000
 Name 1 in "Ralph Kimball, Laura Reeves, Margy Ross, and Warren Thornthwaite" has a comma at the end for entry Kimball2008
 while executing---line 1098 of file apalike.bst
+Name 1 in "Ryszard S Michalski, Jaime G Carbonell, and Tom M Mitchell" has a comma at the end for entry Ryszard2013
+while executing---line 1098 of file apalike.bst
 Warning--empty booktitle in Juddoo
 Name 1 in "Sandra de F. Mendes Sampaio, Chao Dong, and Pedro R. Falcone Sampaio" has a comma at the end for entry Sandra2015
 while executing---line 1098 of file apalike.bst
@@ -288,45 +294,45 @@ Warning--empty booktitle in Asilomar
 Name 1 in "V. Goasdoué, S. Nugier, D. Duquennoy, and B. Laboisse" has a comma at the end for entry Laboisse
 while executing---line 1098 of file apalike.bst
 Warning--empty journal in Laboisse
-You've used 41 entries,
+You've used 42 entries,
             1935 wiz_defined-function locations,
-            716 strings with 10627 characters,
-and the built_in function-call counts, 14439 in all, are:
-= -- 1456
-> -- 445
-< -- 50
-+ -- 152
-- -- 136
-* -- 936
-:= -- 2413
-add.period$ -- 129
-call.type$ -- 41
-change.case$ -- 258
-chr.to.int$ -- 41
-cite$ -- 67
-duplicate$ -- 726
-empty$ -- 1033
-format.name$ -- 224
-if$ -- 2989
+            721 strings with 10793 characters,
+and the built_in function-call counts, 14755 in all, are:
+= -- 1485
+> -- 458
+< -- 51
++ -- 156
+- -- 140
+* -- 959
+:= -- 2470
+add.period$ -- 132
+call.type$ -- 42
+change.case$ -- 264
+chr.to.int$ -- 42
+cite$ -- 68
+duplicate$ -- 740
+empty$ -- 1056
+format.name$ -- 231
+if$ -- 3051
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 46
-newline$ -- 207
-num.names$ -- 120
-pop$ -- 325
+missing$ -- 48
+newline$ -- 212
+num.names$ -- 123
+pop$ -- 334
 preamble$ -- 1
-purify$ -- 273
+purify$ -- 280
 quote$ -- 0
-skip$ -- 591
+skip$ -- 601
 stack$ -- 0
-substring$ -- 749
-swap$ -- 172
+substring$ -- 761
+swap$ -- 173
 text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 220
+type$ -- 224
 warning$ -- 25
-while$ -- 98
+while$ -- 100
 width$ -- 0
-write$ -- 504
-(There were 124 error messages)
+write$ -- 516
+(There were 127 error messages)
