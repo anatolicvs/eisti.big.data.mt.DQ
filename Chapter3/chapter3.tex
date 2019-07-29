@@ -70,8 +70,7 @@ For example a metric that calculates the accuracy of a data attribute is defined
 \section{DQ Issues and Big Data Characteristics}
 
 Data characteristics commonly named V's are initially, Volume, Velocity, Variety, and Veracity. Since the Big Data inception; 
-we reached now 7 V's and probably we will keep going ~\cite{Gupta}. The veracity tends more to express and describe
-trust and certainty of data that can be expressed mostly as quality of the data. 
+we reached now 7 V's and probably we will keep going ~\cite{Gupta}. The veracity tends more to express and describe trust and certainty of data that can be expressed mostly as quality of the data. 
 The DQD accuracy is often related to precision, reliability and veracity ~\cite{Laboisse}.
 
 A mapping tentative between these characteristics, data and data quality is complied in ~\citep{Caballero} ~\cite{Firmani2015} ~\cite{Zhu}.
@@ -94,7 +93,6 @@ The authors attempted to link the V's to the quality dimensions.
 	\end{tabular}%
 	}
 \caption{DQD metric functions}
-\label{tab:my-table}
 \end{table}
 
 \begin{figure}[h]
@@ -107,8 +105,7 @@ The authors attempted to link the V's to the quality dimensions.
 
 \section{Big Data Quality Evaluation Scheme}
 
-The purpose of Big Data Quality Evaluation (BDQ) Scheme is to address the data quality before starting data analytics.
-This is done by estimating the quality of data attributes or features by applying a DQD metric to measure the quality characterized by its
+The purpose of Big Data Quality Evaluation (BDQ) Scheme is to address the data quality before starting data analytics. This is done by estimating the quality of data attributes or features by applying a DQD metric to measure the quality characterized by its
 accuracy, completeness or/and consistency. The expected result is data quality assessment suggestions indicating the quality 
 constraints that will increase or decrease the data quality.
 
@@ -267,9 +264,9 @@ If we are evaluating the same DQD $d_k$ for a set of attributes, if the weights 
 is computed. The metric $f_i$ will be evaluated to measure if all the attributes individually 
 have their $f_i$ correct. This is done for each instance (cell or row) of the sample $s_i$.
 
-In Table 3.3, we describe the detail of BDQ Evaluation Algorithm. THe $Q_k$ represents the mean
+In Table 3.3, we describe the detail of BDQ Evaluation Algorithm. The $Q_k$ represents the mean
 quality score for a DQD $d_k$ for measurable attributes. For data set let note. 
-A as a set of attributes or features. THe $Q_k$ values respectively for each attribute are represented
+A as a set of attributes or features. The $Q_k$ values respectively for each attribute are represented
 by a set of quality scores: 
 
 \begin{equation*}
@@ -286,9 +283,7 @@ data quality information and scores of quality dimensions of
 each attributes or features. These scores are used to identify
 the data that must be targeted and omitted. A set of
 proposals actions is generated based on many parameters,
-like DQD, or data quality issue. If a data attribute got a
-lower score than the required level (\%) of accuracy or
-completeness the following actions are proposed:
+like DQD, or data quality issue. If a data attribute got a lower score than the required level (\%) of accuracy or completeness the following actions are proposed:
 
 \begin{itemize}
 	\item{
@@ -303,6 +298,4 @@ completeness the following actions are proposed:
 \end{itemize}
 
 Whatever the Quality evaluation results, it always contains
-actions to be taken on the dataset to remove any
-irregularities using techniques like cleaning, filtering and
-pre-processing based on the quality assessment.
+actions to be taken on the dataset to remove any irregularities using techniques like cleaning, filtering and pre-processing based on the quality assessment.

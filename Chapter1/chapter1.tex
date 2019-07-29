@@ -25,7 +25,7 @@ areas, including statistics, management, and computer science. Statisticians wer
 proposing a mathematical theory for considering duplicates in statistical data sets, in the late 1960's. They were followed by researchers in management, who
 at the beginning of the 1980's focused on how to control data manufacturing systems in order to detect and eliminate data quality problems. Only at the
 beginning of the 1990's computer scientists begin considering the problem of defining, measuring, and improving the quality of electronic data stored in
-databases, data warehouses, and legacy systems.~\citep{CBMS}
+databases, data warehouses, and legacy systems.
 
 Dr. Genichi Taguchi~\citep{Jugulum14}, who was a world-renowned quality engineering expert from Japan, emphasized and established the relationship between
 poor quality and overall loss. Dr. Taguchi (1987) used a quality loss function (QLF) to measure the loss associated with quality characteristics
@@ -133,11 +133,11 @@ cycle ~\cite{ComputingResearchAssociation}
     architecture design, taking into account the type of database suitableness (e.g. relational, non-relational),
     the capacities of the database management system, etc., among all the alternatives in which data could be stored. ~\cite{ComputingResearchAssociation}
     \\
-    & \\ & Data visualisation & Typically one step before analysis
+    & \\ & Data visualization & Typically one step before analysis
     techniques. This process is about applying a graphical representation to
     the data, aimed at providing ease at future usage, transformation and understanding ~\cite{Fayyad2002} ~\cite{Ware2012} ~\cite{Philip2014}.
     \\ 
-    MODELING ANALYSING & Statistics \&\ machine learning & This concerns about stating facts in
+    MODELING ANALYZING & Statistics \&\ machine learning & This concerns about stating facts in
     this context, from a given dataset, by interpreting data and providing a numerical picture of it, as well as using computer systems that emulate the human learning process, saving new information and outcomes,
     closely related to artificial intelligence (AI). Parallel Parallel statistics algorithms have been proposed to approach big data ~\cite{Ryszard2013}~\cite{PhilipChen2014}.
     \\
@@ -188,7 +188,7 @@ quality is not a bigger challenge than the lack of knowledge from analysts to im
 
 the correct methods to manage big data value ~\cite{Lavalle2011}, however, data management is an
 inherent phase of the big data analytics, and it involves the capacity to gather, integrate
-and analyse data as well, where data quality should not be considered as a separate
+and analyze data as well, where data quality should not be considered as a separate
 phase.
 The Data Warehousing Institute estimated low quality data cost U.S. businesses
 more than 600 billion USD per annum ~\cite{Eckerson2002}. The U.S. Postal Service estimated that
@@ -207,76 +207,57 @@ right value retrieval out of relevant problems from each area ~\cite{Hazen2014}.
 \section{Big Data and Parallelism}
 
 The term big data itself comprises a deeper meaning, being not only a term to be
-defined but the name of a phenomenon and an emerging discipline [34]. The earliest
-mentions of big data were made, to the best of my knowledge, in 1979 by Lawrence
+defined but the name of a phenomenon and an emerging discipline ~\cite{Diebold2012}. 
+The earliest mentions of big data were made, to the best of my knowledge, in 1979 by Lawrence
 Stone, when describing the work of cliometricians dealing with “vast quantities of data
-using electronic computers to process it and applying mathematical procedures” [121],
+using electronic computers to process it and applying mathematical procedures” ~\cite{Lawrence1979},
 and by Charles Tilly, who in 1980 describing the work done by the former, used the
-term “big-data people” referring to the cliometricians Stone mentioned before [138].
+term “big-data people” referring to the cliometricians Stone mentioned before ~\cite{Tilly1980}.
 Then, in 1997 Michael Cox and David Ellsworth, described the term as large data
 sets that surpasses the available size in main memory, local disk and even remote disk
-[19]. Following that year, Sholom M. Weiss and Nitin Indurkhya in their book “Predictive data mining: a practical guide”, contextualize not only the term but the phe-
-nomenon, mentioning that “millions or even hundreds of millions of individual records can lead to much stronger conclusions, making use of powerful methods to examine
-data more comprehensively” and also acknowledges that analysing big data, in practice, has many difficulties [146]. Two years later, Francis X. Diebold defined big data
+~\cite{Cox1997}. Following that year, Sholom M. Weiss and Nitin Indurkhya in their book “Predictive data mining: a practical guide”, contextualize not only the term but the phenomenon, 
+mentioning that “millions or even hundreds of millions of individual records can lead to much stronger conclusions, making use of powerful methods to examine
+data more comprehensively” and also acknowledges that analyzing big data, in practice, has many difficulties ~\cite{Sholom1998}. Two years later, Francis X. Diebold defined big data
 as “the explosion in the quantity of available and potentially relevant data, largely the
-result of recent and unprecedented advancements in data recording and storage technology” [33]. By this time, it was clear that big data was not only about size, but about
+result of recent and unprecedented advancements in data recording and storage technology”. By this time, it was clear that big data was not only about size, but about
 the insights that a large set of data could eventually bring.
 
 The Oxford English Dictionary, which added the term to its data base in 2013
-[101], defines big data as “data of a very large size, typically to the extent that its
-manipulation and management present significant logistical challenges” [102].
+~\cite{OxfordDictionaries2013}, defines big data as “data of a very large size, typically to the extent that its
+manipulation and management present significant logistical challenges”.
 
 Nevertheless, those “logistical challenges” for one organization could be necessary
-to be done when facing a smaller size of data compared to another [81], in this sense,
-it seemed that relying only in the size depends on the available technology within
-each organization and its capability to handle a given amount of data, so, to scope the
-definition, the size of big data could be thought as the size in which using traditional
+to be done when facing a smaller size of data compared to another ~\cite{Magoulas2009}, in this sense, it seemed that relying only in the size depends on the available technology within each organization and its capability to handle a given amount of data, so, to scope the definition, the size of big data could be thought as the size in which using traditional
 techniques to process it, is not longer an option. 
 
 The above led to define big data not only regarding size, but taking into account
-another identified characteristics, known as the “V’s of big data” [58, 82]: Volume,
-Velocity, Variety, Veracity and Value; where Volume refers to the data size, Velocity
-evokes the high speed of change and fast generation of data, Variety relates to the
-different type of data (structured, unstructured and semistructured), Veracity is the
+another identified characteristics, known as the “V’s of big data” ~\cite{Marr2015} : Volume, Velocity, Variety, Veracity and Value; where Volume refers to the data size, Velocity
+evokes the high speed of change and fast generation of data, Variety relates to the different type of data (structured, unstructured and semistructured), Veracity is the
 degree of trustworthiness of the data (quality and accuracy) and Value indicates the
-worth or benefit of gathering, storing, processing and analysing the data.
+worth or benefit of gathering, storing, processing and analyzing the data.
 
 Because of the nature of big data, traditional approaches to managing data are not
-suitable, for example, since the main aim was to handle relational data, and as previ-
-ously mentioned, big data is not always relational, so, traditional techniques are not ex-
-pected to work correctly [49]. When processing data, one of the main challenges faced
-with big data is the large volume of it; this require scaling, and there have been two
-types of scaling for big data processing: scaling-up and scaling-out, where the former
-is about implementing powerful machines, with great memory and storage capacity,
-as well as quick but expensive processors, and the latter refers to the usage of several
-commodity machines connected as clusters, having a parallel environment, suitable to
-handle large volumes of data, and an advantageous price-performance relation, com-
-pared to the scaling-up approach [88, 49]. For big data frameworks, it is known that with the proper optimisations, scaling-up performs better than scaling-out [6], how-
-ever, it is still unknown exactly when is better to opt for one approach or the other,
+suitable, for example, since the main aim was to handle relational data, and as previously mentioned,  big data is not always relational, so, traditional techniques are not expected to work correctly ~\cite{FUJITSU2015}. 
+
+When processing data, one of the main challenges faced with big data is the large volume of it; this require scaling, and there have been two types of scaling for big data processing: scaling-up and scaling-out, where the former is about implementing powerful machines, with great memory and storage capacity, as well as quick but expensive processors, and the latter refers to the usage of several commodity machines connected as clusters, having a parallel environment, suitable to handle large volumes of data, and an advantageous price-performance relation, compared to the scaling-up approach [88] ~\cite{FUJITSU2015}. For big data frameworks, it is known that with the proper optimizations, scaling-up performs better than scaling-out ~\cite{Appuswamy2013}, however, it is still unknown exactly when is better to opt for one approach or the other,
 this is, the results presented were not dependable on the framework solely, but on the
-processed data characteristics. Nevertheless, it might be strongly preferred to utilise
+processed data characteristics. Nevertheless, it might be strongly preferred to utilize
 several smaller machines than high performance computer systems (HPC), because of
 the higher cost scaling-up represents, and considering the support that new paradigms
-provide by avoiding the necessity to communicate data, but having the processing ap-
-plications running where the data is, which proposes a significant performance advan-
-tage [128], trading off performance in certain degree for a better cost-benefit ratio.
+provide by avoiding the necessity to communicate data, but having the processing ap-publications running where the data is, which proposes a significant performance advantage ~\cite{Tekiner2013}, trading off performance in certain degree for a better cost-benefit ratio.
 
 Distributed and parallel computation are two major ways of processing big data,
 where a distributed system communicates and coordinates their processes without a
-global clock, through messages, and in a component’s independence working as sin-
-gle system [127], and parallel computing is a term generally used to identify those
-processes carried out simultaneously by numerous processors, intended to reduce the
-runtime [5]. Besides solely parallel, distributed or a mixture of both, new techniques
-are being developed and selected towards aiding the whole big data life cycle. Recent
-studies target “granular computing, cloud computing, biological computing systems
-and quantum computing” [15] as the emergent areas, theories and techniques for big
-data.
+global clock, through messages, and in a component’s independence working as single system ~\cite{Tanenbaum2007}, and parallel computing is a term generally used to identify those
+processes carried out simultaneously by numerous processors, intended to reduce the runtime ~\cite{Almasi1988}. Besides solely parallel, distributed or a mixture of both, new techniques
+are being developed and selected towards aiding the whole big data life cycle. 
+Recent studies target “granular computing, cloud computing, biological computing systems and quantum computing” ~\cite{PhilipChen2014} as the emergent areas, theories and techniques for big data.
 
 \section{Why Data Quality is Relevant}
 
 The consequences of poor quality of data are often experienced in everyday life, but often, without making the necessary connections to their causes.
 
-For example, the late or mistaken delivery of a letter is often blamed on a postal service, although  a closer look often reveals data-related causes, typically an error in the address, orginating in the address database.
+For example, the late or mistaken delivery of a letter is often blamed on a postal service, although  a closer look often reveals data-related causes, typically an error in the address, originating in the address database.
 
 Data quality has serious consequences of far-reaching significance, for the efficiency and effectiveness of organizations and business.
 
@@ -339,7 +320,7 @@ Monolithic, Distributed, Data Warehouses,Cooperative, and Peer-to-Peer.
     \item{A \textit{coorparative information system} (CIS) can be defined as a large-scale information system that interconnects various systems of different and autonomous organizations, 
     while sharing common objectives.}
     \item{In a \textit{peer to peer information system} (usually abbreviated P2P), the traditional distinction between clients and servers typical of distributed systems is disappearing.
-    A P2P system can be characterized by a number of properties: peers are highly autonomous and higly heterogeneous, they have no obligation for the quality of their services
+    A P2P system can be characterized by a number of properties: peers are highly autonomous and highly heterogeneous, they have no obligation for the quality of their services
     and data, no central coordination and no central database exist, no peer has a global view of the system, global behavior emerges from local intreactions.    
     }
 \end{itemize}

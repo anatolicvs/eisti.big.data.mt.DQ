@@ -11,4 +11,70 @@
     \graphicspath{{Chapter4/Figs/Vector/}{Chapter4/Figs/}}
 \fi
 
-In this chapter, we will explain how data quality dimensions implemented  
+In this chapter, we will explain how data quality dimensions are implemented with Machine Learning (ML) techniques towards dirty datasets. 
+
+\section{Experimental Methodology}  
+
+The impact of the dirt data and data cleaning on ML in a dataset depends on a number of factors -- some factors depend on the data cleaning process, 
+
+i.e., the error types to be cleaned and the cleaning methods; some factors depend on the ML
+process, i.e., the model types used; and some factors depend on where the cleaning is performed during the ML process. Hence, in order to comprehensively investigate the impacts, we need to consider data cleaning an ML jointly in our experiments.
+
+
+\section{The NettoyageML \cite{Nettoyage2019} Schema}  
+
+The NettoyageML relational schema consists of three relations as shown in Table ~\ref{table:nettoyage_ml} . Firstly will introduced the attributes of NettoyageML relational models, and then will explained 
+the differences between these three relations.
+
+
+\begin{itemize}
+	\item {
+		\textbf{Attributes for Dataset.} The first attribute is dataset, which is the input to the data cleaning and ML pipeline. Each dataset can have multiply types of errors and has an associated ML task. 
+	}
+\end{itemize}
+
+
+\begin{table}[H]
+	\label{table:nettoyage_ml}
+		
+	\leftskip=3em
+	\begin{flushleft}
+		\leftskip=3em
+		\textbf{R1 Vanilla}
+	\end{flushleft}
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+		\hline 
+		Dataset & Error Type & Detection & Repair & ML Model & Scenario & Flag \\ 
+		\hline 
+	\end{tabular} \linebreak	
+
+	\begin{flushleft}
+		\leftskip=3em
+		\textbf{R2 (With Model Section)}
+	\end{flushleft}
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+		\hline 
+		Dataset & Error Type & Detection & Repair & Scenario & Flag \\ 
+		\hline 
+	\end{tabular} \linebreak
+
+	\begin{flushleft}
+		\leftskip=3em
+		\textbf{R3 (With Model Selection and Cleaning Method Selection)}
+	\end{flushleft}	
+
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+		\hline 
+		Dataset & Error Type & Scenario & Flag \\ 
+		\hline 
+	\end{tabular} \linebreak
+	\caption{NettoyageML Relational Schema}
+\end{table}
+
+Even for one error type, they might appear in a dataset in various distributions and hence affect ML models in complicated ways
+
+
+
+
+
+

@@ -12,7 +12,7 @@
 
 More specifically, quality dimensions can refer either to the extension of data, i.e., to data values, or to their 
 intension, i.e., to their schema. Both data dimensions are usually defined in qualitative way, referring to general properties of data and schemas,
-and and related definitions do not provide any facility for assigning values to dimensions themselves. 
+and related definitions do not provide any facility for assigning values to dimensions themselves. 
 
 Specifically, definitions do not provide quantitative measures, and one or more metrics are to be associated with dimensions as separate, distinct 
 properties. For each metric, one or more measurement metadata are to be provided regarding (i) where the measurement is taken, (ii) what data are included, 
@@ -27,56 +27,59 @@ According to the literature, at times we will distinguish between dimensions and
 \toprule
 \textbf{Dimension Name} & \textbf{Description} \\ 
 \bottomrule
-Data Governance & 
-Do organization-wide data standards exist and are they enforced? Do clearly
-defined roles and responsibilities exist for data quality related activities? Does
-data governance strive to acquire and maintain high-quality data through proactive
-management? \\
-Data Specifications &
-Are data standards documented in the form of a data dictionary, 
-data models, meta data, and integrity constraints?  
+	Data Governance & 
+	Do organization-wide data standards exist and are they enforced? Do clearly
+	defined roles and responsibilities exist for data quality related activities? Does
+	data governance strive to acquire and maintain high-quality data through proactive
+	management? 
 \\
-Data Integrity & 
-How is data integrity maintained? How are data integrity violations detected and
-resolved ?   
+	Data Specifications &
+	Are data standards documented in the form of a data dictionary, 
+	data models, meta data, and integrity constraints?  
 \\
-Data Consistency & 
-If data redundancy exists, how is data consistency achieved? What methods
-are used to bring consistency to data that has become inconsistent? If data is
-geographically replicated, how is the consistency and latency managed? 
+	Data Integrity & 
+	How is data integrity maintained? How are data integrity violations detected and
+	resolved ?   
 \\
-Data Currency & 
-Is the data current? Do procedures exists to keep the data current and purge stale
-data? 
+	Data Consistency & 
+	If data redundancy exists, how is data consistency achieved? What methods
+	are used to bring consistency to data that has become inconsistent? If data is
+	geographically replicated, how is the consistency and latency managed? 
 \\
-Data Duplication & Are there effective procedures in place to detect and remove duplicate data? 
+	Data Currency & 
+	Is the data current? Do procedures exists to keep the data current and purge stale
+	data? 
 \\
-Data Completeness & 
-Is the data about entities complete? How is missing data managed? 
+	Data Duplication & 
+	Are there effective procedures in place to detect and remove duplicate data? 
 \\
-Data Provenance & 
-Is a historical record of data and its origination maintained? If the data is acquired
-through multiple sources and has undergone cleaning and transformations, does
-the organization maintain a history of all changes to the data? 
+	Data Completeness & 
+	Is the data about entities complete? How is missing data managed? 
 \\
-Data Heterogeneity & 
-If multi-modality data about an entity is available, is that data captured and used? 
+	Data Provenance & 
+	Is a historical record of data and its origination maintained? If the data is acquired
+	through multiple sources and has undergone cleaning and transformations, does
+	the organization maintain a history of all changes to the data? 
 \\
-Streaming Data & 
-How is streaming data sampled, filtered, stored, and managed for both real-time
-and batch processing? 
+	Data Heterogeneity & 
+	If multi-modality data about an entity is available, is that data captured and used? 
 \\
-Outliers & 
-How are outliers detected and addressed? Are there versions of datasets that
-are outlier-free? Does each version correspond to a different method for outlier
-detection and treatment? 
+	Streaming Data & 
+	How is streaming data sampled, filtered, stored, and managed for both real-time
+	and batch processing? 
 \\
-Dimensionality &
-Reduction Do the datasets feature dimensionality reduced versions? How many versions are
-available? \\
-Feature Selection & 
-Do datasets have versions that exclude features that are either redundant, highly
-correlated, or irrelevant? How many versions are available? 
+	Outliers & 
+	How are outliers detected and addressed? Are there versions of datasets that
+	are outlier-free? Does each version correspond to a different method for outlier
+	detection and treatment? 
+\\
+	Dimensionality &
+	Reduction Do the datasets feature dimensionality reduced versions? How many versions are
+	available? 
+\\
+	Feature Selection & 
+	Do datasets have versions that exclude features that are either redundant, highly
+	correlated, or irrelevant? How many versions are available? 
 \\
 \bottomrule
 \end{tabular}
@@ -124,7 +127,7 @@ and modifications defined and implemented? \\
 
 \section{Accuracy}
 
-Accuracy ~\citep{Falorsi} is defined as the closeness between a value v and a value v' , considered as 
+Accuracy is defined as the closeness between a value v and a value v' , considered as 
 the correct representation of the real-life phenomenon that v aims to
 represent. As an example if the name of a person is Aytac, the value v' = Ayta?
 is correct, while the value v = Ayt is incorrect. Two kinds of accuracy can be
