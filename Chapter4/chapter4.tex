@@ -21,7 +21,7 @@ i.e., the error types to be cleaned and the cleaning methods; some factors depen
 process, i.e., the model types used; and some factors depend on where the cleaning is performed during the ML process. Hence, in order to comprehensively investigate the impacts, we need to consider data cleaning an ML jointly in our experiments.
 
 
-\section{The NettoyageML \cite{Nettoyage2019} Schema}  
+\section{The NettoyageML ~\cite{Nettoyage2019} Schema}  
 
 The NettoyageML relational schema consists of three relations as shown in Table ~\ref{table:nettoyage_ml} . Firstly will introduced the attributes of NettoyageML relational models, and then will explained 
 the differences between these three relations.
@@ -34,9 +34,7 @@ the differences between these three relations.
 \end{itemize}
 
 
-\begin{table}[H]
-	\label{table:nettoyage_ml}
-		
+\begin{table}[H]	
 	\leftskip=3em
 	\begin{flushleft}
 		\leftskip=3em
@@ -69,12 +67,163 @@ the differences between these three relations.
 		\hline 
 	\end{tabular} \linebreak
 	\caption{NettoyageML Relational Schema}
+	\label{table:nettoyage_ml}
 \end{table}
 
-Even for one error type, they might appear in a dataset in various distributions and hence affect ML models in complicated ways
+Even for one error type, they might appear in a dataset in various distributions and hence affect ML models in complicated ways/ To study the impact of the real-world error types and distribution on ML models, we mostly use real-world-dataset with real errors, and we apply various cleaning methods to detect and repair the errors in them.
 
 
+\begin{itemize}
+	\item {
+	\textbf{Attributes for Data Cleaning.}	
+		The error type attribute describes
+		which type of dirtiness we are testing. We consider five most
+		common types of dirtiness that are considered in the ML and
+		DB communities: missing values, outliers, duplicates, inconsistencies, and mislabels. For each error type, there exist multiple
+		cleaning methods, and each cleaning method includes an error
+		detection component and an error repair component.
+	}
+\item {
+	\textbf{Attributes for ML.}	
+	The ML model describes the algorithm of
+	training and prediction. Different ML models may have different
+	robustness or sensitivity to dirty data.
+}
+\item {
+	\textbf{Flag Attribute.}	
+	\textit{The flag attribute summarizes } the impact of data cleaning on ML of an experiment into three categories “\textbf{P (positive)}”, “\textbf{N (negative)}” 
+	or “\textbf{S (insignificant)}”, indicating whether
+	the cleaning has a positive, negative, or insignificant impact on
+	the ML performance respectively.
+}
+\end{itemize}
+
+Given these attributes, we designed three relations as shown Table ~\ref{table:nettoyage_ml}
+\textit{R1} shows the vanilla of the a NettoyageML relation schema with the key 
+\textit{ \{\ dataset, error type, detect, repair, ML model, scenario, flag \}\ }
+Every tuple of \textit{R1} represents \underline{a hypothesis} or \underline{an experiment:}
+how does cleaning some type of error using a detection method and a repair method affect a ML model for a given dataset?
+We also consider other two versions of relations in NettoyageML. 
+
+Compared with \textit{R1}, \textit{R2} eliminates the ML model attribute. In this case,
+we try different models during training and select the model that
+has the best validation accuracy (or F1 score) as the model to be
+considered in an experiment in \textit{R2}. 
+
+Every tuple of R2 represents a hypothesis or an experiment: how does cleaning some type of error using a detection method and a repair method affect the best
+ML model for a given dataset? 
+
+\textit{R3} further eliminates the cleaning
+method (detection and repair) attributes. In this case, in addition
+to model selection, we also try different cleaning methods and select the cleaning method that results in the best validation accuracy
+as the cleaning method to be considered in an experiment in \textit{R3}.
+Every tuple of \textit{R3} represents a hypothesis or an experiment: how
+does the best cleaning method affect the predictive performance of
+the best model for a given dataset?
+
+All three relations can also be extended with other attributes that are associated with an experiment, which may help obtain insights
+and interpret the results, such as the accuracy scores before and
+after cleaning and p-values of hypothesis testing associated with
+each experiment.
 
 
+\section{Analysis Methodology}
 
+are associated with an experiment, which may help obtain insights
+and interpret the results, such as the accuracy scores before and
+after cleaning and p-values of hypothesis testing associated with
+each experiment in Table  ~\ref{table:nettoyage_ml} . 
 
+We first fix the error type and group by flags. The percentage of each type of flag indicates the general impact of cleaning this type of error on ML. For example,
+if flag “P” dominates in the error type outliers, it indicates cleaning outliers generally improves the performance of ML. Then we
+group by the other attributes (e.g., ML models, datasets, etc.) in addition to flags to see how each attribute affects the impact. 
+
+For example, if flag “S” dominates under the ML algorithm decision tree, it indicates decision tree is insensitive to this error.
+We also investigate the changes of percentage in each type of flag when moving from \textit{R1}, to \textit{R2} and \textit{R3}. 
+
+This indicates how model selection and cleaning algorithm selection affect the impacts. 
+
+For example, if the percentage of flag “N” significantly decreases from
+\textit{R1} to \textit{R2}, it indicates the model selection reduces the negative impact of data cleaning on ML.
+
+We investigate the impact of dirty data on ML models by simply running SQL queries on three relations \textit{R1}, \textit{R2} and \textit{R3}. 
+
+We formally present the SQL query templates as follows, where E $\in$ {inconsistencies, duplicates, mislabels, outliers, missing values}.
+
+\textbf{Q1: Flag}
+\begin{lstlisting}[language=SQL, caption=Q1: Flag]
+	SELECT flag, COUNT(*) FROM R 
+	WHERE error_type = E 
+	GROUP BY flag
+\end{lstlisting}
+
+\textbf{Q2: Scenario}
+\begin{lstlisting}[language=SQL, caption=Q2: Scenario]
+	SELECT scenario, flag, COUNT(*)
+	FROM R
+	WHERE error_type = E
+  GROUP BY scenario, flag
+\end{lstlisting}
+
+\textbf{Q3: ML Model. (Not applicable to R2, R3)}
+\begin{lstlisting}[language=SQL, caption=Q3: ML Model]
+	SELECT model, flag, COUNT(*)
+	FROM R
+	WHERE error_type = E
+	GROUP BY model, flag
+\end{lstlisting}
+
+\textbf{Q4: Clean Method (Not applicable to R3 or E $\in$ { inconsistencies, duplicates, mislabels}, where only one cleaning method is applied}
+\begin{lstlisting}[language=SQL, caption=Q4.1:Clean Method]
+	SELECT detect_method, flag, COUNT(*)
+	FROM R
+	WHERE error_type = E
+	GROUP BY detect_method, flag
+\end{lstlisting}
+
+\begin{lstlisting}[language=SQL, caption=Q4.2:Clean Method]
+	SELECT repair_method, flag, COUNT(*)
+	FROM R
+	WHERE error_type = E
+	GROUP BY repair_method, flag
+\end{lstlisting}
+-\\
+\begin{lstlisting}[language=SQL, caption=Q5: Dataset]
+	SELECT dataset, flag, COUNT(*)
+	FROM R
+	WHERE error_type = E
+	GROUP BY dataset, flag
+\end{lstlisting}
+
+\section{Design of Benchmark}
+
+Based on NettoyageML Relational Schema, we design NettoyageML Benchmark by specifying the domain of each key attribute.In the following sections we present all datasets, error types, cleaning methods, ML models, and cleaning scenarios we consider in the benchmark.
+
+\section{Error Types and Cleaning Methods}
+We consider five error types that are prevalent in the real-world
+datasets, including missing values, outliers, duplicates, inconsistencies and mislabels. 
+
+\begin{longtable}[c]{|l|l|l|}
+	\caption{Cleaning Methods}
+	\label{tab:cleaning-methods-table}\\
+	\hline
+	\textbf{Error Type}       & \textbf{Detect Method} & \textbf{Repair Method}                                                                                                             \\ \hline
+	\endfirsthead
+	%
+	\endhead
+	%
+	Missing Values            & Empty Entry            & Deletion                                                                                                                           \\ \hline
+	&                        & \begin{tabular}[c]{@{}l@{}}Imputation:\\ Mean Mode\\ Median Mode\\ Mode Mode\\ Mean Dummy\\ Mode Dummy\\ Median Dummy\end{tabular} \\ \hline
+	\multirow{3}{*}{Outliers} & SD                     & Deletion                                                                                                                           \\ \cline{2-3} 
+	& IQR                    & \multirow{4}{*}{\begin{tabular}[c]{@{}l@{}}Imputation:\\ Mean\\ Median\\ Mode\end{tabular}}                                        \\ \cline{2-2}
+	& IF                     &                                                                                                                                    \\ \cline{1-2}
+	\multicolumn{2}{|l|}{\multirow{2}{*}{}}            &                                                                                                                                    \\
+	\multicolumn{2}{|l|}{}                             &                                                                                                                                    \\ \hline
+	Duplicates                & Key Collision          & Deletion                                                                                                                           \\ \hline
+	Inconsistencies           & OpenRefine             & Merge                                                                                                                              \\ \hline
+	Mislabels                 & Ground Truth           & Flip Labels                                                                                                                        \\ \hline
+\end{longtable}
+While there are many cleaning methods in the literature we consider the most straightforward
+one in this study. 
+The definition and the cleaning methods of each
+error type are described below and summarized in Table
