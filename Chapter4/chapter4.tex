@@ -492,6 +492,36 @@ below.
 \end{itemize}
 
 
+\section{Scenarios}
 
+Given a dataset with a train/test split, and a cleaning method,
+we can have different model performance depending on where the
+cleaning is performed. 
+Table ~\ref{tab:where-cleaning-is-performed } shows the four cases: 
+\textbf{Case A} represents a model built using the original dirty training set and tested on
+the original dirty test set; 
+\textbf{Case B} represents a model built using the
+original dirty training set and tested on the cleaned test set; 
+\textbf{Case C } represents a model built using the cleaned training set and tested
+on the original dirty test set; 
+and \textbf{Case D} represents a model built
+using the cleaned training set and tested on the cleaned test set.
+\underline{\textbf{Our goal is compare two of them to evaluate how cleaning affects
+model performance}},
+and a chosen comparison between two cases is what we call a scenario in Table ~\ref{table:nettoyage_ml}
 
+\begin{longtable}[c]{|c|c|c|}
+	\caption{Where Cleaning is Performed}
+	\label{tab:where-cleaning-is-performed }\\
+	\hline
+	& \textbf{Dirty Test Set} & \textbf{Cleaned Test Set} \\ \hline
+	\endfirsthead
+	%
+	\multicolumn{3}{c}%
+	{{\bfseries Table \thetable\ continued from previous page}} \\
+	\endhead
+	%
+	\textbf{Dirty Training Set} & \cellcolor[HTML]{EFEFEF}A & \cellcolor[HTML]{EFEFEF}B \\ \hline
+	\textbf{Cleaned Training Set} & \cellcolor[HTML]{EFEFEF}C & \cellcolor[HTML]{EFEFEF}D \\ \hline
+\end{longtable}
 

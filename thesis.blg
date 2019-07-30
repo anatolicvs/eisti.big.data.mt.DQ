@@ -33,6 +33,8 @@ Warning--entry type for "Marr2015" isn't style-file defined
 --line 1227 of file References/references.bib
 Warning--entry type for "Nettoyage2019" isn't style-file defined
 --line 1365 of file References/references.bib
+Warning--entry type for "inra-paca:2019" isn't style-file defined
+--line 1379 of file References/references.bib
 Warning--to sort, need author or key in Nettoyage2019
 Too many commas in name 1 of "Nicola Askham, Denise Cook, Martin Doyle, Helen Fereday, Mike Gibson, Ulrich Landbeck, Rob Lee, Chris Maynard, Gary Palmer and Julian Schwarzenbach" for entry DAMA2013
 while executing---line 1023 of file apalike.bst
@@ -273,6 +275,7 @@ Warning--empty journal in JagadishGehrkeLabrindisPapakonstantinou
 Warning--empty year in HastieTibshirani
 Warning--empty journal in HastieTibshirani
 Warning--empty year in Hatton2019
+Warning--empty year in inra-paca:2019
 Warning--empty journal in Kambatla2014
 Warning--empty booktitle in krawczykh.wiszniewskib.2003
 Warning--empty journal in Lenzerini2002
@@ -321,45 +324,45 @@ while executing---line 1098 of file apalike.bst
 Warning--empty booktitle in Asilomar
 Warning--empty journal in Laboisse
 Warning--empty booktitle in CuiChen2015
-You've used 87 entries,
+You've used 88 entries,
             1935 wiz_defined-function locations,
-            966 strings with 17230 characters,
-and the built_in function-call counts, 29586 in all, are:
-= -- 2980
-> -- 927
-< -- 101
-+ -- 328
-- -- 283
-* -- 1984
-:= -- 5061
-add.period$ -- 273
-call.type$ -- 87
-change.case$ -- 554
-chr.to.int$ -- 82
-cite$ -- 131
-duplicate$ -- 1407
-empty$ -- 2072
-format.name$ -- 460
-if$ -- 5995
+            970 strings with 17462 characters,
+and the built_in function-call counts, 29838 in all, are:
+= -- 3008
+> -- 934
+< -- 102
++ -- 330
+- -- 285
+* -- 1997
+:= -- 5111
+add.period$ -- 277
+call.type$ -- 88
+change.case$ -- 560
+chr.to.int$ -- 83
+cite$ -- 133
+duplicate$ -- 1417
+empty$ -- 2087
+format.name$ -- 463
+if$ -- 6042
 int.to.chr$ -- 6
 int.to.str$ -- 0
 missing$ -- 83
-newline$ -- 438
-num.names$ -- 257
-pop$ -- 592
+newline$ -- 444
+num.names$ -- 260
+pop$ -- 596
 preamble$ -- 1
-purify$ -- 576
+purify$ -- 582
 quote$ -- 0
-skip$ -- 1186
+skip$ -- 1193
 stack$ -- 0
-substring$ -- 1631
+substring$ -- 1643
 swap$ -- 280
 text.length$ -- 18
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 478
-warning$ -- 42
-while$ -- 203
+type$ -- 484
+warning$ -- 43
+while$ -- 205
 width$ -- 0
-write$ -- 1070
+write$ -- 1083
 (There were 124 error messages)
