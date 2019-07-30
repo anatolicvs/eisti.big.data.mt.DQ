@@ -39,4 +39,6 @@
 \contentsline {section}{\numberline {4.6}Datasets}{37}{section.4.6}
 \contentsline {section}{\numberline {4.7}ML Models}{40}{section.4.7}
 \contentsline {section}{\numberline {4.8}Scenarios}{41}{section.4.8}
-\contentsline {chapter}{References}{43}{chapter*.24}
+\contentsline {section}{\numberline {4.9}Running The Benchmark}{43}{section.4.9}
+\contentsline {subsection}{\numberline {4.9.1}Generating One Metric Pair}{44}{subsection.4.9.1}
+\contentsline {chapter}{References}{47}{chapter*.25}

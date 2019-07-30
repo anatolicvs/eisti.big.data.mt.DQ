@@ -512,7 +512,7 @@ and a chosen comparison between two cases is what we call a scenario in Table ~\
 
 \begin{longtable}[c]{|c|c|c|}
 	\caption{Where Cleaning is Performed}
-	\label{tab:where-cleaning-is-performed }\\
+	\label{tab:where-cleaning-is-performed}\\
 	\hline
 	& \textbf{Dirty Test Set} & \textbf{Cleaned Test Set} \\ \hline
 	\endfirsthead
@@ -524,4 +524,180 @@ and a chosen comparison between two cases is what we call a scenario in Table ~\
 	\textbf{Dirty Training Set} & \cellcolor[HTML]{EFEFEF}A & \cellcolor[HTML]{EFEFEF}B \\ \hline
 	\textbf{Cleaned Training Set} & \cellcolor[HTML]{EFEFEF}C & \cellcolor[HTML]{EFEFEF}D \\ \hline
 \end{longtable}
+
+\begin{longtable}[c]{|c|c|c|}
+	\caption{Where Cleaning is Performed (Missing Values)}
+	\label{tab:where-cleaning-is-performed-missing-values }\\
+	\hline
+	& \textbf{Deletion Test set} & \textbf{Imputation Test set} \\ \hline
+	\endfirsthead
+	%
+	\multicolumn{3}{c}%
+	{{\bfseries Table \thetable\ continued from previous page}} \\
+	\endhead
+	%
+	\textbf{Deletion Training set} & \cellcolor[HTML]{EFEFEF}A & \cellcolor[HTML]{EFEFEF}B \\ \hline
+	\textbf{Imputation Training set} & \cellcolor[HTML]{EFEFEF}C & \cellcolor[HTML]{EFEFEF}D \\ \hline
+\end{longtable}
+
+Do we then have a total of $ C^{2}_{4} = 6 $ scenarios ? The answer is no, and in
+fact, only two of them (“BD” and “CD”) make sense as explained
+as follows:
+
+\begin{itemize}
+	\item {
+	Scenario “BD”. This shows the effects of cleaning dirty data in the
+	training set when models are evaluated on the clean test set. This
+	is reflective of the real-world model building phase, where we are
+	given a dirty training set and we would like to know whether we
+	need to clean the training set. Of course, in order to test whether
+	cleaning training set helps, the two models need to be evaluated
+	on the same cleaned test set.
+	}
+	\item {
+	\textbf{Scenario “CD”}. This shows the effects of cleaning dirty data in the
+	test set when models are trained on the clean training set. This
+	is reflective of the real-world model deployment phase, where
+	the model is deployed and is being used for new test data, and
+	we would like to know whether cleaning incoming dirty test data
+	helps with the predictive performance.
+	}
+	\item {
+	\textbf{Scenario “AB”}. We do not compare the entries A and B because
+	in real-world data cleaning, we do not consider evaluating a test
+	set on a model trained with dirtiness, especially we are not interested in the performance improvement/degradation when swap-
+	ping dirty with clean test sets.
+	}
+	\item {
+	\textbf{Scenario “AC”}. The comparison between A and C is also not
+	reported because in production we are not interested in the performance of models evaluated on a dirty test set. It is common
+	practice to ensure the test set is clean for evaluating the model
+	performance.
+	}
+	\item {
+	\textbf{Scenario “AD” and “BC”}. The two scenarios are based on two
+	different settings, which are not directly comparable.
+	}
+\end{itemize}
+
+\textbf{Special Handling for Missing Values.} 
+Missing values need special attention; they occur when no value is stored for a variable in an observation. We cannot train models when some data is missing. 
+Thus, Cases A and B in Table ~\ref{tab:where-cleaning-is-performed} are not available for missing values. Instead of comparing dirty and cleaned datasets, 
+
+we compare the difference between a deletion dataset (a dataset with missing values deleted) and an imputation dataset (a dataset with missing values imputed). 
+
+The four cases for missing values are shown in Table ~\ref{tab:where-cleaning-is-performed-missing-values }. 
+We only consider the “BD” scenario for missing values, which captures the difference of imputing and deleting training samples while testing the model performance in the imputed test set. 
+This scenario is the authentic scenario we encounter in production, where it is not allowed to delete instances from the test set, so missing values in the test set have to be repaired using
+imputation methods.
+
+\section{Running The Benchmark}
+
+We have defined the domain of each key attribute. We call each
+valid assignment of key attributes an experiment specification. By
+definition, the experiment specification for $a$ tuple $t$ in relation
+
+is $ t[R - Flag]$, where $R \in \{R1, R2, R3\} $. For example in Table ~\ref{table:experiment-specifications} $s_{1}$, $s_{2}$ and $s_{3}$ are there experiment specifications in $R1$, $R2$ and $R3$, respectively.
+
+\begin{table}[H]	
+	\leftskip=3em
+	\begin{flushleft}
+		\leftskip=3em
+		\textbf{$s_{1}$}
+	\end{flushleft}
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+		\hline 
+		Dataset & Error Type & Detection & Repair & ML Model & Scenario \\ 
+		\hline 
+		EEG & Outliers & IQR & Mean Imputation & Logistic Regression & BD  \\ 
+		\hline 
+	\end{tabular} \linebreak	
+	
+	\begin{flushleft}
+		\leftskip=3em
+		\textbf{$s_{2}$}
+	\end{flushleft}
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+		\hline 
+		Dataset & Error Type & Detection & Repair & Scenario \\ 
+		\hline 
+		EEG & Outliers & IQR & Mean Imputation & BD  \\
+		\hline 
+	\end{tabular} \linebreak
+	
+	\begin{flushleft}
+		\leftskip=3em
+		\textbf{$s_{3}$}
+	\end{flushleft}	
+	
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+		\hline 
+		Dataset & Error Type & Scenario \\ 
+		\hline 
+		EEG & Outliers & BD \\ 
+		\hline 
+	\end{tabular} \linebreak
+	\caption{Example of Experiment specifications}
+	\label{table:experiment-specifications}
+\end{table}
+
+In this section, we present how to run the benchmark to generate
+flags for each experiment specification in $R1$, $R2$ and $R3$. 
+
+\subsection{Generating One Metric Pair}
+
+Given an experiment specification in R1, we can generate a pair
+of metrics through following steps:
+
+\begin{enumerate}
+	\item {
+		\textbf{Split dataset.} We first split dataset randomly into a training
+		and a test set with a $70/30$ ratio.
+	}
+	\item {
+		\textbf{Clean dataset.} We clean the error in the training set and test
+		set with the specific cleaning methods. To avoid the data
+		leakage problem, all statistics needed for data cleaning, such
+		as mean and standard deviation, are computed only on the
+		training set and used to clean both training and test set.
+    }
+	\item {
+		\textbf{Training ML models.} If the scenario is BD, we train two ML
+		models, one on dirty training set and one on clean training
+		set. If the scenario is \textbf{CD}, we only train one ML model on the
+		clean training set. We tune hyper-parameters of ML models
+		using random search and 5-fold cross validation.
+	}
+	\item {
+		\textbf{Training ML models.} If the scenario is BD, we train two ML
+		models, one on dirty training set and one on clean training
+		set. If the scenario is \textbf{CD}, we only train one ML model on the
+		clean training set. We tune hyper-parameters of ML models
+		using random search and 5-fold cross validation.
+	}
+	\item {
+		\textbf{Evaluating ML models.} If the scenario is \textbf{BD}, we evaluate
+		two ML models (one trained on a dirty training set, anther
+		trained on a clean training set) on the clean test set to get
+		a pair of metrics. If the scenario is \textbf{CD}, the model trained
+		on clean training set will be evaluated on dirty test set and
+		clean test set respectively to get a pair of metrics. The evaluation metric is selected based on class imbalance. For class-
+		imbalanced datasets \textit{(i.e., KDD and Credit)}, we use F1 score
+		to evaluate the performance of models but for all the other
+		datasets, we use accuracy as the evaluation metric.
+	}
+\end{enumerate}
+
+For experiment specifications in $R2$, the difference is that we
+train various ML models at step \textbf{(3)} and select the model with the
+best validation accuracy from cross validation as the model evaluated in step \textbf{(4)}. 
+For R3, in addition to model selection, we use
+various cleaning methods to clean dataset at step \textbf{(2)} and select the cleaning method resulting in the best validation accuracy. At step
+\textbf{(4),} the test set cleaned by the best cleaning method is used to evaluate the best model.
+
+\newtheorem{SampleEnv}{Sample Environment}[section]
+\begin{example}
+	User-defined numbered environment
+\end{example}
+
 
