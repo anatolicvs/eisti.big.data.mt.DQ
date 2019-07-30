@@ -430,6 +430,67 @@ We used \textbf{scikit-learn} ~\cite{Scikit-learn:2011} to train models. Each mo
 below.
 
 
+\begin{itemize}
+	\item { \textbf{Logistic Regression:}
+	Logistic regression is a binary classifier that
+	uses a Sigmoid function to create a linear classification boundary. Logistic regression uses optimization methods to determine
+	the best regression coefficient of the function based on the training data. ~\cite{McFadden1973}
+}
+
+\item {
+	\textbf{KNN Classifier:} \textit{KNN classifier} uses a distance metric (\textit{Euclidean
+	distance} in our experiments), and the number of nearest neighbors
+	(k) to calculate the distance between records in the training set.
+	After calculating the distance it then retrieves the k nearest neighbors. Once the algorithm has found those neighbors, it can classify
+	a record in the test set by computing its distance to other training
+	records and using the class labels of the nearest neighbors to deter-
+	mine the label class of the unknown record. ~\cite{HastieTibshirani}
+}
+
+\item {
+\textbf{Decision Tree:} CART (Classification\& Regression Trees) decision trees were used in this analysis. During training, the decision
+	tree splits the data based on homogeneity. Gini index is used to
+	measure node impurity and the attribute with minimum Gini index
+	is used as the split node. This algorithm recursively partitions data
+	until the splitting is completed. ~\cite{Quinlan1986}
+}
+\item{
+   \textbf{Random Forest:} Random forests are an ensemble learning method
+	for classification. During training, the random forests algorithm
+	constructs several decision trees and outputs an aggregated prediction (often the mode of the classes). Predictions in the test set are
+	then made using this output ~\cite{CuiChen2015}.
+}
+
+\item {
+	\textbf{Adaboost}: Adaboost, also known as “Adaptive boost”, is a meta-
+	learning algorithm with high theoretical and empirical performance.
+	It uses weak learners and transforms them into high performance
+	learners by repeatedly emphasizing mispredicted instances. In ex-
+	periments, the decision tree is our base learner. ~\cite{Hastie2009}
+}
+\item {
+	\textbf{XGBoost}: XGBoost is short for “Extreme Gradient Boosting”. It is
+	an implementation of gradient tree boosting system designed to be
+	highly efficient and scalable. It is one of the most popular packages
+	used by competitors to win ML challenges ~\cite{Guestrin2016}. We use gradient
+	boosted tree as our base learner in the experiments.
+}
+
+\item {
+	\textbf{Naive Bayes:} Naive Bayes predicts a class given a set of features using Bayes Theorem. This algorithm assumes independence among all attributes when the class is given ~\cite{Rish2001}.
+}
+\item {
+	We preprocess features before training ML models following
+	these common practice: \textbf{(1)} Categorical variables were encoded
+	using one hot encoding. \textbf{(2)} Text embeddings were used for non-
+	categorical text attributes. We computed their tf-idf matrix using
+	\textbf{TfidfVectorizer} from \textbf{scikit-learn} ~\cite{Scikit-learn:2011}. 
+	\textbf{(3)} Data were standardized to a mean of 0 and variance of 1. 
+	\textbf{(4)} Class-imbalanced datasets were downsampled, i.e., for every observation of the minor class, we randomly sample from the major class without replacement, to make the number of the instances in the major class equal to that in
+	the minor class during the training.
+}
+\end{itemize}
+
 
 
 

@@ -1,0 +1,491 @@
+\begin{thebibliography}{}
+
+\bibitem[Dat, 2016]{Dataone2016}
+ (2016).
+\newblock Data observation network for earth. dentify and use relevant metadata
+  standards.
+\newblock
+  \url{https://www.dataone.org/best-practices/identify-and-use-relevant-metadata-standards}.
+\newblock Accessed: 2019-07-19.
+
+\bibitem[Net, 2019]{Nettoyage2019}
+ (2019).
+\newblock Nettoyage de données.
+\newblock \url{https://fr.wikipedia.org/wiki/Nettoyage_de_donn%C3%A9es}.
+
+\bibitem[A.~Kleiner and Jordan, 2012]{ArXiv12066415}
+A.~Kleiner, A.~Talwalkar, P.~S. and Jordan, M. (2012).
+\newblock The big data bootstrap.
+
+\bibitem[Almasi and Gottlieb, 1988]{Almasi1988}
+Almasi, G.~S. and Gottlieb, A. (1988).
+\newblock {\em Highly Parallel Computing}.
+\newblock Benjamin-Cummings Pub. Co.
+
+\bibitem[Alon~Halevy and Ordille, 2006]{Halevy2006}
+Alon~Halevy, A.~R. and Ordille, J. (2006).
+\newblock Data integration: the teenage years.
+\newblock page 9–16, Endowment. In Proceedings of the 32nd international
+  conference on Very large data bases.
+
+\bibitem[Benjamin T.~Hazen and Jones-Farmer, 2014]{Hazen2014}
+Benjamin T.~Hazen, Christopher A.~Boone, J. D.~E. and Jones-Farmer, L.~A.
+  (2014).
+\newblock Data quality for data science, predictive analytics, and big data in
+  supply chain management: An introduction to the problem and suggestions for
+  research and applications.
+\newblock 154:72–80.
+
+\bibitem[Cai and Zhu, 2015a]{ZhuCai2015}
+Cai, L. and Zhu, Y. (2015a).
+\newblock The challenges of data quality and data quality assessment in the big
+  data era.
+\newblock page 14:2.
+
+\bibitem[Cai and Zhu, 2015b]{Zhu}
+Cai, L. and Zhu, Y. (May 2015b).
+\newblock The challenges of data quality and data quality assessment in the big
+  data era.
+\newblock 14:2.
+
+\bibitem[Chen and Zhang, 2014a]{Philip2014}
+Chen, C.~P. and Zhang, C.-Y. (2014a).
+\newblock Data-intensive applications, challenges, techniques and technologies:
+  A survey on big data.
+\newblock page 314–347.
+
+\bibitem[Chen and Zhang, 2014b]{PhilipChen2014}
+Chen, C.~P. and Zhang, C.-Y. (2014b).
+\newblock Data-intensive applications, challenges, techniques and technologies:
+  A survey on big data.
+\newblock 275:314–347.
+
+\bibitem[Chen and Guestrin, 2016]{Guestrin2016}
+Chen, T. and Guestrin, C. (2016).
+\newblock Xgboost: A scalable tree boosting system.
+\newblock page 785–794. The 22nd acm sigkdd international conference on
+  knowledge discovery and data mining, ACM.
+
+\bibitem[Chris~Meek, 2019]{USCensusData:2019}
+Chris~Meek, Bo~Thiesson, D.~H. (2019).
+\newblock {UCI} machine learning repository us census data (1990) data set.
+
+\bibitem[Cormode and Duffield, 2014]{SIGKDD}
+Cormode, G. and Duffield, N. (2014).
+\newblock Sampling for big data: A tutorial.
+\newblock page 1975–1975, New York, NY, USA. 20th ACM SIGKDD International
+  Conference on Knowledge Discovery and Data Mining.
+
+\bibitem[Cox and Ellsworth, 1997]{Cox1997}
+Cox, M. and Ellsworth, D. (1997).
+\newblock Application-controlled demand paging for out-of-core visualization.
+
+\bibitem[D.~Firmani and Batini, 2015]{Firmani2015}
+D.~Firmani, M.~Mecella, M.~S. and Batini, C. (2015).
+\newblock {\em On the Meaningfulness of ‘Big Data Quality}.
+\newblock Springer Berlin Heidelberg.
+
+\bibitem[Das et~al., ]{magellandata}
+Das, S., Doan, A., G.~C., P.~S., Gokhale, C., Konda, P., Govind, Y., and
+  Paulsen, D.
+\newblock The magellan data repository.
+\newblock \url{https://sites.google.com/site/anhaidgroup/projects/data}.
+
+\bibitem[Data, 2019]{SensorDataset2019}
+Data, I.~L. (2019).
+\newblock Sensor dataset.
+\newblock \url{http://db.csail.mit.edu/labdata/labdata.html}.
+\newblock Accessed: 2019-07-30.
+
+\bibitem[Deming, 1960]{Deming}
+Deming, W.~E. (1960).
+\newblock {\em Sample Design in Business Research}.
+\newblock ohn Wiley and Sons, Inc., New York.
+
+\bibitem[Dictionaries, 2013]{OxfordDictionaries2013}
+Dictionaries, O. (2013).
+\newblock An oxford english dictionary update — oxfordwords blog.
+\newblock
+  \url{http://blog.oxforddictionaries.com/2013/06/oed-june-2013-update/}.
+
+\bibitem[Diebold, 2012]{Diebold2012}
+Diebold, F.~X. (2012).
+\newblock A personal perspective on the origin(s) and development of big data.
+
+\bibitem[Divyakant~Agrawal, ]{ComputingResearchAssociation}
+Divyakant~Agrawal, Philip~Bernstein, E. B. S. D. U. D. M. F. J. G. L. H. J. H.
+  H. J. A. L. S. M. Y. P.~J.
+\newblock Challenges and opportunities with big data.
+\newblock A white paper prepared for the Computing Community Consortium
+  committee of the Computing Research Association.
+
+\bibitem[Dua and Graff, 2017]{Dua:2019}
+Dua, D. and Graff, C. (2017).
+\newblock {UCI} machine learning repository.
+
+\bibitem[Eckerson, 2002]{Eckerson2002}
+Eckerson, W.~W. (2002).
+\newblock Data quality and the bottom line. achieving business success through
+  a commitment to high quality data.
+
+\bibitem[F.~Liang and Song, 2016]{Liang2016}
+F.~Liang, J.~K. and Song, Q. (2016).
+\newblock {\em A Bootstrap Metropolis-Hastings Algorithm for Bayesian Analysis
+  of Big Data}.
+\newblock Technometrics.
+
+\bibitem[F.~Pedregosa and Duchesnay, 2011]{Scikit-learn:2011}
+F.~Pedregosa, G.~Varoquaux, A. G. V. M. B. T. O. G. M. B. P. P. R. W. V. D. J.
+  V. A. P. D. C. M. B. M.~P. and Duchesnay, E. (2011).
+\newblock Scikit-learn: Machine learning in python.
+\newblock 12:2825–2830.
+
+\bibitem[FUJITSU, 2015]{FUJITSU2015}
+FUJITSU (2015).
+\newblock {\em White paper Solution Approaches for Big Data}.
+\newblock FUJITSU Technology Solutions GmbH.
+
+\bibitem[Group, 2019a]{RestaurantDataset2019}
+Group, A. (2019a).
+\newblock Restaurant dataset.
+\newblock \url{https://sites.google.com/site/anhaidgroup/useful-stuff/data}.
+\newblock Accessed: 2019-07-30.
+
+\bibitem[Group, 2019b]{TMDBmovie2019}
+Group, A. (2019b).
+\newblock The tmdb 5000 movie dataset.
+\newblock \url{https://www.kaggle.com/tmdb/tmdb-movie-metadata}.
+\newblock Accessed: 2019-07-30.
+
+\bibitem[Guptil and Morrison, 1995]{guptilc.morrisonj.1995}
+Guptil, C. and Morrison, J. (1995).
+\newblock {\em Elements of Spatial Data Quality.}
+\newblock Elsevier Science Ltd, Oxford, UK.
+
+\bibitem[H.~Jagadish and Shahabi,
+  2014]{JagadishGehrkeLabrindisPapakonstantinou}
+H.~Jagadish, Johannes~Gehrke, A. L. Y. P. J. M. P. R.~R. and Shahabi, C.
+  (2014).
+\newblock Big data and its technical challenges.
+\newblock page 86–94.
+
+\bibitem[Hastie and Tibshirani, ]{HastieTibshirani}
+Hastie, T. and Tibshirani, R.
+\newblock Discriminant adaptive nearest neighbor classification and regression.
+
+\bibitem[Hatton, ]{Hatton2019}
+Hatton, J.~A.
+\newblock Company dataset.
+\newblock
+  \url{https://www.kaggle.com/jacksapper/company-sentiment-by-location}.
+\newblock Accessed: 2019-07-30.
+
+\bibitem[Heinrich et~al., 2018]{Heinrich:2018:RDQ:3155015.3148238}
+Heinrich, B., Hristova, D., Klier, M., Schiller, A., and Szubartowicz, M.
+  (2018).
+\newblock Requirements for data quality metrics.
+\newblock {\em J. Data and Information Quality}, 9(2):12:1--12:32.
+
+\bibitem[I.~Caballero and Piattini, 2014]{Caballero}
+I.~Caballero, M.~S. and Piattini, M. (2014).
+\newblock A data quality in use model for big data.
+
+\bibitem[Jugulum, 2014]{Jugulum14}
+Jugulum, R. (2014).
+\newblock {\em Computing with High Quality Data}, page~1.
+\newblock John Wiley and Sons, Inc., New Jersey.
+
+\bibitem[Kaggle, 2019a]{creditdataset2019}
+Kaggle (2019a).
+\newblock The credit dataset.
+\newblock \url{https://www.kaggle.com/c/GiveMeSomeCredit/data}.
+\newblock Accessed: 2019-07-30.
+
+\bibitem[Kaggle, 2019b]{KDDdataset2019}
+Kaggle (2019b).
+\newblock The kdd dataset.
+\newblock
+  \url{https://www.kaggle.com/c/kdd-cup-2014-predicting-excitement-at-donors-choose/data}.
+\newblock Accessed: 2019-07-30.
+
+\bibitem[Kaggle, 2019c]{Titanic2019}
+Kaggle (2019c).
+\newblock The titanic dataset.
+\newblock
+  \url{https://www.kaggle.com/upendr/titanic-machine-learning-from-disaster/data}.
+\newblock Accessed: 2019-07-30.
+
+\bibitem[Karthik~Kambatla and Grama, 2014]{Kambatla2014}
+Karthik~Kambatla, Giorgos~Kollias, V.~K. and Grama, A. (2014).
+\newblock Trends in big data analytics.
+\newblock 74:2561–2573.
+
+\bibitem[Krawczyk and Wiszniewski, 2003]{krawczykh.wiszniewskib.2003}
+Krawczyk, H. and Wiszniewski, B. (2003).
+\newblock Visual gqm approach to quality-driven development of electronic
+  documents.
+\newblock Edinburgh UK. 2nd International Workshop on Web Document Analysis.
+
+\bibitem[Lenzerini, 2002]{Lenzerini2002}
+Lenzerini, M. (2002).
+\newblock Data integration: A theoretical perspective. in proceedings of the
+  twenty-first acm sigmod-sigact-sigart symposium on principles of database
+  systems.
+\newblock 23(4):233–246.
+
+\bibitem[Leo~Pipino and Yang, 2002]{Pipino2002}
+Leo~Pipino, Yang W~Lee, R. Y. W. M. W. L. Y.~L. and Yang, R.~Y. (2002).
+\newblock Data quality assessment.
+\newblock 45(4):211–218.
+
+\bibitem[M.~Ali-ud-din Khan and Gupta, 2014]{Gupta}
+M.~Ali-ud-din Khan, M. F.~U. and Gupta, N. (2014).
+\newblock Seven v’s of big data understanding big data to extract value.
+\newblock page 1–5. American Society for Engineering Education (ASEE Zone 1),
+  2014 Zone 1 Conference of the, 2014.
+
+\bibitem[Magoulas and Lorica, 2009]{Magoulas2009}
+Magoulas, R. and Lorica, B. (2009).
+\newblock Big data: Technologies and techniques for large-scale data.
+\newblock 2.
+
+\bibitem[Marr, 2015]{Marr2015}
+Marr, B. (2015).
+\newblock Why only one of the 5 vs of big data really matters — ibm big data
+  and analytics hub.
+\newblock
+  \url{http://www.ibmbigdatahub.com/blog/why-only-one-5-vs-big-data-really-matters}.
+
+\bibitem[Maydanchik, 2007]{Maydanchik2007}
+Maydanchik, A. (2007).
+\newblock {\em Data quality assessment}.
+\newblock Bradley Beach, Technics Publications, New Jersey, USA.
+
+\bibitem[McFadden, 1973]{McFadden1973}
+McFadden, D. (1973).
+\newblock {\em Conditional logit analysis of qualitative choice behavior}.
+
+\bibitem[McGilvary, 2008]{McGilvary2008}
+McGilvary, D. (2008).
+\newblock {\em Executing data quality projects: ten steps to quality data and
+  trusted information}.
+\newblock Elsevier Inc.
+
+\bibitem[Michael J.~Shaw and Welge, 2001]{Chandrasekar2001}
+Michael J.~Shaw, Chandrasekar~Subramaniam, G. W.~T. and Welge, M.~E. (2001).
+\newblock Knowledge management and data mining for marketing.
+\newblock 31:127–137.
+
+\bibitem[Microsoft, 2016]{Microsoft2016}
+Microsoft (2016).
+\newblock Data identification.
+\newblock
+  \url{https://msdn.microsoft.com/en-us/library/aa291809(v=vs.71).aspx}.
+\newblock Accessed: 2019-07-19.
+
+\bibitem[Nicola~Askham and Schwarzenbach, 2013]{DAMA2013}
+Nicola~Askham, Denise~Cook, M. D. H. F. M. G. U. L. R. L. C. M. G.~P. and
+  Schwarzenbach, J. (2013).
+\newblock {\em The six primary dimensions for data}.
+\newblock Data Management Association (DAMA), United Kingdom.
+
+\bibitem[of~Inspector~General, 2014]{USAPostService2014}
+of~Inspector~General, G.~O. (2014).
+\newblock United states postal service. undeliverable as addressed mail audit
+  report.
+\newblock (MS-AR-14-006).
+
+\bibitem[Ohbyung~Kwon and Shin, 2014]{Kwon2014}
+Ohbyung~Kwon, N.~L. and Shin, B. (2014).
+\newblock Data quality management, data usage experience and acquisition
+  intention of big data analytics.
+\newblock 34(3):387–394.
+
+\bibitem[Osborne, 2013]{Osborne2013}
+Osborne, J.~W. (2013).
+\newblock {\em Best practices in data cleaning: a complete guide to everything
+  you need to do before and after collecting your data}.
+\newblock Thousand Oaks.
+
+\bibitem[Ostman, 1997]{ostmana.1997}
+Ostman, A. (1997).
+\newblock The specifications and evaluation of spatial data quality.
+\newblock In {\em 18th ICA/ACI International Conference}, Stockholm, Sweden.
+
+\bibitem[Paton, 2016]{NormanPaton}
+Paton, N. (2016).
+\newblock Data wrangling.
+\newblock
+  \url{http://www.cs.manchester.ac.uk/study/postgraduate-research/programmes/phd/programme-details/projects/description/?projectid=6981}.
+\newblock Accessed: 2019-07-19.
+
+\bibitem[Pernici and Scannapieco, 2003]{pernicib.scannapiecom.2003}
+Pernici and Scannapieco, M. (2003).
+\newblock Data quality in web information systems.
+\newblock {\em Journal of Data Semantics}.
+
+\bibitem[Platform, 2018]{ibmInfoGraphic}
+Platform, I. A.~T. (2018).
+\newblock Extracting business value from the 4 v's of big data.
+\newblock \url{https://www.ibmbigdatahub.com/infographic/four-vs-big-data}.
+\newblock Accessed: 2019-07-19.
+
+\bibitem[Quinlan, 1986]{Quinlan1986}
+Quinlan, J.~R. (1986).
+\newblock Induction of decision trees.
+\newblock (1):81--106.
+
+\bibitem[Rahm and Do, 2000]{Erhard2000}
+Rahm, E. and Do, H.~H. (2000).
+\newblock Data cleaning: Problems and current approaches.
+\newblock 23(4):3–13.
+
+\bibitem[Raja~Appuswamy and Rowstron, 2013]{Appuswamy2013}
+Raja~Appuswamy, Christos~Gkantsidis, D. N. O.~H. and Rowstron, A. (2013).
+\newblock Scale-up vs scale-out for hadoop: Time to rethink?
+\newblock In editor, editor, {\em Proceedings of the 4th Annual Symposium on
+  Cloud Computing}, page 20:1–20:13. ACM.
+
+\bibitem[Ralph~Kimball and Thornthwaite, 2008]{Kimball2008}
+Ralph~Kimball, Laura~Reeves, M.~R. and Thornthwaite, W. (2008).
+\newblock {\em The Data Warehouse Lifecycle Toolkit}.
+\newblock Wiley.
+
+\bibitem[Redman, 2018]{RedmanHBR2018}
+Redman, T.~C. (2018).
+\newblock If your data is bad, your machine learning tools are useless.
+\newblock
+  \url{https://hbr.org/2018/04/if-your-data-is-bad-your-machine-learning-tools-are-useless}.
+\newblock Accessed: 2019-07-19.
+
+\bibitem[Rish, 2001]{Rish2001}
+Rish, I. (2001).
+\newblock An empirical study of the naive bayes classifier.
+\newblock volume~3, page 41–46. IJCAI 2001 workshop on empirical methods in
+  artificial intelligence, IBM.
+
+\bibitem[Rouse, 2005]{MargaretRouse}
+Rouse, M. (2005).
+\newblock What is data quality?
+\newblock
+  \url{http://searchdatamanagement.techtarget.com/definition/data-quality}.
+\newblock Accessed: 2019-07-19.
+
+\bibitem[Ryszard S~Michalski and Mitchell, 2013]{Ryszard2013}
+Ryszard S~Michalski, J. G.~C. and Mitchell, T.~M. (2013).
+\newblock {\em Machine learning: An artificial intelligence approach}.
+\newblock Springer Science and Business Media.
+
+\bibitem[S, 2015]{Juddoo}
+S, J. (2015).
+\newblock Overview of data quality challenges in the context of big data.
+\newblock pages 1--9. International Conference on Computing Communication and
+  Security.
+
+\bibitem[S.~Garcia and Herrera, 2015]{Garcia2015}
+S.~Garcia, J.~L. and Herrera, F. (2015).
+\newblock {\em Data preprocessing in data mining}.
+\newblock Springer.
+
+\bibitem[Sandra~de F.~Mendes~Sampaio and Sampaio, 2015]{Sandra2015}
+Sandra~de F.~Mendes~Sampaio, C.~D. and Sampaio, P. R.~F. (2015).
+\newblock {\em DQ2S - A framework for data quality-aware information
+  management}.
+
+\bibitem[Satyanarayana, 2014]{Satyanarayana2014}
+Satyanarayana, A. (2014).
+\newblock Intelligent sampling for big data using bootstrap sampling and
+  chebyshev inequality.
+\newblock pages 1--6. 27th Canadian Conference on Electrical and Computer
+  Engineering (CCECE).
+
+\bibitem[Souders, 2019]{University:2019}
+Souders, S. (2019).
+\newblock {UCI} machine learning repository.
+
+\bibitem[Steve~Lavalle and Kruschwitz, 2011]{Lavalle2011}
+Steve~Lavalle, Eric~Lesser, R. S. M. S.~H. and Kruschwitz, N. (2011).
+\newblock Big data , analytics and the path from insights to value big data,
+  analytics and the path from insights to value.
+\newblock 52205.
+
+\bibitem[Stone, 1979]{Lawrence1979}
+Stone, L. (1979).
+\newblock The revival of narrative: Reflections on a new old history.past and
+  present.
+
+\bibitem[T.~Hastie and Zou, 2009]{Hastie2009}
+T.~Hastie, S.~Rosset, J.~Z. and Zou, H. (2009).
+\newblock {\em Multi-class adaboost. Statistics and its Interfac}.
+
+\bibitem[Tanenbaum and Steen, 2007]{Tanenbaum2007}
+Tanenbaum, A.~S. and Steen, M.~V. (2007).
+\newblock {\em Distributed systems}.
+\newblock Prentice-Hall.
+
+\bibitem[Tekiner and Keane, 2013]{Tekiner2013}
+Tekiner, F. and Keane, J.~A. (2013).
+\newblock Big data framework.
+\newblock page 1494–1499. EEE International Conference on Systems, Man, and
+  Cybernetics, IEEE.
+
+\bibitem[Tilly, 1980]{Tilly1980}
+Tilly, C. (1980).
+\newblock The old new social history and the new old social history.
+
+\bibitem[Usama M~Fayyad and Grinstein, 2002]{Fayyad2002}
+Usama M~Fayyad, A.~W. and Grinstein, G.~G. (2002).
+\newblock {\em Information visualization in data mining and knowledge
+  discovery}.
+\newblock Morgan Kaufmann.
+
+\bibitem[V.~Gadepally and Miller, 2015]{Asilomar}
+V.~Gadepally, T.~Herr, L. J. L. M. M.~M. and Miller, B.~A. (2015).
+\newblock Sampling operations on big data.
+\newblock page 1515–1519. 49th Asilomar Conference on Signals, Systems and
+  Computers.
+
+\bibitem[V.~Goasdoué and Laboisse, 2007]{Laboisse}
+V.~Goasdoué, S.~Nugier, D.~D. and Laboisse, B. (2007).
+\newblock An evaluation framework for data quality tools.
+\newblock page 280–294.
+
+\bibitem[Verborgh and Wilde, 2013]{Verborgh2013}
+Verborgh, R. and Wilde, M.~D. (2013).
+\newblock {\em Using OpenRefine}.
+\newblock Packt Publishing Ltd.
+
+\bibitem[Wang and Strong, 1996]{Wang}
+Wang and Strong, D.~M. (1996).
+\newblock Beyond accuracy: What data quality means to data consumers.
+\newblock {\em Journal of Management Information Systems}, page~12.
+
+\bibitem[Ware, 2012]{Ware2012}
+Ware, C. (2012).
+\newblock {\em Information visualization: perception for design}.
+\newblock Elsevier.
+
+\bibitem[Weiss and Indurkhya, 1998]{Sholom1998}
+Weiss, S.~M. and Indurkhya, N. (1998).
+\newblock {\em Predictive Data Mining: A Practical Guide}.
+\newblock Morgan Kaufmann Publishers Inc.
+
+\bibitem[Wiszniewski and Krawczyk, 2003]{wiszniewskib.krawczykh.2003}
+Wiszniewski, B. and Krawczyk, H. (2003).
+\newblock Digital document life cycle development.
+\newblock In {\em 1st International Symposium on Information and Communica-
+  tion Technologies}, Dublin Ireland.
+
+\bibitem[World, 2019]{IMDBmovie2019}
+World, D. (2019).
+\newblock The imdb 5000 movie dataset.
+\newblock \url{https://data.world/popculture/imdb-5000-movie-dataset}.
+\newblock Accessed: 2019-07-30.
+
+\bibitem[Z.~Cui and Chen, 2015]{CuiChen2015}
+Z.~Cui, W.~Chen, Y.~H. and Chen, Y. (2015).
+\newblock Optimal action extraction for random forests and boosted trees.
+\newblock page 179–188. 21th ACM SIGKDD International Conference on Knowledge
+  Discovery and Data Mining, ACM.
+
+\end{thebibliography}
