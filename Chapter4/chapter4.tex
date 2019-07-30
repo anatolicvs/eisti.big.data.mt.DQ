@@ -226,4 +226,211 @@ datasets, including missing values, outliers, duplicates, inconsistencies and mi
 While there are many cleaning methods in the literature we consider the most straightforward
 one in this study. 
 The definition and the cleaning methods of each
-error type are described below and summarized in Table
+error type are described below and summarized in Table ~\ref{tab:cleaning-methods-table}
+
+\subsection{Missing Values}
+Missing values occur when no value is stored for some attribute
+in an observation. We detect missing values by finding empty or
+\textit{NaN} entries in datasets. We use two methods to repair missing
+values:
+\begin{itemize}
+	\item{\textbf{Deletion:} Delete records with missing values.
+	}
+	\item{
+		\textbf{Imputation:} For numerical missing values, we consider three
+		types of imputation methods: mean, median and mode. For categorical missing values, we use two types of imputation methods: the mode (most frequent class) or a dummy variable named
+		“missing”. Therefore, we have six imputation methods. In Table ~\ref{tab:cleaning-methods-table} we denote each imputation method by the numerical imputation and categorical imputation (e.g. “Mean Dummy” represents
+		imputing numerical missing values by mean and imputing categorical missing values by dummy variables).
+	}
+\end{itemize}
+
+\subsection{Outliers}
+An outlier is an observation that is distant from other observations. We only consider numerical outliers in our experiments. We use three methods to detect numerical outliers.
+
+\begin{itemize}
+	\item {\textbf{Standard Deviation Method (SD:)}
+		A value is considered to be an outlier if it is $n$ numbers of standard deviations away from the mean of the attribute it belongs to. We use $ n = 3 $.
+	}
+	\item {\textbf{Interquartile Range Method (IQR):} Let $Q_{1}$ and $Q_{3}$ be the 25\textit{th} and the 75\textit{th} percentiles of an attribute. Then, interquartile range 
+		$ IQR = Q_{3} - Q_{1} $. A value is considered to be an outlier of it is outside range
+		of $ [Q_{1} - k * IQR, Q_{3} + k * IQR] $ We use $ k = 1.5$.
+	}
+	\item{\textbf{Isolation Forest Method (IF):}
+		The isolation forest isolates observations by randomly selecting a feature and randomly selecting a
+		split value of the selected feature. This partition can be represented by a tree structure and outliers will have noticeably shorter
+		paths in the random trees. We use \textbf{the scikit-learn IsolationForest}
+		and set the contamination parameter to be $\mathbf{0.01}$
+	}
+\end{itemize}
+We use two methods to repair numerical outliers in the datasets.
+\begin{itemize}
+	\item {
+		\textbf{Deletion:} Records with outliers entries are removed from the datasets.
+	}
+	\item {
+		\textbf{Imputation:}Outliers entries are imputed. We consider three
+		types of imputation:  \textbf{mean}, \textbf{median} and \textbf{mode}.
+	}
+\end{itemize}
+
+\subsection{Duplicates}
+Duplicates refer to the records that correspond to the identical
+real-world entity. We detect duplicates by defining the key attribute
+that is unique for each entity in the dataset. If two records have an
+identical value on the key attribute, they will be considered as duplicates. We repair the duplicates by keeping the first and deleting all the others.
+
+\subsection{Inconsistencies}
+Inconsistencies occur when two values correspond to the identical real-world entity but have different representations. 
+We detect inconsistencies in datasets using OpenRefine ~\cite{Verborgh2013} and repair them by merging different representations into one in OpenRefine.
+
+\subsection{Mislabels}
+Mislabels occur when an observation is incorrectly labeled. Since
+mislabels in our datasets come from error injection, we already
+know which label is incorrect. We repair mislabels by flipping the
+label. Our protocol in injecting class noise follows the recommendation in ~\cite{Garcia2015}
+
+\section{Datasets}
+Collected 13 real-world datasets from different sources to
+conduct our experiments. Each dataset contains one or more types
+of error summarized in Table ~\ref{tab:dataset-and-error-types}  For mislabels, we cannot find existing real-world datasets with both mislabels and ground truth. Since it is difficult to clean mislabels without ground truth (we do not know whether a label is mislabeled unless we have ground truth or domain knowledge), we injected mislabels in three real-world datasets.
+
+-\\
+\linebreak
+
+\begin{longtable}[c]{|c|c|c|c|c|c|}
+	\caption{Dataset and Error Types}
+	\label{tab:dataset-and-error-types}\\
+	\hline
+	& \multicolumn{5}{c|}{\textbf{Error Types}} \\ \hline
+	\endfirsthead
+	%
+	\endhead
+	%
+	\textbf{Datasets} & \textbf{Inconsistencies} & \textbf{Duplicates} & \textbf{Missing Values} & \textbf{Outliers} & \textbf{*Mislabels Data} \\ \hline
+	Airbnb &  & X & X & X &  \\ \hline
+	Citation &  & X &  &  &  \\ \hline
+	Company & X &  &  &  &  \\ \hline
+	Credit &  &  & X & X &  \\ \hline
+	EEG &  &  &  & X & X \\ \hline
+	KDD &  &  & X & X & X \\ \hline
+	Marketing &  &  & X &  &  \\ \hline
+	Movie & X & X &  &  &  \\ \hline
+	Restaurant & X & X &  &  &  \\ \hline
+	Sensor &  &  &  & X &  \\ \hline
+	Titanic &  &  & X &  &  \\ \hline
+	University & X &  &  &  &  \\ \hline
+	USCensus &  &  & X &  & X \\ \hline
+\end{longtable}
+
+
+\begin{itemize}
+	\item {
+	\textbf{Airbnb :} This dataset contains 42,492 records on hotels in the top
+	10 tourist destinations and major US metropolitan areas scraped
+	from Airbnb.com. Each record has 40 attributes including the number of bedrooms, price, location, etc. Demographic and economic attributes were scraped from city-data.com. The classification task is to determine whether the rating of each hotel is 5 or not. This
+	dataset contains missing values, numerical outliers and duplicates.	
+}
+
+\item {
+	\textbf{Citation: ~\cite{magellandata}} This dataset consists of titles of 5,005 publications from Google Scholar and DBLP. Given a publication title, the classification task is to determine whether the paper is related to Computer Science or not. This dataset contains duplicates.	
+}
+
+\item {
+	\textbf{Company: ~\cite{Hatton2019}} The original dataset contains over 2.5 million records
+	about companies including company names and locations. Because of its large size, we randomly sampled 5% records (128,889
+	records) from the original dataset. Each record has seven attributes including company name, country, city, etc. The classification task
+	is to predict whether the company sentiment is negative or not. This dataset contains inconsistent company names.
+}
+
+\item {
+	\textbf{Credit: ~\cite{creditdataset2019}}
+	This dataset consists of 150,000 credit data with 10
+	attributes including monthly income, age, then number of dependents, etc. The classification task for this dataset is to predict whether
+	a client will experience financial distress in the next two years. This
+	dataset has a class imbalance problem. There are only 6.7% records
+	in minority class. This dataset primarily contains missing values
+	and numerical outliers.
+}
+
+\item {
+	\textbf{EEG: ~\cite{Dua:2019}}
+	This is a dataset of 14,980 EEG recordings. Each record
+	has 14 EEG attributes. The classification task is to predict whether
+	the eye-state is closed or open. This dataset contains numerical outliers. We inject mislabels into this dataset by randomly flip labels.
+}
+
+\item {
+	\textbf{KDD: ~\cite{KDDdataset2019}}
+	his dataset contains 131,329 records about projects and
+	donations from DonorsChoose.org. Each record has 100 attributes. The classification task is to predict whether a project is “exciting”.
+	This dataset has a class imbalance problem. There are 11\% records
+	in the minority class. This dataset contains missing values and numerical outliers. We inject mislabels into this dataset by randomly
+	flip labels.
+}
+
+\item {
+	\textbf{Marketing:}
+	This dataset consists of 8,993 data about household in-
+	come from a survey. Each record has 14 demographic attributes including sex, age, education, etc. The classification task is to predict
+	if the annual household income is less than \$25000. This dataset contains missing values.
+}
+
+\item {
+	\textbf{Movie: ~\cite{TMDBmovie2019} ~\cite{IMDBmovie2019}}
+	This dataset consists of 9,329 movie reviews, which
+	we obtained by merging data from IMDB and TMDB datasets.
+	Each record has seven attributes including title, language, score,
+	etc. The classification task is to predict the genre of the movie
+	(romance or comedy). 
+	It contains duplicates and inconsistent representations of languages.
+}
+
+\item{
+	\textbf{Restaurant: ~\cite{RestaurantDataset2019}}
+	This dataset contains 12,007 records about restaurants, which we obtained by merging data from the Yelp and Yellowpages datasets. Each record has 10 attributes including city, category, rating, etc. The classification task is to predict whether the
+	categorical price range of a restaurant is “\$” or not. This dataset
+	consists of duplicates and inconsistent restaurant names and categories.
+}
+
+\item {
+	\textbf{Titanic: ~\cite{Titanic2019}}
+	This dataset contains 891 records and 11 attributes from the Titanic including name, sex, age, etc. The classification
+	task is to determine whether the passenger survived or not. This dataset has a significant number of missing values.
+}
+
+\item {
+	\textbf{Sensor: ~\cite{SensorDataset2019}}
+	The original sensor dataset contains 928,991 sensor recordings with eight attributes including temperature, humidity, light, etc. Because of the large size, we only used recordings from
+sensor 1 and sensor 2 and sampled the dataset to include 1 observation per hour, and day for each 	sensor. The sampled dataset contains 62,076 records. The classification task is to predict whether
+	the readings came from a particular sensor (sensor 1 or sensor 2). This dataset contains outliers.
+}
+
+\item {
+	\textbf{University: ~\cite{University:2019}}
+	This dataset contains 286 records about universities. Each record has 17 attributes including state, university name,
+	SAT scores, etc. The classification task is to predict whether the
+	expenses are greater than 7, 000 for each university. This dataset
+	contains inconsistent representations for states and locations.
+}
+
+\item  {
+	\textbf{USCensus: ~\cite{USCensusData:2019}}
+	This dataset contains 32,561 US Census records
+	for adults. Each record has 14 attributes including age, education,
+	sex, etc. The classification goal is to predict whether the adult earns
+	more than \$50,000. This dataset contains missing values.
+}
+
+\end{itemize}
+
+\section{ML Models}
+
+We select seven classical and competitive classification algorithms in our experiments, including \textbf{Logistic Regression, KNN,Decision Tree, Random Forest, Adaboost, XGBoost and Naive Bayes}.
+We used \textbf{scikit-learn} ~\cite{Scikit-learn:2011} to train models. Each model is described
+below.
+
+
+
+
+
+
