@@ -963,5 +963,32 @@ This is called the \textbf{FDR} approach ~\cite{Friedman2001} where we ensure th
 the number of false rejections. Common FDR approaches include Benjamini-Hochberg (BH) and Benjamini-Yekutieli (BY) procedures, where we try to control the FDR that is “(upper) bounded
 by a user-defined level $\alpha$" ~\cite{Friedman2001}.We employed the BY
 procedure since it controls the FDR under arbitrary dependence assumptions\footnote{https://en.wikipedia.org/wiki/False\_discovery\_rate (last accessed:July 31, 2019}
+For each relation, we conduct a separate multiple hypothesis testing. We assign $\alpha$ to be 0.05 in our experiments.
+
+\begin{example}
+	P-values for $s_{1}$ Table \ref{tab:hypothesis-testing} are collected in a multiple testing setting where we run BY-Procedure on p-values of all hypotheses in $R1$. Table ~\ref{tab:hypothesis-testing-corrected-pvalues}
+	shows the collected the corrected p-values for $s_{1}$. Since $p_{0} < \alpha \quad and \quad p_{1} < \alpha$. Thus, the flag of $s_{1}$ is finally determined to be "P".
+\end{example}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|l|l|}
+		\hline
+		Test-Type & Corrected p-value \\ \hline
+		Two-Tailed $(p_{0})$& 6.28E-17 \\ \hline
+		Upper-tailed $(p_{1})$ & 3.25E-17 \\ \hline
+		Lower-tailed $(p_{2})$ & 1  \\ \hline
+	\end{tabular}
+	\caption{Corrected p-values of the Example Analysis (Outlier)}
+	\label{tab:hypothesis-testing-corrected-pvalues}
+\end{table}
+
+\section{Analyzing Benchmark Results}
 
 
+\begin{figure}[]
+	\centering
+	\includegraphics[angle=-90,scale=.3]{Test_Accuracy_Scores_in_Scenarios_BD_and_CD_of_20_Splits_for_Five_Error_Types}
+	\caption{Test Accuracy Scores in Scenarios BD and CD of 20 Splits for Five Error Types}
+	\label{fig:Test_Accuracy_Scores_in_Scenarios_BD_and_CD_of_20_Splits_for_Five_Error_Types}
+\end{figure}
