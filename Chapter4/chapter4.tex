@@ -819,7 +819,7 @@ reduces the effect of randomness caused by random search.
 			5824 & 0.638849 & 0.634846 & 0.673372 & 0.668669 \\ \hline
 			3659 & 0.638754 & 0.635291 & 0.672323 & 0.668892 \\ \hline
 			3239 & 0.639040 & 0.634179 & 0.672323 & 0.669114 \\ \hline
-			\multicolumn{1}{|l|}{Average} &  & 0.634767 &  & 0.668625 \\ \hline
+			\multicolumn{2}{|c|}{Average}   & 0.634767 &  & 0.668625 \\ \hline
 			\multicolumn{5}{|c|}{\textbf{Aggregated Metric Pair: (0.634767, 0.668625)}} \\ \hline
 		\end{tabular}%
 	}
@@ -849,4 +849,119 @@ reduces the effect of randomness caused by random search.
 \subsection{Handling Split Randomness}
 To avoid the occasionality caused by a train/test split, we randomly split each dataset 20 times with different seeds and repeat the experiments under the same protocol on each train/test split. Each split will generate one pair of metrics. Hence, we end up with
 20 metric pairs for each specification.
+
+\begin{example}
+	Table ~\ref{tab:accuracy-evulated-on-the-clean-test-set} shows 20 pairs of metrics from 20 different train/test splits for $s_{1}$.
+\end{example}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|l|l|c|l|l|}
+		\hline
+		Split Seed & \multicolumn{1}{c|}{B} & \multicolumn{1}{c|}{D} & Split Seed & \multicolumn{1}{c|}{b} & \multicolumn{1}{c|}{D} \\ \hline
+		v144 & 0.632488 & 0.657321 & v5192 & 0.631954 & 0.67401 \\ \hline
+		v235 & 0.634757 & 0.668625 & v5374 & 0.638362 & 0.676992 \\ \hline
+		v2516 & 0.625812 & 0.666266 & v5396 & 0.641032 & 0.672452 \\ \hline
+		v2895 & 0.636404 & 0.662394 & v6542 & 0.63992 & 0.670049 \\ \hline
+		v2962 & 0.637161 & 0.674633 & v7751 & 0.640098 & 0.669871 \\ \hline
+		v3462 & 0.644726 & 0.673654 & v7813 & 0.634535 & 0.676591 \\ \hline
+		v3562 & 0.635514 & 0.67401 & v8093 & 0.636271 & 0.666489 \\ \hline
+		v4225 & 0.641478 & 0.674989 & v8444 & 0.632443 & 0.673431 \\ \hline
+		v4764 & 0.649177 & 0.680196 & v905 & 0.636671 & 0.673565 \\ \hline
+		v5056 & 0.629773 & 0.669381 & v9394 & 0.632176 & 0.668803 \\ \hline
+	\end{tabular}
+	\caption{Accuracy Evaluated on the Clean Test Set}
+	\label{tab:accuracy-evulated-on-the-clean-test-set}
+\end{table}
+
+Given 20 pairs of metrics for each specification $s = t[R \-- Flag]$,
+we generate the flag $t[Flag]$ using paired sample $t-test$. We consider 20 metric pairs as two sets of 20 observations from the same dataset before and after data cleaning. 
+Then paired sample $t-test can$ determine whether the mean difference between two sets of
+observations is zero, positive or negative. The paired sample $t-test$ is formally defined below. 
+
+For each specification $t[R\--Flag]$, let $\mu^{t}$ be the mean difference
+of the metrics of the ML model before and after we clean the error
+in the dataset with the detection and repair method. We define null
+and alternative hypotheses for three types of paired sample $t-test$
+as:
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		\multicolumn{1}{|c|}{\textbf{Hypothesis}} & \multicolumn{1}{c|}{\textbf{Two-tailed t-test}} & \multicolumn{1}{c|}{\textbf{Upper-tailed t-test}} & \multicolumn{1}{c|}{\textbf{Lower-tailed t-test}} \\ \hline
+	Null &  $ H^{t}_{0}:\mu^{t} = 0 $ & $H^{t}_{1}:\mu^{t} \leq 0$  & $H^{t}_{2}:\mu^{t} \geq 0$  \\ \hline
+		Alternative &  $ H^{t}_{a}:\mu^{t} \neq 0 $ & $H^{t}_{b}:\mu^{t} > 0$  & $H^{t}_{c}:\mu^{t} < 0$  \\ \hline
+	\end{tabular}
+	\caption{Hypotheses}
+	\label{tab:hypotheses}
+\end{table}
+
+We run three types of paired sample $t-test$ on 20 metric pairs. Let $p_{0}$,
+$p_{1}$, $p_{2}$ be the $p-values$ of two tailed $t-test$, upper-tailed $t-test$ and
+lower-tailed t-test, respectively. 
+
+Let $\alpha$ be the significant level.The procedure for determining flags using paired sample t-test is
+described below:
+	
+
+\begin{equation*}
+\begin{array}{l}
+   (1) \quad if \quad p_{0} \geq \alpha,\quad t[Flag] = "S" \\
+   (2) \quad if \quad p_{0} < \alpha \quad \textrm{and} \quad p_{1} < \alpha, \quad t[Flag] = "P" \\
+   (3) \quad if \quad p_{0} < \alpha \quad \textrm{and} \quad p_{2} < \alpha,  \quad t[Flag] = "N" \\
+ \end{array}
+\end{equation*}
+
+The intricacy of conducting two-tailed test and one-tailed test
+together lies in the fact that if the test statistics distribution is symmetric 
+(e.g., Gaussian), the p-value in one of one-tailed tests is half
+of the p-value in a two-tailed test. Hence, a two-tailed test with
+significance does imply that the one-tailed test under the same distribution is also significant; yet if the one-tailed test is significant,
+the two-tailed one is not necessarily significant. What is criticized
+often is that people only report a one-tailed test p-value because the
+two-tailed test is insignificant. However, in our case, we do not face
+this claim because we conduct three tests and only report the one-
+tailed test results if its corresponding two-tailed test is significant.
+
+\begin{example}
+	For $s_{1}$ , we run two-tailed, upper-tailed and lower-tailed sample t-test on 20 metric (\ref{tab:accuracy-evulated-on-the-clean-test-set}) pairs $Assume \alpha = 0.05$. Table \ref{tab:hypothesis-testing} $shows \quad p_{0} < \alpha \quad and \quad p_{1} < \alpha$. 
+	Thus, the flag of $s_{1}$ is determined to be "P"
+\end{example}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|l|l|}
+		\hline
+		Type & p-value \\ \hline
+		Two-Tailed $(p_{0})$& 3.82E-17 \\ \hline
+		Upper-tailed $(p_{1})$ & 1.91E-17 \\ \hline
+		Lower-tailed $(p_{2})$ & 1  \\ \hline
+	\end{tabular}
+	\caption{p-values in t-test and Hypothesis Testing}
+	\label{tab:hypothesis-testing}
+\end{table}
+
+\section{Controlling False Discoveries}
+Since we aim at studying the significant impacts of data cleaning techniques on ML performances in spite of the search and split randomness, we face the challenges that not all statically significant results in individual hypothesis tests are true discoveries. 
+Some results are significant simply due to the large number of tests examined. 
+
+This commonly known as the multiple hypothesis testing or the multiple comparisons problem in the statistics literature ~\cite{Rupert2012}.
+
+To see the effect of multiple testing, consider a case where there are 20 hypotheses to test and we set a significance level of $\alpha = 0.05$. The probability of observing at least one significant result just due to chance is $ 1 - (1 - \alpha)^{20} \approx 0.64$
+
+With just 20 test considered, we have a 64\% chance of observing at least one significant result, even if all of the tests are actually not significant.
+
+With 3, 990, 570 and 150 hypotheses in our relations $R1$, $R2$ and $R3$, respectively, it is highly likely that our results contain many false discoveries by chance. Strategies to control the false discoveries caused by the multiple hypothesis testing problem usually adjust the significance level $\alpha$ in some way ~\cite{Rupert2012} ~\cite{Benjamini1995}.
+
+For example a simple way  to adjust $\alpha$ is called the \textit{Bonferroni correction} ~\cite{Bonferroni1936} \footnote{Bonferroni correction is one of many familywise error rate
+(FWER) methods, for an extensive survey, c.f. ~\cite{Zhao2017}} which test each hypothesis at the significance level of $\frac{\alpha}{m}$ instead of $\alpha$, where $m$ is the number of false negatives because it can miss a lot of true significant tests.
+
+Instead of adjusting the significance level $\alpha$ for every test, another strategy is to rank the tests by their p-values, which indicate the statistical significance levels of tests ~\cite{Wasserstein2016}.
+
+This is called the \textbf{FDR} approach ~\cite{Friedman2001} where we ensure that in expectation, $\frac{V}{R} = FDR$, where $R$ is the total number of rejections, and $V$
+the number of false rejections. Common FDR approaches include Benjamini-Hochberg (BH) and Benjamini-Yekutieli (BY) procedures, where we try to control the FDR that is “(upper) bounded
+by a user-defined level $\alpha$" ~\cite{Friedman2001}.We employed the BY
+procedure since it controls the FDR under arbitrary dependence assumptions\footnote{https://en.wikipedia.org/wiki/False\_discovery\_rate (last accessed:July 31, 2019}
+
 
