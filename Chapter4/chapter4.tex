@@ -695,9 +695,113 @@ For R3, in addition to model selection, we use
 various cleaning methods to clean dataset at step \textbf{(2)} and select the cleaning method resulting in the best validation accuracy. At step
 \textbf{(4),} the test set cleaned by the best cleaning method is used to evaluate the best model.
 
-\newtheorem{SampleEnv}{Sample Environment}[section]
+
 \begin{example}
-	User-defined numbered environment
+\textit{We take the specifications in Table ~\ref{table:experiment-specifications} as an example to show how to generate one metric pair for each specification.}
+\end{example}
+
+To generate metric pair for $s_{1}$ , we first split EEG into training
+and test datasets. We detect outliers in the training set and test set
+using \textbf{IQR} detection and repair them with mean imputation. 
+The quantiles used in detection and mean used in repair are computed on the training set. 
+Then, since the scenario here is \textbf{BD}, we train two logistic regression models on a dirty training set and a cleaned training set respectively. Finally, we evaluate two models on the cleaned test set and get two test accuracy scores to form a metric pair as shown in Table ~\ref{tab:metric-pairs}
+
+
+\begin{table}[H]
+	\centering
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|l|c|c|c|c|}
+			\hline
+			& \multicolumn{2}{c|}{\textbf{Train on Dirty Training Set}} & \multicolumn{2}{c|}{\textbf{Train on Clean Training Set}} \\ \hline
+			\textbf{Model} & \textbf{Validation Accuracy} & \textbf{Clean Test Accuracy} & \textbf{Validation Accuracy} & \textbf{Clean Test Accuracy} \\ \hline
+			\textbf{Logistic Regression} & 0.638849 & 0.634179 & 0.673467 & 0.668892 \\ \hline
+			\multicolumn{5}{|c|}{\textbf{Metric Pair: (0.634179, 0.668892)}} \\ \hline
+		\end{tabular}%
+	}
+	\caption{$s_{1}$ Metric Pairs}
+	\label{tab:metric-pairs}
+\end{table}
+
+To generate the metric pair for $s_{2}$ , we train various ML models.
+Table ~\ref{tab:s2_metric_pairs} shows that based on the validation accuracy, \underline{\textbf{XGBoost} is
+the best model trained on the dirty training set} and \textbf{KNN} \underline{is the best
+model trained on the clean training set}. We then evaluate two best
+models on the cleaned test set to get two test accuracy scores to
+form a metric pair.
+
+\begin{table}[H]
+	\centering
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|l|c|c|c|c|}
+			\hline
+			& \multicolumn{2}{c|}{\textbf{Train on Dirty Training Set}} & \multicolumn{2}{c|}{\textbf{Train on Clean Training Set}} \\ \hline
+			Model & \textbf{Validation Accuracy} & \textbf{Clean Test Accuracy} & \textbf{Validation Accuracy} & \textbf{Clean Test Accuracy} \\ \hline
+			AdaBoost & 0.763205 & 0.711393 & 0.718193 & 0.715176 \\ \hline
+			Decision Tree & 0.822621 & 0.754784 & 0.796487 & 0.810414 \\ \hline
+			KNN & 0.895481 & 0.821095 & {\color[HTML]{FE0000} 0.948312} & {\color[HTML]{FE0000} 0.956386} \\ \hline
+			Logistic Regression & 0.638849 & 0.634179 & 0.673467 & 0.668892 \\ \hline
+			Naive Bayes & 0.453365 & 0.457276 & 0.634745 & 0.638407 \\ \hline
+			Random Forest & 0.918556 & 0.854695 & 0.903680 & 0.903680 \\ \hline
+			XGBoost & {\color[HTML]{FE0000} 0.932098} & {\color[HTML]{FE0000} 0.862706} & 0.920369 & 0.922786 \\ \hline
+		\end{tabular}%
+	}
+	\caption{$s_{2}$ Metric Pairs}
+	\label{tab:s2_metric_pairs}
+\end{table}
+
+To generate the metric pair for $s_{3}$ , in addition to model selection,
+we use various cleaning methods. Table ~\ref{tab:s3_metric_pairs} shows the clean test
+accuracy of best models under each cleaning methods.Based on
+the validation accuracy, detecting outliers by \textbf{SD} and repairing by
+deletion is the best cleaning method. Hence, we use its metric pair
+as the metric pair for $s_{3}$.
+
+\begin{table}[H]
+	\centering
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|l|l|c|c|c|}
+			\hline
+			Detect Method & Repair Method & \begin{tabular}[c]{@{}c@{}}Validation Accuracy of \\ Best Model on\\ Clean Training set\end{tabular} & \begin{tabular}[c]{@{}c@{}}Clean Test Accuracy of\\ Best Model on\\ Dirty Training set\end{tabular} & \begin{tabular}[c]{@{}c@{}}Clean Test Accuracy of\\ Best Model on\\ Clean Training set\end{tabular} \\ \hline
+			SD & Delete & {\color[HTML]{FE0000} 0.959370} & {\color[HTML]{FE0000} 0.937612} & {\color[HTML]{FE0000} 0.969928} \\ \hline
+			SD & Mean Imputation & 0.955179 & 0.938140 & 0.964174 \\ \hline
+			SD & Median Imputation & 0.955179 & 0.938140 & 0.964174 \\ \hline
+			SD & Mode Imputation & 0.955179 & 0.937917 & 0.964174 \\ \hline
+			IQR & Delete & 0.958072 & 0.929052 & 0.967190 \\ \hline
+			IQR & Mean Imputation & 0.948312 & 0.862706 & 0.956386 \\ \hline
+			IQR & Median Imputation & 0.944115 & 0.868046 & 0.951268 \\ \hline
+			IQR & Mode Imputation & 0.946308 & 0.870049 & 0.957499 \\ \hline
+			IF & Delete & 0.959250 & 0.935250 & 0.969846 \\ \hline
+			IF & Mean Imputation & 0.957466 & 0.925456 & 0.966845 \\ \hline
+			IF & Median Imputation & 0.957371 & 0.924789 & 0.966177 \\ \hline
+			IF & Mode Imputation & 0.956990 & 0.927236 & 0.966400 \\ \hline
+			\multicolumn{5}{|c|}{Metric Pair: (0.937612, 0.969928)} \\ \hline
+		\end{tabular}%
+	}
+	\caption{$s_{3}$ Metric Pairs}
+	\label{tab:s3_metric_pairs}
+\end{table}
+
+\section{Handling Randomness}
+The above procedure has randomness, which mainly comes two
+sources: 
+(1) Search Randomness. This is introduced by random
+search in tuning hyper-parameters. Different search spaces will result in different performances, which may affect the evaluation of ML models. 
+(2) Split Randomness. This is introduced by random train/test split. Different train/test splits may result in different error distribution, which may affect the quality of data cleaning.
+
+\subsection{Handling Search Randomness}
+To handle the randomness from random search, we repeat step
+(3) and step (4) 5 times with different seeds for random search.
+Each random search will generate a pair of metrics. To aggregate
+5 pairs, for specifications in $R1$, 
+since we care more about the performance of a model on average, we averages each metric in the pair over 5 random searches. For specifications in $R2$ and $R3$, similarly as we select the best model based on the validation accuracy,
+we select the one with the best validation accuracy from 5 random
+searches for each metric. After repeating experiments with 5 times
+random search, we still have one metric pair for each specification,
+but it provides a better evaluation of the model performance and
+reduces the effect of randomness caused by random search.
+
+\begin{example}
+	content...
 \end{example}
 
 
