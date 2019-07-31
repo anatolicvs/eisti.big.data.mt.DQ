@@ -801,7 +801,52 @@ but it provides a better evaluation of the model performance and
 reduces the effect of randomness caused by random search.
 
 \begin{example}
-	content...
+	Table ~\ref{tab:aggregate-five-random-search-for-s1} shows the five metric pairs we get from repeating random search with 5 different seeds. For $s_{1}$ , we average
+	over 5 random search for each metric. For $s_{2}$ , as shown in Table ~\ref{tab:aggregate-five-random-search-for-s2},
+	we select the one with the best validation accuracy from 5 random
+	search for each metric. $s_{3}$ can be generated in a similar way.
 \end{example}
 
+\begin{table}[H]
+	\centering
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|c|c|c|c|c|}
+			\hline
+			\multicolumn{3}{|c|}{\textbf{Train on Dirty Training Set}} & \multicolumn{2}{l|}{\textbf{Train on Clean Training Set}} \\ \hline
+			\textbf{Random Search Seed} & \textbf{Validation Accuracy} & \textbf{Clean Test Accuracy} & \multicolumn{1}{l|}{\textbf{Validation Accuracy}} & \multicolumn{1}{l|}{\textbf{Clean Test Accuracy}} \\ \hline
+			8006 & 0.638849 & 0.634179 & 0.673467 & 0.668892 \\ \hline
+			6130 & 0.638849 & 0.635292 & 0.673562 & 0.667557 \\ \hline
+			5824 & 0.638849 & 0.634846 & 0.673372 & 0.668669 \\ \hline
+			3659 & 0.638754 & 0.635291 & 0.672323 & 0.668892 \\ \hline
+			3239 & 0.639040 & 0.634179 & 0.672323 & 0.669114 \\ \hline
+			\multicolumn{1}{|l|}{Average} &  & 0.634767 &  & 0.668625 \\ \hline
+			\multicolumn{5}{|c|}{\textbf{Aggregated Metric Pair: (0.634767, 0.668625)}} \\ \hline
+		\end{tabular}%
+	}
+	\caption{Aggregate Five Random Search For $s_{1}$}
+	\label{tab:aggregate-five-random-search-for-s1}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|c|c|c|c|c|}
+			\hline
+			\multicolumn{3}{|c|}{\textbf{Train on Dirty Training Set}} & \multicolumn{2}{l|}{\textbf{Train on Clean Training Set}} \\ \hline
+			\textbf{Random Search Seed} & \textbf{Validation Accuracy} & \textbf{Clean Test Accuracy} & \multicolumn{1}{l|}{\textbf{Validation Accuracy}} & \multicolumn{1}{l|}{\textbf{Clean Test Accuracy}} \\ \hline
+			8006 & {\color[HTML]{FE0000} 0.932098} & {\color[HTML]{FE0000} 0.862706} & {\color[HTML]{FE0000} 0.948312} & {\color[HTML]{FE0000} 0.956386} \\ \hline
+			6130 & 0.930381 & 0.868046 & 0.948312 & 0.956386 \\ \hline
+			5824 & 0.932098 & 0.862706 & 0.920369 & 0.922786 \\ \hline
+			3659 & 0.930381 & 0.868046 & 0.948312 & 0.956386 \\ \hline
+			3239 & 0.932098 & 0.862706 & 0.948312 & 0.956386 \\ \hline
+			\multicolumn{5}{|c|}{\textbf{Metric Pair: (0.862706, 0.956386)}} \\ \hline
+		\end{tabular}%
+	}
+	\caption{Aggregate Five Random Search For $s_{2}$}
+	\label{tab:aggregate-five-random-search-for-s2}
+\end{table}
+
+\subsection{Handling Split Randomness}
+To avoid the occasionality caused by a train/test split, we randomly split each dataset 20 times with different seeds and repeat the experiments under the same protocol on each train/test split. Each split will generate one pair of metrics. Hence, we end up with
+20 metric pairs for each specification.
 
