@@ -1047,16 +1047,18 @@ In Section .. we summarize the key insights.
 \begin{table}
 	\centering
 	\caption{Benchmark Results(Organized by Query)}
-	\label{tab:BENC}
+	\label{tab:benchmark-results}
 	\renewcommand{\arraystretch}{2}	
 	\def\arraystretch{1.5}
 	\resizebox{\textwidth}{!}{%
-	\begin{tabular}{|l|lll|} 
+	\begin{tabular}{|l|llll|} 
+		
 		\hline
+		\centering
 		\multirow{2}{*}{Q1}                      
-		 & 
-		 \centering
-		 \begin{tabular}{llll}
+		
+		& 
+		\begin{tabular}{llll}
 		 	\multicolumn{4}{l}{Q1(E=Inconsistencies)} \\ \hline
 		 	\multicolumn{1}{|l|}{R} & \multicolumn{1}{l|}{P} & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{N} \\ \hline
 		 	\multicolumn{1}{|l|}{R1} & \multicolumn{1}{l|}{14.29\% (8)} & \multicolumn{1}{l|}{85.71\% (48)} & \multicolumn{1}{l|}{0\%(0)} \\ \hline
@@ -1064,15 +1066,13 @@ In Section .. we summarize the key insights.
 		 	\multicolumn{1}{|l|}{R3} & \multicolumn{1}{l|}{37.5\% (3)} & \multicolumn{1}{l|}{62.5\% (5)} & \multicolumn{1}{l|}{0\%(0)} \\ \hline
 		 \end{tabular}						  								 							  
 		& 										  	
-		\centering
 		\begin{tabular}{llll}
 			\multicolumn{4}{l}{Q1(E=Duplicates)} \\ \hline
 			\multicolumn{1}{|l|}{R} & \multicolumn{1}{l|}{P} & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{N} \\ \hline
 			\multicolumn{1}{|l|}{R1} & \multicolumn{1}{l|}{17.86\% (10)} & \multicolumn{1}{l|}{71.43\% (40)} & \multicolumn{1}{l|}{10.71\% (6)} \\ \hline
 			\multicolumn{1}{|l|}{R2} & \multicolumn{1}{l|}{12.5\% (1)} & \multicolumn{1}{l|}{62.5\% (5)} & \multicolumn{1}{l|}{25.0\% (2)} \\ \hline
 			\multicolumn{1}{|l|}{R3} & \multicolumn{1}{l|}{25.0\% (2)} & \multicolumn{1}{l|}{50.0\% (4)} & \multicolumn{1}{l|}{25.0\% (2)} \\ \hline
-		\end{tabular}											   
-												  	 
+		\end{tabular}											   								  	 
 		& 
 		\begin{tabular}{llll}
 			\multicolumn{4}{l}{Q1(E=Mislabels)} \\ \hline
@@ -1081,8 +1081,7 @@ In Section .. we summarize the key insights.
 			\multicolumn{1}{|l|}{R2} & \multicolumn{1}{l|}{61.11\% (11)} & \multicolumn{1}{l|}{27.78\% (5)} & \multicolumn{1}{l|}{11.11\% (2)} \\ \hline
 			\multicolumn{1}{|l|}{R3} & \multicolumn{1}{l|}{61.11\% (11)} & \multicolumn{1}{l|}{27.78\% (5)} & \multicolumn{1}{l|}{11.11\% (2)} \\ \hline
 		\end{tabular}
-		\\							                         
-		& 
+		&
 		\begin{tabular}{llll}
 			\multicolumn{4}{l}{Q1(E=Outliers)} \\ \hline
 			\multicolumn{1}{|l|}{R} & \multicolumn{1}{l|}{P} & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{N} \\ \hline
@@ -1090,6 +1089,8 @@ In Section .. we summarize the key insights.
 			\multicolumn{1}{|l|}{R2} & \multicolumn{1}{l|}{33.33\% (40)} & \multicolumn{1}{l|}{60\% (72)} & \multicolumn{1}{l|}{6.67\% (8)} \\ \hline
 			\multicolumn{1}{|l|}{R3} & \multicolumn{1}{l|}{30\% (3)} & \multicolumn{1}{l|}{70\% (7)} & \multicolumn{1}{l|}{0\% (0)} \\ \hline
 		\end{tabular}
+		
+		\\							                         
 		& 
 		\begin{tabular}{llll}
 			\multicolumn{4}{l}{Q1(E=Missing Values)} \\ \hline
@@ -1098,20 +1099,169 @@ In Section .. we summarize the key insights.
 			\multicolumn{1}{|l|}{R2} & \multicolumn{1}{l|}{50.00\% (18)} & \multicolumn{1}{l|}{50.00\% (18)} & \multicolumn{1}{l|}{0.00\% (0)} \\ \hline
 			\multicolumn{1}{|l|}{R3} & \multicolumn{1}{l|}{50.00\% (3)} & \multicolumn{1}{l|}{50.00\% (3)} & \multicolumn{1}{l|}{0.00\% (0)} \\ \hline
 		\end{tabular}
-		&                       
+		& 
+		& 
+		&                      
+		
+		\\ 
+		
+		\cline{1-1}
+		\centering
+		\multirow{2}{*}{Q2}
+		&   
+		\begin{tabular}{llll}
+			\multicolumn{4}{l}{Q2(E=Inconsistencies)} \\ \hline
+			\multicolumn{1}{|l|}{R} & \multicolumn{1}{l|}{Scenario} & \multicolumn{1}{l|}{P} & \multicolumn{1}{l|}{S} \\ \hline
+			\multicolumn{1}{|c|}{\multirow{2}{*}{R1}} & \multicolumn{1}{l|}{BD} & \multicolumn{1}{l|}{7.14\% (2)} & \multicolumn{1}{l|}{92.86\% (26)} \\ \cline{2-4} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{CD} & \multicolumn{1}{l|}{21.43\% (6)} & \multicolumn{1}{l|}{78.57\% (22)} \\ \hline
+			\multicolumn{1}{|l|}{\multirow{2}{*}{R2}} & \multicolumn{1}{l|}{BD} & \multicolumn{1}{l|}{25.0\% (1)} & \multicolumn{1}{l|}{75.0\% (3)} \\ \cline{2-4} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{CD} & \multicolumn{1}{l|}{25.0\% (1)} & \multicolumn{1}{l|}{75.0\% (3)} \\ \hline
+			\multicolumn{1}{|l|}{\multirow{2}{*}{R3}} & \multicolumn{1}{l|}{BD} & \multicolumn{1}{l|}{25.0\% (1)} & \multicolumn{1}{l|}{75.0\% (3)} \\ \cline{2-4} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{CD} & \multicolumn{1}{l|}{50.0\% (2)} & \multicolumn{1}{l|}{50.0\% (2)} \\ \hline
+		\end{tabular}
+		&   
+		\begin{tabular}{lllll}
+			\multicolumn{5}{l}{Q2(E=Duplicates)} \\ \hline
+			\multicolumn{1}{|l|}{R} & \multicolumn{1}{l|}{Scenario} & \multicolumn{1}{l|}{P} & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{N} \\ \hline
+			\multicolumn{1}{|c|}{\multirow{2}{*}{R1}} & \multicolumn{1}{l|}{BD} & \multicolumn{1}{l|}{10.71\% (3)} & \multicolumn{1}{l|}{75.0\% (21)} & \multicolumn{1}{l|}{14.29\% (4)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{CD} & \multicolumn{1}{l|}{25.0\% (7)} & \multicolumn{1}{l|}{67.86\% (19)} & \multicolumn{1}{l|}{7.14\% (2)} \\ \hline
+			\multicolumn{1}{|l|}{\multirow{2}{*}{R2}} & \multicolumn{1}{l|}{BD} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{50.0\% (2)} & \multicolumn{1}{l|}{50.0\% (2)} \\ \cline{2-5} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{CD} & \multicolumn{1}{l|}{25.0\% (1)} & \multicolumn{1}{l|}{75.0\% (3)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \hline
+			\multicolumn{1}{|l|}{\multirow{2}{*}{R3}} & \multicolumn{1}{l|}{BD} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{50.0\% (2)} & \multicolumn{1}{l|}{50.0\% (2)} \\ \cline{2-5} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{CD} & \multicolumn{1}{l|}{50.0\% (2)} & \multicolumn{1}{l|}{50.0\% (2)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \hline
+		\end{tabular}
+		& 
+		\begin{tabular}{lllll}
+			\multicolumn{5}{l}{Q2(E=Mislabels)} \\ \hline
+			\multicolumn{1}{|l|}{R} & \multicolumn{1}{l|}{Scenario} & \multicolumn{1}{l|}{P} & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{N} \\ \hline
+			\multicolumn{1}{|c|}{\multirow{2}{*}{R1}} & \multicolumn{1}{l|}{BD} & \multicolumn{1}{l|}{50.79\% (32)} & \multicolumn{1}{l|}{49.21\% (31)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{CD} & \multicolumn{1}{l|}{68.25\% (43)} & \multicolumn{1}{l|}{3.17\% (2)} & \multicolumn{1}{l|}{28.57\% (18)} \\ \hline
+			\multicolumn{1}{|l|}{\multirow{2}{*}{R2}} & \multicolumn{1}{l|}{BD} & \multicolumn{1}{l|}{44.44\% (4)} & \multicolumn{1}{l|}{55.56\% (5)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-5} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{CD} & \multicolumn{1}{l|}{77.78\% (7)} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{22.22\% (2)} \\ \hline
+			\multicolumn{1}{|l|}{\multirow{2}{*}{R3}} & \multicolumn{1}{l|}{BD} & \multicolumn{1}{l|}{44.44\% (4)} & \multicolumn{1}{l|}{55.56\% (5)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-5} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{CD} & \multicolumn{1}{l|}{77.78\% (7)} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{22.22\% (2)} \\ \hline
+		\end{tabular} 
+		&
+		\begin{tabular}{lllll}
+			\multicolumn{5}{l}{Q2(E=Outliers)} \\ \hline
+			\multicolumn{1}{|l|}{R} & \multicolumn{1}{l|}{Scenario} & \multicolumn{1}{l|}{P} & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{N} \\ \hline
+			\multicolumn{1}{|c|}{\multirow{2}{*}{R1}} & \multicolumn{1}{l|}{BD} & \multicolumn{1}{l|}{50.79\% (32)} & \multicolumn{1}{l|}{49.21\% (31)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{CD} & \multicolumn{1}{l|}{68.25\% (43)} & \multicolumn{1}{l|}{3.17\% (2)} & \multicolumn{1}{l|}{28.57\% (18)} \\ \hline
+			\multicolumn{1}{|l|}{\multirow{2}{*}{R2}} & \multicolumn{1}{l|}{BD} & \multicolumn{1}{l|}{44.44\% (4)} & \multicolumn{1}{l|}{55.56\% (5)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-5} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{CD} & \multicolumn{1}{l|}{77.78\% (7)} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{22.22\% (2)} \\ \hline
+			\multicolumn{1}{|l|}{\multirow{2}{*}{R3}} & \multicolumn{1}{l|}{BD} & \multicolumn{1}{l|}{44.44\% (4)} & \multicolumn{1}{l|}{55.56\% (5)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-5} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{CD} & \multicolumn{1}{l|}{77.78\% (7)} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{22.22\% (2)} \\ \hline
+		\end{tabular}
+		
+
+		\\
+		&   
+		&   
+		&
+		&                        
+		
 		\\ 
 		\cline{1-1}
-		\multirow{2}{*}{Q2}                       &   &   & \multicolumn{1}{c|}{}  \\
-		&   &   &                        \\ 
+		\multirow{2}{*}{Q3} 
+		&   
+		\begin{tabular}{clll}
+			\multicolumn{4}{l}{Q3(E=Inconsistencies)} \\ \hline
+			\multicolumn{1}{|l|}{R} & \multicolumn{1}{l|}{Model} & \multicolumn{1}{l|}{P} & \multicolumn{1}{l|}{S} \\ \hline
+			\multicolumn{1}{|c|}{\multirow{7}{*}{R1}} & \multicolumn{1}{l|}{AdaBoost} & \multicolumn{1}{l|}{12.5\% (1)} & \multicolumn{1}{l|}{87.5\% (7)} \\ \cline{2-4} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Decision Tree} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{100.0\% (8)} \\ \cline{2-4} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{KNN} & \multicolumn{1}{l|}{25.0\% (2)} & \multicolumn{1}{l|}{75.0\% (6)} \\ \cline{2-4} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Logistic Regression} & \multicolumn{1}{l|}{12.5\% (1)} & \multicolumn{1}{l|}{87.5\% (7)} \\ \cline{2-4} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Naive Bayes} & \multicolumn{1}{l|}{12.5\% (1)} & \multicolumn{1}{l|}{87.5\% (7)} \\ \cline{2-4} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Random Forest} & \multicolumn{1}{l|}{25.0\% (2)} & \multicolumn{1}{l|}{75.0\% (6)} \\ \cline{2-4} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{XGBoost} & \multicolumn{1}{l|}{12.5\% (1)} & \multicolumn{1}{l|}{87.5\% (7)} \\ \hline
+		\end{tabular}
+		&   
+		\begin{tabular}{cllll}
+			\multicolumn{5}{l}{Q3(E=Duplicates)} \\ \hline
+			\multicolumn{1}{|l|}{R} & \multicolumn{1}{l|}{Model} & \multicolumn{1}{l|}{P} & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{N} \\ \hline
+			\multicolumn{1}{|c|}{\multirow{7}{*}{R1}} & \multicolumn{1}{l|}{AdaBoost} & \multicolumn{1}{l|}{25.0\% (2)} & \multicolumn{1}{l|}{75.0\% (6)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Decision Tree} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{100.0\% (8)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{KNN} & \multicolumn{1}{l|}{12.5\% (1)} & \multicolumn{1}{l|}{87.5\% (7)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Logistic Regression} & \multicolumn{1}{l|}{25.0\% (2)} & \multicolumn{1}{l|}{62.5\% (5)} & \multicolumn{1}{l|}{12.5\% (1)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Naive Bayes} & \multicolumn{1}{l|}{37.5\% (3)} & \multicolumn{1}{l|}{50.0\% (4)} & \multicolumn{1}{l|}{12.5\% (1)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Random Forest} & \multicolumn{1}{l|}{12.5\% (1)} & \multicolumn{1}{l|}{62.5\% (5)} & \multicolumn{1}{l|}{25.0\% (2)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{XGBoost} & \multicolumn{1}{l|}{12.5\% (1)} & \multicolumn{1}{l|}{62.5\% (5)} & \multicolumn{1}{l|}{25.0\% (2)} \\ \hline
+		\end{tabular}
+		&               
+		\begin{tabular}{cllll}
+			\multicolumn{5}{l}{Q3(E=Mislabels)} \\ \hline
+			\multicolumn{1}{|l|}{R} & \multicolumn{1}{l|}{Model} & \multicolumn{1}{l|}{P} & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{N} \\ \hline
+			\multicolumn{1}{|c|}{\multirow{7}{*}{R1}} & \multicolumn{1}{l|}{AdaBoost} & \multicolumn{1}{l|}{77.78\% (14)} & \multicolumn{1}{l|}{11.11\% (2)} & \multicolumn{1}{l|}{11.11\% (2)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Decision Tree} & \multicolumn{1}{l|}{66.67\% (12)} & \multicolumn{1}{l|}{22.22\% (4)} & \multicolumn{1}{l|}{11.11\% (2)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{KNN} & \multicolumn{1}{l|}{50.0\% (9)} & \multicolumn{1}{l|}{38.89\% (7)} & \multicolumn{1}{l|}{11.11\% (2)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Logistic Regression} & \multicolumn{1}{l|}{55.56\% (10)} & \multicolumn{1}{l|}{33.33\% (6)} & \multicolumn{1}{l|}{11.11\% (2)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Naive Bayes} & \multicolumn{1}{l|}{27.78\% (5)} & \multicolumn{1}{l|}{38.89\% (7)} & \multicolumn{1}{l|}{33.33\% (6)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Random Forest} & \multicolumn{1}{l|}{61.11\% (11)} & \multicolumn{1}{l|}{27.78\% (5)} & \multicolumn{1}{l|}{11.11\% (2)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{XGBoost} & \multicolumn{1}{l|}{77.78\% (14)} & \multicolumn{1}{l|}{11.11\% (2)} & \multicolumn{1}{l|}{11.11\% (2)} \\ \hline
+		\end{tabular}         
+		&
+		\begin{tabular}{cllll}
+			\multicolumn{5}{l}{Q3(E=Outliers)} \\ \hline
+			\multicolumn{1}{|l|}{R} & \multicolumn{1}{l|}{Model} & \multicolumn{1}{l|}{P} & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{N} \\ \hline
+			\multicolumn{1}{|c|}{\multirow{7}{*}{R1}} & \multicolumn{1}{l|}{AdaBoost} & \multicolumn{1}{l|}{20\% (24)} & \multicolumn{1}{l|}{62.50\% (75)} & \multicolumn{1}{l|}{17.50\% (21)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Decision Tree} & \multicolumn{1}{l|}{27.50\% (33)} & \multicolumn{1}{l|}{65.83\% (79)} & \multicolumn{1}{l|}{6.67\% (8)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{KNN} & \multicolumn{1}{l|}{50\% (60)} & \multicolumn{1}{l|}{44.17\% (53)} & \multicolumn{1}{l|}{5.83\% (7)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Logistic Regression} & \multicolumn{1}{l|}{28.33\% (34)} & \multicolumn{1}{l|}{56.67\% (68)} & \multicolumn{1}{l|}{15\% (18)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Naive Bayes} & \multicolumn{1}{l|}{34.17\% (41)} & \multicolumn{1}{l|}{58.33\% (70)} & \multicolumn{1}{l|}{7.5\% (9)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Random Forest} & \multicolumn{1}{l|}{29.17\% (35)} & \multicolumn{1}{l|}{56.67\% (68)} & \multicolumn{1}{l|}{14.17\% (17)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{XGBoost} & \multicolumn{1}{l|}{31.67\% (38)} & \multicolumn{1}{l|}{55\% (66)} & \multicolumn{1}{l|}{13.33\% (16)} \\ \hline
+		\end{tabular}
+		
+		\\            
+		&   
+		\begin{tabular}{cllll}
+			\multicolumn{5}{l}{Q3(E=Missing Values)} \\ \hline
+			\multicolumn{1}{|l|}{R} & \multicolumn{1}{l|}{Model} & \multicolumn{1}{l|}{P} & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{N} \\ \hline
+			\multicolumn{1}{|c|}{\multirow{7}{*}{R1}} & \multicolumn{1}{l|}{AdaBoost} & \multicolumn{1}{l|}{20\% (24)} & \multicolumn{1}{l|}{62.50\% (75)} & \multicolumn{1}{l|}{17.50\% (21)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Decision Tree} & \multicolumn{1}{l|}{27.50\% (33)} & \multicolumn{1}{l|}{65.83\% (79)} & \multicolumn{1}{l|}{6.67\% (8)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{KNN} & \multicolumn{1}{l|}{50\% (60)} & \multicolumn{1}{l|}{44.17\% (53)} & \multicolumn{1}{l|}{5.83\% (7)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Logistic Regression} & \multicolumn{1}{l|}{28.33\% (34)} & \multicolumn{1}{l|}{56.67\% (68)} & \multicolumn{1}{l|}{15\% (18)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Naive Bayes} & \multicolumn{1}{l|}{34.17\% (41)} & \multicolumn{1}{l|}{58.33\% (70)} & \multicolumn{1}{l|}{7.5\% (9)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Random Forest} & \multicolumn{1}{l|}{29.17\% (35)} & \multicolumn{1}{l|}{56.67\% (68)} & \multicolumn{1}{l|}{14.17\% (17)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{XGBoost} & \multicolumn{1}{l|}{31.67\% (38)} & \multicolumn{1}{l|}{55\% (66)} & \multicolumn{1}{l|}{13.33\% (16)} \\ \hline
+		\end{tabular}
+		&   
+		&
+		&                       
+		
+		\\ 
 		\cline{1-1}
-		\multicolumn{1}{|c|}{\multirow{2}{*}{Q3}} &   &   &                        \\
-		\multicolumn{1}{|c|}{}                    &   &   &                        \\ 
+		\multirow{2}{*}{Q4}                       
+		
+		&   
+		&   
+		&
+		&                        
+		
+		\\
+		
+		&   
+		&   
+		&
+		&                        
+		
+		\\ 
 		\cline{1-1}
-		\multirow{2}{*}{Q4}                       &   &   &                        \\
-		&   &   &                        \\ 
-		\cline{1-1}
-		\multirow{2}{*}{Q5}                       &   &   &                        \\
-		&   &   &                        \\
+		\multirow{2}{*}{Q5}                       
+		
+		&   
+		&   
+		& 
+		&                       
+	    
+	    \\
+		
+		&   
+		&   
+		& 
+		&                        
+		
+		\\
 		\hline
 	\end{tabular}
 }
