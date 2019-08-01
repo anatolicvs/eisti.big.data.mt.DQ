@@ -127,7 +127,7 @@ after cleaning and p-values of hypothesis testing associated with
 each experiment.
 
 
-\section{Analysis Methodology}
+\section{Analysis Methodology}\label{sec:analysis-methodology}
 
 are associated with an experiment, which may help obtain insights
 and interpret the results, such as the accuracy scores before and
@@ -984,9 +984,59 @@ For each relation, we conduct a separate multiple hypothesis testing. We assign 
 \end{table}
 
 \section{Analyzing Benchmark Results}
+We inspect the correlation between the test accuracy scores in
+the scenarios BD and CD. In Figure ~\ref{fig:Test_Accuracy_Scores_in_Scenarios_BD_and_CD_of_20_Splits_for_Five_Error_Types}
+The scatter plots are generated based R3. We plot the test accuracy scores of 20 splits in each
+dataset, given the best model and the best data cleaning method. Different colors correspond to various datasets. The visualization show that: 
+\begin{enumerate}
+	\item{
+		\underline{Cleaning does not improve ML performance.}
+	}
+	\item {
+		\underline{Cleaning can help improve accuracy scores up to 10\% (e.g., cleaning outliers in the scenario CD).}
+	}
+	\item {
+		\underline{The improvements vary largely from one error type to another.}
+	}
+	\item {
+		\underline{We need a systematic and principled approach to analyze the results.}
+	}
+\end{enumerate}
 
+Table ... present the results according to the query templates we define in Section \ref{sec:analysis-methodology}.
 
-\begin{figure}[]
+In section \ref{sec:inconsistencies} to .. we present the impacts of each type of error on ML by analyzing the query results. 
+In Section .. we summarize the key insights. 
+
+\section{Inconsistencies} \label{sec:inconsistencies}
+
+\begin{enumerate}
+	\item {
+		Cleaning inconsistencies is more likely to have insignificant impact and unlikely to have negative impact on ML.
+	}
+	\item {
+		Model selection increases the probability of having positive impacts on ML.
+	}
+\end{enumerate}
+
+\begin{itemize}
+	\item {
+		\textbf{Q1:} We first group by flags on the tuples in R1, R2 and R3. 
+		Table ..:Q1(E=Inconsistencies) shows no negative flags (“N”) in the
+		impact directionality. For every relation, the insignificant changes
+		(“S”) have the largest likelihood. 
+		This implies that cleaning inconsistency in both training and test sets is unlikely to produce negative
+		impacts on the ML model performance. Furthermore, comparing the percentages of “P” among all the relations, selecting the best ML model and the best data cleaning strategy helps to gradually
+		introduce positive changes to ML performances after data cleaning.
+	}
+	\item {
+		\textbf{Q2:} Table..: Q2(E=Inconsistencies) shows the query results
+		of grouping by flags and scenarios, which follows the tendency we
+		observe in Q1, i.e., no negative impacts on ML performance after cleaning inconsistency in both scenarios. Adding an auto ML model/cleaning tuner increases the changes of positive impacts.
+	}
+\end{itemize}
+
+\begin{figure}[H]
 	\centering
 	\includegraphics[angle=-90,scale=.3]{Test_Accuracy_Scores_in_Scenarios_BD_and_CD_of_20_Splits_for_Five_Error_Types}
 	\caption{Test Accuracy Scores in Scenarios BD and CD of 20 Splits for Five Error Types}
