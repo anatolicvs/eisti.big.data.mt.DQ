@@ -492,7 +492,7 @@ below.
 \end{itemize}
 
 
-\section{Scenarios}
+\section{Scenarios} \label{sec:scenarios}
 
 Given a dataset with a train/test split, and a cleaning method,
 we can have different model performance depending on where the
@@ -1003,10 +1003,10 @@ dataset, given the best model and the best data cleaning method. Different color
 	}
 \end{enumerate}
 
-Table ... present the results according to the query templates we define in Section \ref{sec:analysis-methodology}.
+Table ~\ref{tab:benchmark-results} present the results according to the query templates we define in Section \ref{sec:analysis-methodology}.
 
-In section \ref{sec:inconsistencies} to .. we present the impacts of each type of error on ML by analyzing the query results. 
-In Section .. we summarize the key insights. 
+In section \ref{sec:inconsistencies} to \ref{sec:missing-values} we present the impacts of each type of error on ML by analyzing the query results. 
+In Section ~\ref{sec:summary-of-key-insights} we summarize the key insights. 
 
 \section{Inconsistencies} \label{sec:inconsistencies}
 
@@ -1022,15 +1022,14 @@ In Section .. we summarize the key insights.
 \begin{itemize}
 	\item {
 		\textbf{Q1:} We first group by flags on the tuples in R1, R2 and R3. 
-		Table ..:Q1(E=Inconsistencies) shows no negative flags (“N”) in the
-		impact directionality. For every relation, the insignificant changes
+		Table ~\ref{tab:benchmark-results} :Q1(E=Inconsistencies) shows no negative flags (“N”) in the impact directionality. For every relation, the insignificant changes
 		(“S”) have the largest likelihood. 
 		This implies that cleaning inconsistency in both training and test sets is unlikely to produce negative
 		impacts on the ML model performance. Furthermore, comparing the percentages of “P” among all the relations, selecting the best ML model and the best data cleaning strategy helps to gradually
 		introduce positive changes to ML performances after data cleaning.
 	}
 	\item {
-		\textbf{Q2:} Table..: Q2(E=Inconsistencies) shows the query results
+		\textbf{Q2:} Table ~\ref{tab:benchmark-results}: Q2(E=Inconsistencies) shows the query results
 		of grouping by flags and scenarios, which follows the tendency we
 		observe in Q1, i.e., no negative impacts on ML performance after cleaning inconsistency in both scenarios. Adding an auto ML model/cleaning tuner increases the changes of positive impacts.
 	}
@@ -1044,14 +1043,14 @@ In Section .. we summarize the key insights.
 \end{figure}
 
 \begin{landscape}
-\begin{table}
+\begin{table}[h]
 	\centering
 	\caption{Benchmark Results(Organized by Query)}
 	\label{tab:benchmark-results}
 	\renewcommand{\arraystretch}{2}	
-	\def\arraystretch{1.5}
+	\def\arraystretch{1.7}
 	\resizebox{\textwidth}{!}{%
-	\begin{tabular}{|l|llll|} 
+	\begin{tabular}{|l|lllll|} 
 		
 		\hline
 		\centering
@@ -1089,9 +1088,7 @@ In Section .. we summarize the key insights.
 			\multicolumn{1}{|l|}{R2} & \multicolumn{1}{l|}{33.33\% (40)} & \multicolumn{1}{l|}{60\% (72)} & \multicolumn{1}{l|}{6.67\% (8)} \\ \hline
 			\multicolumn{1}{|l|}{R3} & \multicolumn{1}{l|}{30\% (3)} & \multicolumn{1}{l|}{70\% (7)} & \multicolumn{1}{l|}{0\% (0)} \\ \hline
 		\end{tabular}
-		
-		\\							                         
-		& 
+		&
 		\begin{tabular}{llll}
 			\multicolumn{4}{l}{Q1(E=Missing Values)} \\ \hline
 			\multicolumn{1}{|l|}{R} & \multicolumn{1}{l|}{P} & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{N} \\ \hline
@@ -1099,9 +1096,13 @@ In Section .. we summarize the key insights.
 			\multicolumn{1}{|l|}{R2} & \multicolumn{1}{l|}{50.00\% (18)} & \multicolumn{1}{l|}{50.00\% (18)} & \multicolumn{1}{l|}{0.00\% (0)} \\ \hline
 			\multicolumn{1}{|l|}{R3} & \multicolumn{1}{l|}{50.00\% (3)} & \multicolumn{1}{l|}{50.00\% (3)} & \multicolumn{1}{l|}{0.00\% (0)} \\ \hline
 		\end{tabular}
+		
+		\\							                         
+		& 
 		& 
 		& 
 		&                      
+		&
 		
 		\\ 
 		
@@ -1152,13 +1153,14 @@ In Section .. we summarize the key insights.
 			\multicolumn{1}{|l|}{\multirow{2}{*}{R3}} & \multicolumn{1}{l|}{BD} & \multicolumn{1}{l|}{44.44\% (4)} & \multicolumn{1}{l|}{55.56\% (5)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-5} 
 			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{CD} & \multicolumn{1}{l|}{77.78\% (7)} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{22.22\% (2)} \\ \hline
 		\end{tabular}
-		
+		&
 
 		\\
 		&   
 		&   
 		&
 		&                        
+		&
 		
 		\\ 
 		\cline{1-1}
@@ -1211,9 +1213,7 @@ In Section .. we summarize the key insights.
 			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Random Forest} & \multicolumn{1}{l|}{29.17\% (35)} & \multicolumn{1}{l|}{56.67\% (68)} & \multicolumn{1}{l|}{14.17\% (17)} \\ \cline{2-5} 
 			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{XGBoost} & \multicolumn{1}{l|}{31.67\% (38)} & \multicolumn{1}{l|}{55\% (66)} & \multicolumn{1}{l|}{13.33\% (16)} \\ \hline
 		\end{tabular}
-		
-		\\            
-		&   
+		&
 		\begin{tabular}{cllll}
 			\multicolumn{5}{l}{Q3(E=Missing Values)} \\ \hline
 			\multicolumn{1}{|l|}{R} & \multicolumn{1}{l|}{Model} & \multicolumn{1}{l|}{P} & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{N} \\ \hline
@@ -1225,18 +1225,61 @@ In Section .. we summarize the key insights.
 			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Random Forest} & \multicolumn{1}{l|}{29.17\% (35)} & \multicolumn{1}{l|}{56.67\% (68)} & \multicolumn{1}{l|}{14.17\% (17)} \\ \cline{2-5} 
 			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{XGBoost} & \multicolumn{1}{l|}{31.67\% (38)} & \multicolumn{1}{l|}{55\% (66)} & \multicolumn{1}{l|}{13.33\% (16)} \\ \hline
 		\end{tabular}
+		\\            
+		
+		&   
 		&   
 		&
 		&                       
+		&
 		
 		\\ 
 		\cline{1-1}
 		\multirow{2}{*}{Q4}                       
 		
 		&   
+		\begin{tabular}{lllll}
+			\multicolumn{5}{l}{Q4.1(E=Outliers)} \\ \hline
+			\multicolumn{1}{|l|}{R} & \multicolumn{1}{l|}{Detect Method} & \multicolumn{1}{l|}{P} & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{N} \\ \hline
+			\multicolumn{1}{|c|}{\multirow{3}{*}{R1}} & \multicolumn{1}{l|}{IF} & \multicolumn{1}{l|}{32.14\% (90)} & \multicolumn{1}{l|}{47.14\% (132)} & \multicolumn{1}{l|}{20.71\% (58)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{IQR} & \multicolumn{1}{l|}{50.71\% (142)} & \multicolumn{1}{l|}{38.21\% (107)} & \multicolumn{1}{l|}{11.07\% (31)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{SD} & \multicolumn{1}{l|}{11.79\% (33)} & \multicolumn{1}{l|}{85.71\% (240)} & \multicolumn{1}{l|}{2.50\% (7)} \\ \hline
+			\multicolumn{1}{|l|}{\multirow{3}{*}{R2}} & \multicolumn{1}{l|}{IF} & \multicolumn{1}{l|}{32.50\% (13)} & \multicolumn{1}{l|}{60\% (24)} & \multicolumn{1}{l|}{7.50\% (3)} \\ \cline{2-5} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{IQR} & \multicolumn{1}{l|}{52.50\% (21)} & \multicolumn{1}{l|}{35\% (14)} & \multicolumn{1}{l|}{12.50\% (5)} \\ \cline{2-5} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{SD} & \multicolumn{1}{l|}{15\% (6)} & \multicolumn{1}{l|}{85\% (34)} & \multicolumn{1}{l|}{0\% (0)} \\ \hline
+		\end{tabular}
 		&   
+		\begin{tabular}{lllll}
+			\multicolumn{5}{l}{Q4.2(E=Outliers)} \\ \hline
+			\multicolumn{1}{|l|}{R} & \multicolumn{1}{l|}{Repair Method} & \multicolumn{1}{l|}{P} & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{N} \\ \hline
+			\multicolumn{1}{|c|}{\multirow{4}{*}{R1}} & \multicolumn{1}{l|}{Delete} & \multicolumn{1}{l|}{32.86\% (69)} & \multicolumn{1}{l|}{50.48\% (106)} & \multicolumn{1}{l|}{16.67\% (35)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Mean Imputation} & \multicolumn{1}{l|}{31.90\% (67)} & \multicolumn{1}{l|}{60.95\% (128)} & \multicolumn{1}{l|}{7.14\% (15)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Mode Imputation} & \multicolumn{1}{l|}{30.95\% (65)} & \multicolumn{1}{l|}{57.14\% (120)} & \multicolumn{1}{l|}{11.90\% (25)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Median Imputation} & \multicolumn{1}{l|}{30.48\% (64)} & \multicolumn{1}{l|}{59.52\% (125)} & \multicolumn{1}{l|}{10.00\% (21)} \\ \hline
+			\multicolumn{1}{|l|}{\multirow{4}{*}{R2}} & \multicolumn{1}{l|}{Delete} & \multicolumn{1}{l|}{33.33\% (10)} & \multicolumn{1}{l|}{53.33\% (16)} & \multicolumn{1}{l|}{13.33\% (4)} \\ \cline{2-5} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{Mean Imputation} & \multicolumn{1}{l|}{33.33\% (10)} & \multicolumn{1}{l|}{63.33\% (19)} & \multicolumn{1}{l|}{3.33\% (1)} \\ \cline{2-5} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{Mode Imputation} & \multicolumn{1}{l|}{30.00\% (9)} & \multicolumn{1}{l|}{63.33\% (19)} & \multicolumn{1}{l|}{6.67\% (2)} \\ \cline{2-5} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{Median Imputation} & \multicolumn{1}{l|}{36.67\% (11)} & \multicolumn{1}{l|}{60.00\% (18)} & \multicolumn{1}{l|}{3.33\% (1)} \\ \hline
+		\end{tabular}
 		&
+		\begin{tabular}{lllll}
+			\multicolumn{5}{l}{Q4.2(E=Missing Values)} \\ \hline
+			\multicolumn{1}{|l|}{R} & \multicolumn{1}{l|}{Imputation Method} & \multicolumn{1}{l|}{P} & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{N} \\ \hline
+			\multicolumn{1}{|c|}{\multirow{6}{*}{R1}} & \multicolumn{1}{l|}{Mean Dummy} & \multicolumn{1}{l|}{54.76\% (23)} & \multicolumn{1}{l|}{40.48\% (17)} & \multicolumn{1}{l|}{4.76\% (2)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Median Dummy} & \multicolumn{1}{l|}{59.52\% (25)} & \multicolumn{1}{l|}{35.71\% (15)} & \multicolumn{1}{l|}{4.76\% (2)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Mode Dummy} & \multicolumn{1}{l|}{64.29\% (27)} & \multicolumn{1}{l|}{30.95\% (13)} & \multicolumn{1}{l|}{4.76\% (2)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Mean Mode} & \multicolumn{1}{l|}{64.29\% (27)} & \multicolumn{1}{l|}{33.33\% (14)} & \multicolumn{1}{l|}{2.38\% (1)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Median Mode} & \multicolumn{1}{l|}{61.90\% (26)} & \multicolumn{1}{l|}{35.71\% (15)} & \multicolumn{1}{l|}{2.38\% (1)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Mode Mode} & \multicolumn{1}{l|}{64.29\% (27)} & \multicolumn{1}{l|}{33.33\% (14)} & \multicolumn{1}{l|}{2.38\% (1)} \\ \hline
+			\multicolumn{1}{|l|}{\multirow{6}{*}{R2}} & \multicolumn{1}{l|}{Mean Dummy} & \multicolumn{1}{l|}{50.00\% (3)} & \multicolumn{1}{l|}{50.00\% (3)} & \multicolumn{1}{l|}{0.00\% (0)} \\ \cline{2-5} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{Median Dummy} & \multicolumn{1}{l|}{50.00\% (3)} & \multicolumn{1}{l|}{50.00\% (3)} & \multicolumn{1}{l|}{0.00\% (0)} \\ \cline{2-5} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{Mode Dummy} & \multicolumn{1}{l|}{50.00\% (3)} & \multicolumn{1}{l|}{50.00\% (3)} & \multicolumn{1}{l|}{0.00\% (0)} \\ \cline{2-5} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{Mean Mode} & \multicolumn{1}{l|}{50.00\% (3)} & \multicolumn{1}{l|}{50.00\% (3)} & \multicolumn{1}{l|}{0.00\% (0)} \\ \cline{2-5} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{Median Mode} & \multicolumn{1}{l|}{50.00\% (3)} & \multicolumn{1}{l|}{50.00\% (3)} & \multicolumn{1}{l|}{0.00\% (0)} \\ \cline{2-5} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{Mode Mode} & \multicolumn{1}{l|}{50.00\% (3)} & \multicolumn{1}{l|}{50.00\% (3)} & \multicolumn{1}{l|}{0.00\% (0)} \\ \hline
+		\end{tabular}
 		&                        
+		&
 		
 		\\
 		
@@ -1244,22 +1287,121 @@ In Section .. we summarize the key insights.
 		&   
 		&
 		&                        
+		&
 		
 		\\ 
 		\cline{1-1}
 		\multirow{2}{*}{Q5}                       
 		
 		&   
+		\begin{tabular}{llll}
+			\multicolumn{4}{l}{Q5(E=Inconsistencies)} \\ \hline
+			\multicolumn{1}{|l|}{R} & \multicolumn{1}{l|}{Dataset} & \multicolumn{1}{l|}{P} & \multicolumn{1}{l|}{S} \\ \hline
+			\multicolumn{1}{|c|}{\multirow{4}{*}{R1}} & \multicolumn{1}{l|}{Company} & \multicolumn{1}{l|}{28.57\% (4)} & \multicolumn{1}{l|}{71.43\% (10)} \\ \cline{2-4} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Movie} & \multicolumn{1}{l|}{21.43\% (3)} & \multicolumn{1}{l|}{78.57\% (11)} \\ \cline{2-4} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Restaurant} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{100.0\% (14)} \\ \cline{2-4} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{University} & \multicolumn{1}{l|}{7.14\% (1)} & \multicolumn{1}{l|}{92.86\% (13)} \\ \hline
+			\multicolumn{1}{|l|}{\multirow{4}{*}{R2}} & \multicolumn{1}{l|}{Company} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{100.0\% (2)} \\ \cline{2-4} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{Movie} & \multicolumn{1}{l|}{100.0\% (2)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-4} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{Restaurant} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{100.0\% (2)} \\ \cline{2-4} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{University} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{100.0\% (2)} \\ \hline
+			\multicolumn{1}{|l|}{\multirow{4}{*}{R3}} & \multicolumn{1}{l|}{Company} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{100.0\% (2)} \\ \cline{2-4} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{Movie} & \multicolumn{1}{l|}{100.0\% (2)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-4} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{Restaurant} & \multicolumn{1}{l|}{50.0\% (1)} & \multicolumn{1}{l|}{50.0\% (1)} \\ \cline{2-4} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{University} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{100.0\% (2)} \\ \hline
+		\end{tabular}
 		&   
+		\begin{tabular}{lllll}
+			\multicolumn{5}{l}{Q5(E=Duplicates)} \\ \hline
+			\multicolumn{1}{|l|}{R} & \multicolumn{1}{l|}{Dataset} & \multicolumn{1}{l|}{P} & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{N} \\ \hline
+			\multicolumn{1}{|c|}{\multirow{4}{*}{R1}} & \multicolumn{1}{l|}{Airbnb} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{85.71\% (12)} & \multicolumn{1}{l|}{14.29\% (2)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Citation} & \multicolumn{1}{l|}{7.14\% (1)} & \multicolumn{1}{l|}{85.71\% (12)} & \multicolumn{1}{l|}{7.14\% (1)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Movie} & \multicolumn{1}{l|}{64.29\% (9)} & \multicolumn{1}{l|}{28.57\% (4)} & \multicolumn{1}{l|}{7.14\% (1)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Restaurant} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{85.71\% (12)} & \multicolumn{1}{l|}{14.29\% (2)} \\ \hline
+			\multicolumn{1}{|l|}{\multirow{4}{*}{R2}} & \multicolumn{1}{l|}{Airbnb} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{100.0\% (2)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-5} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{Citation} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{100.0\% (2)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-5} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{Movie} & \multicolumn{1}{l|}{50.0\% (1)} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{50.0\% (1)} \\ \cline{2-5} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{Restaurant} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{50.0\% (1)} & \multicolumn{1}{l|}{50.0\% (1)} \\ \hline
+			\multicolumn{1}{|l|}{\multirow{4}{*}{R3}} & \multicolumn{1}{l|}{Airbnb} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{100.0\% (2)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-5} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{Citation} & \multicolumn{1}{l|}{50.0\% (1)} & \multicolumn{1}{l|}{50.0\% (1)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-5} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{Movie} & \multicolumn{1}{l|}{50.0\% (1)} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{50.0\% (1)} \\ \cline{2-5} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{Restaurant} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{50.0\% (1)} & \multicolumn{1}{l|}{50.0\% (1)} \\ \hline
+		\end{tabular}
 		& 
-		&                       
-	    
+		\begin{tabular}{lllll}
+			\multicolumn{5}{l}{Q5(E=Outliers)} \\ \hline
+			\multicolumn{1}{|l|}{R} & \multicolumn{1}{l|}{Dataset} & \multicolumn{1}{l|}{P} & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{N} \\ \hline
+			\multicolumn{1}{|c|}{\multirow{4}{*}{R1}} & \multicolumn{1}{l|}{Airbnb} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{85.71\% (12)} & \multicolumn{1}{l|}{14.29\% (2)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Citation} & \multicolumn{1}{l|}{7.14\% (1)} & \multicolumn{1}{l|}{85.71\% (12)} & \multicolumn{1}{l|}{7.14\% (1)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Movie} & \multicolumn{1}{l|}{64.29\% (9)} & \multicolumn{1}{l|}{28.57\% (4)} & \multicolumn{1}{l|}{7.14\% (1)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Restaurant} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{85.71\% (12)} & \multicolumn{1}{l|}{14.29\% (2)} \\ \hline
+			\multicolumn{1}{|l|}{\multirow{4}{*}{R2}} & \multicolumn{1}{l|}{Airbnb} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{100.0\% (2)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-5} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{Citation} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{100.0\% (2)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-5} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{Movie} & \multicolumn{1}{l|}{50.0\% (1)} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{50.0\% (1)} \\ \cline{2-5} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{Restaurant} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{50.0\% (1)} & \multicolumn{1}{l|}{50.0\% (1)} \\ \hline
+			\multicolumn{1}{|l|}{\multirow{4}{*}{R3}} & \multicolumn{1}{l|}{Airbnb} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{100.0\% (2)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-5} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{Citation} & \multicolumn{1}{l|}{50.0\% (1)} & \multicolumn{1}{l|}{50.0\% (1)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-5} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{Movie} & \multicolumn{1}{l|}{50.0\% (1)} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{50.0\% (1)} \\ \cline{2-5} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{Restaurant} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{50.0\% (1)} & \multicolumn{1}{l|}{50.0\% (1)} \\ \hline
+		\end{tabular}
+		&   
+		\begin{tabular}{lllll}
+			\multicolumn{5}{l}{Q5(E=Missing Values)} \\ \hline
+			\multicolumn{1}{|l|}{R} & \multicolumn{1}{l|}{Dataset} & \multicolumn{1}{l|}{P} & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{N} \\ \hline
+			\multicolumn{1}{|c|}{\multirow{5}{*}{R1}} & \multicolumn{1}{l|}{Airbnb} & \multicolumn{1}{l|}{23.21\% (39)} & \multicolumn{1}{l|}{70.83\% (119)} & \multicolumn{1}{l|}{5.95\% (10)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Credit} & \multicolumn{1}{l|}{22.62\% (38)} & \multicolumn{1}{l|}{43.35\% (73)} & \multicolumn{1}{l|}{33.93\% (57)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{EEG} & \multicolumn{1}{l|}{60.12\% (101)} & \multicolumn{1}{l|}{33.93\% (57)} & \multicolumn{1}{l|}{5.95\% (10)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{KDD} & \multicolumn{1}{l|}{3.57\% (6)} & \multicolumn{1}{l|}{93.45\% (157)} & \multicolumn{1}{l|}{2.98\% (5)} \\ \cline{2-5} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{Sensor} & \multicolumn{1}{l|}{48.21\% (81)} & \multicolumn{1}{l|}{43.45\% (73)} & \multicolumn{1}{l|}{8.33\% (14)} \\ \hline
+			\multicolumn{1}{|l|}{\multirow{5}{*}{R2}} & \multicolumn{1}{l|}{Airbnb} & \multicolumn{1}{l|}{37.50\% (9)} & \multicolumn{1}{l|}{62.50\%(15)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-5} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{Credit} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{66.67\% (16)} & \multicolumn{1}{l|}{33.33\% (8)} \\ \cline{2-5} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{EEG} & \multicolumn{1}{l|}{79.17\% (19)} & \multicolumn{1}{l|}{20.83\% (5)} & \multicolumn{1}{l|}{0\% (0)} \\ \cline{2-5} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{KDD} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{100\% (0)} & \multicolumn{1}{l|}{0\% (0)} \\ \cline{2-5} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{Sensor} & \multicolumn{1}{l|}{50\% (12)} & \multicolumn{1}{l|}{50\% (12)} & \multicolumn{1}{l|}{0\% (0)} \\ \hline
+			\multicolumn{1}{|l|}{\multirow{5}{*}{R3}} & \multicolumn{1}{l|}{Airbnb} & \multicolumn{1}{l|}{50\% (1)} & \multicolumn{1}{l|}{50\% (1)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-5} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{Credit} & \multicolumn{1}{l|}{0\% (0)} & \multicolumn{1}{l|}{100\% (2)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-5} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{EEG} & \multicolumn{1}{l|}{50.0\% (1)} & \multicolumn{1}{l|}{50\% (1)} & \multicolumn{1}{l|}{0\% (0)} \\ \cline{2-5} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{KDD} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{100\% (2)} & \multicolumn{1}{l|}{0\% (0)} \\ \cline{2-5} 
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{Sensor} & \multicolumn{1}{l|}{50\% (1)} & \multicolumn{1}{l|}{50\% (1)} & \multicolumn{1}{l|}{0\% (0)} \\ \hline
+		\end{tabular}                    
+	    &
+	    \begin{tabular}{cllll}
+	    	\multicolumn{5}{l}{Q5(E=Mislabels)} \\ \hline
+	    	\multicolumn{1}{|l|}{R} & \multicolumn{1}{l|}{Dataset} & \multicolumn{1}{l|}{P} & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{N} \\ \hline
+	    	\multicolumn{1}{|c|}{\multirow{18}{*}{R1}} & \multicolumn{1}{l|}{EEG major} & \multicolumn{1}{l|}{78.57\% (11)} & \multicolumn{1}{l|}{14.29\% (2)} & \multicolumn{1}{l|}{7.14\% (1)} \\ \cline{2-5} 
+	    	\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{EEG minor} & \multicolumn{1}{l|}{78.57\% (11)} & \multicolumn{1}{l|}{21.43\% (3)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-5} 
+	    	\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{EEG uniform} & \multicolumn{1}{l|}{78.57\% (11)} & \multicolumn{1}{l|}{14.29\% (2)} & \multicolumn{1}{l|}{7.14\% (1)} \\ \cline{2-5} 
+	    	\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{KDD major} & \multicolumn{1}{l|}{28.57\% (4)} & \multicolumn{1}{l|}{21.43\% (3)} & \multicolumn{1}{l|}{50.0\% (7)} \\ \cline{2-5} 
+	    	\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{KDD minor} & \multicolumn{1}{l|}{50.0\% (7)} & \multicolumn{1}{l|}{50.0\% (7)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-5} 
+	    	\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{KDD uniform} & \multicolumn{1}{l|}{35.71\% (5)} & \multicolumn{1}{l|}{14.29\% (2)} & \multicolumn{1}{l|}{50.0\% (7)} \\ \cline{2-5} 
+	    	\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{USCensus major} & \multicolumn{1}{l|}{50.0\% (7)} & \multicolumn{1}{l|}{42.86\% (6)} & \multicolumn{1}{l|}{7.14\% (1)} \\ \cline{2-5} 
+	    	\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{USCensus minor} & \multicolumn{1}{l|}{64.29\% (9)} & \multicolumn{1}{l|}{35.71\% (5)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-5} 
+	    	\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{USCensus uniform} & \multicolumn{1}{l|}{71.43\% (10)} & \multicolumn{1}{l|}{21.43\% (3)} & \multicolumn{1}{l|}{7.14\% (1)} \\ \cline{2-5} 
+	    	\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{EEG major} & \multicolumn{1}{l|}{100.0\% (2)} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-5} 
+	    	\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{EEG minor} & \multicolumn{1}{l|}{100.0\% (2)} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-5} 
+	    	\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{EEG uniform} & \multicolumn{1}{l|}{100.0\% (2)} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-5} 
+	    	\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{KDD major} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{50.0\% (1)} & \multicolumn{1}{l|}{50.0\% (1)} \\ \cline{2-5} 
+	    	\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{KDD minor} & \multicolumn{1}{l|}{50.0\% (1)} & \multicolumn{1}{l|}{50.0\% (1)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-5} 
+	    	\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{KDD uniform} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{50.0\% (1)} & \multicolumn{1}{l|}{50.0\% (1)} \\ \cline{2-5} 
+	    	\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{USCensus major} & \multicolumn{1}{l|}{50.0\% (1)} & \multicolumn{1}{l|}{50.0\% (1)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-5} 
+	    	\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{USCensus minor} & \multicolumn{1}{l|}{50.0\% (1)} & \multicolumn{1}{l|}{50.0\% (1)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-5} 
+	    	\multicolumn{1}{|c|}{} & \multicolumn{1}{l|}{USCensus uniform} & \multicolumn{1}{l|}{100.0\% (2)} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \hline
+	    	\multicolumn{1}{|l|}{\multirow{9}{*}{R2}} & \multicolumn{1}{l|}{EEG major} & \multicolumn{1}{l|}{100.0\% (2)} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-5} 
+	    	\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{EEG minor} & \multicolumn{1}{l|}{100.0\% (2)} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-5} 
+	    	\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{EEG uniform} & \multicolumn{1}{l|}{100.0\% (2)} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-5} 
+	    	\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{KDD major} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{50.0\% (1)} & \multicolumn{1}{l|}{50.0\% (1)} \\ \cline{2-5} 
+	    	\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{KDD minor} & \multicolumn{1}{l|}{50.0\% (1)} & \multicolumn{1}{l|}{50.0\% (1)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-5} 
+	    	\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{KDD uniform} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{50.0\% (1)} & \multicolumn{1}{l|}{50.0\% (1)} \\ \cline{2-5} 
+	    	\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{USCensus major} & \multicolumn{1}{l|}{50.0\% (1)} & \multicolumn{1}{l|}{50.0\% (1)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-5} 
+	    	\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{USCensus minor} & \multicolumn{1}{l|}{50.0\% (1)} & \multicolumn{1}{l|}{50.0\% (1)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \cline{2-5} 
+	    	\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{USCensus uniform} & \multicolumn{1}{l|}{100.0\% (2)} & \multicolumn{1}{l|}{0.0\% (0)} & \multicolumn{1}{l|}{0.0\% (0)} \\ \hline
+	    \end{tabular}
 	    \\
-		
 		&   
 		&   
 		& 
 		&                        
+		&
 		
 		\\
 		\hline
@@ -1267,3 +1409,241 @@ In Section .. we summarize the key insights.
 }
 \end{table}
 \end{landscape}
+
+\begin{itemize}
+	\item {
+		\textbf{Q3:} Grouped by ML models, it is noticeable that all the ML models have demonstrated the same tendency in the impacts of data
+		cleaning, as shown in Table \ref{tab:benchmark-results}: Q3(E=Inconsistencies). Again, there is no negative impact on ML performances that cleaning inconsistency can induce.
+	}
+
+	\item {
+		\textbf{Q5:} At last, we group by datasets and provide a view on dataset
+		choice and its influence on ML performance with data cleaning strategy incorporated. As shown in Table ~\ref{tab:benchmark-results}:(E=Inconsistencies),
+		in general, the pattern holds that insignificant impact of cleaning inconsistency prevails; no negative impacts of cleaning inconsistency
+		was found. It is probably due to the idiosyncrasy in the Movie
+		dataset, which has 48\% of inconsistencies \footnote{We calculate the inconsistency of the datasets using the percentage of minority class. For instance, in the dataset Movie, we correct the values English and en under the variable “Language”. The value English takes 52\% in all the attribute values; the value en 48\%. We therefore replace en with English. This gives us an inconsistency rate of 48\%.} the improvement an auto ML/cleaning strategy tuner brings is 78.57\% in the direction of positive changes.
+	}
+\end{itemize}
+
+\section{Duplicates} \label{sec:duplicates}
+
+\begin{enumerate}
+	\item {
+		Cleaning duplicates is more likely to have insignificant
+		impacts on ML and it is possible to produce negative impacts.
+	}
+	\item {
+		With model selection, negative impacts caused by
+		cleaning test set can be eliminated.
+	}
+\end{enumerate}
+
+\begin{itemize}
+	\item {
+		\textbf{Q1:} From the query on flags shown in Table ~\ref{tab:benchmark-results}:Q1(E=Duplicates),
+		it is unclear that if cleaning duplicates could bring either positive
+		or negative impacts. In all the relations, the number of insignificant flags has the largest percentage compared with the positive
+		and negative flags.
+	}
+	\item{
+		\textbf{Q2:} Looking scenarios grouped by flags in Table ~\ref{tab:benchmark-results}: Q2 (E=Duplicates), using a clean test set with a clean training model (CD) is highly unlikely to result in negative changes of ML performance.
+		Especially when we utilize an auto ML/data cleaning tuner, the negative impacts disappear. In the scenario BD, utilizing an ML/cleaning tuner does not decrease the chance of yielding negative impacts
+		when we clean the duplicates. This observation is also made from
+		the scatter plot on BD in Figure ~\ref{fig:Test_Accuracy_Scores_in_Scenarios_BD_and_CD_of_20_Splits_for_Five_Error_Types}, where there are more points with the “N” flag than the other two flags. The reason is due to the various duplication rates of features in the datasets, as we see when analyzing the results of Q5 below.
+	}
+
+	\item {
+		\textbf{Q3}: We observe from Table ~\ref{tab:benchmark-results}:Q3(E=Duplicates) that for all the ML models, AdaBoost, KNN and Decision Tree tend to have no negative impact.
+	}
+	\item {
+		\textbf{Q5}: The discrepancies of datasets affect the ML performances largely as we observe from Table ~\ref{tab:benchmark-results}:Q5(E=Duplicates). For the datasets “Airbnb” and “Citation”, the negative impacts could be
+		dampened to zero if we add an auto ML/cleaning tuner. Yet for the datasets “Movie” and “Restaurant”, the negative impacts even increase after we use an auto ML/cleaning tuner. This might be due to the protocol of generating the duplicates, where we have combined the two sources of datasets and do not correlate the duplication rate
+		with the class distribution. Finally, “Movie” has a duplication rate of 40\%, “Citation” 10\%, “Airbnb” 10\%, and “Restaurant” 10\%.
+	}
+\end{itemize}
+
+\section{Mislabels} \label{sec:mislabels}
+
+\begin{enumerate}
+	\item {
+		Cleaning mislabels are highly likely to have positive impacts on ML.
+	}
+	\item {
+		Cleaning mislabels for models that have bad
+		performances may produce negative impacts.
+	}
+\end{enumerate}
+
+\begin{itemize}
+	\item{
+		\textbf{Q1:} Table ~\ref{tab:benchmark-results}:Q1(E=Mislabels) is generated by grouping flags,
+		which demonstrates strong positive impacts of cleaning mislabels in all relations. The likelihood of improving ML model performances after cleaning mislabels (the “P” flag) is higher than that
+		of insignificant changes (the “S” flag) , which is more likely than
+		reducing the ML model performances (the “N” flag).
+	}
+	\item {
+		\textbf{Q2}: In the scenario CD shown in Table ~\ref{tab:benchmark-results}:Q2(E=Mislabels), cleaning mislabels has always a higher likelihood of rendering a
+		positive impact on the ML performances, which corresponds to the observation from Figure ~\ref{fig:Test_Accuracy_Scores_in_Scenarios_BD_and_CD_of_20_Splits_for_Five_Error_Types}. This could be understood by the fact that using a clean training set and a clean test set, i.e., sets without label flipping, ML performances are generally better than using a
+		clean training set and a corrupted test set. There are no negative flags in the scenario BD under the error type “Mislabel”. We find
+		out that if we clean the dirtiness in the training set, it is highly unlikely that the cleaning method has a negative impact on the ML
+		model performance.
+	} 
+	\item {
+		\textbf{Q3}: Apart from Naive Bayes (Table ~\ref{tab:benchmark-results}:Q2(E=Mislabels)), all
+		the other ML models have demonstrated a stronger tendency in producing more accurate predictions after cleaning the mislabels.
+	}
+
+	\item{
+		\textbf{Q5:} We observe that the negative impact only occurs when the
+		model has a bad performance (accuracy < 50\%). This is because when we inject mislabels by flipping labels, we are more likely to flip a label that bad models predict incorrectly. Then accuracy of bad models is likely to be improved after injecting mislabels. Hence, cleaning mislabels may reduce the performance of
+		bad models. With model selection, the negative impact is reduced,
+		since we are less likely to have a bad model.
+	}
+
+\end{itemize}
+
+\section{Outliers} \label{sec:outliers}
+
+\begin{enumerate}
+	\item {
+		Cleaning outliers is more likely to have insignificant
+		and positive impacts, but it may produce negative impacts on ML.
+	}
+	\item {
+		With model selection, the probability of having
+		negative impacts can be reduced. With cleaning method and
+		model selection, it is unlikely to have negative impacts.
+	}
+	\item {
+		The probability of having positive and negative
+		impacts is highly related to datasets and detection methods.
+	}
+\end{enumerate}
+
+\begin{itemize}
+	\item {
+		\textbf{Q1:} Table ~\ref{tab:benchmark-results}:Q1(E=Outliers) shows the results of Q1 for outliers.
+		The results of R1 indicate that cleaning outliers mostly have no impact or positive impact on ML, but sometimes it may negatively
+		affect ML. This is because outlier detection and repair are not completely accurate. The detection methods are usually based on the
+		assumptions of the error distribution, which may not be the underlying authentic distribution. Some outliers may be true data instead
+		of errors although they are distant from other instances. Cleaning
+		such data will distort the true distribution of the dataset, which results in negative impact on ML.
+		The results of R2 and R3 show that with the model selection and with the cleaning method selection the percentage of flag “N” decreases to 0 and the percentage of “S” increases, while the flag “P”
+		remains at the similar percentage. This indicates that using model selection and cleaning method selection can eliminate the negative
+		impact of cleaning outliers and improve the robustness without losing too much benefit.
+	}
+	\item {
+		\textbf{Q2:} Table ~\ref{tab:benchmark-results}:Q1(E=Outliers) shows the results of Q2 for outliers. 
+		In R1, R2 and R3, BD and CD have similar percentage scores of “P”, “S” and “N”. This indicates that cleaning outliers in the
+		training and test sets have similar impacts on ML models.
+	}
+	\item {
+		\textbf{Q3:} Table ~\ref{tab:benchmark-results}:Q3(E=Outliers) shows the results of Q3 for outliers. KNN has more “P” flags, less “N” and “S” flags than other models. Therefore, KNN is the most sensitive model to outliers
+		and gains most benefit from cleaning outliers. Other models are affected similarly.
+	} 
+	\item {
+	\textbf{Q4.1:} Table ~\ref{tab:benchmark-results}:Q4.1(E=Outliers) shows the results of Q4.1. In
+		R1, IQR and IF have more “P” flags and “N” flags than the SD method. This indicates that IQR and IF are more aggressive than SD and SD is more conservative. In R2, the negative impact of IF and IQR is largely eliminated by model selection, but the positive impact remains.
+	}
+	\item {
+		\textbf{Q4.2:} Table ~\ref{tab:benchmark-results}:Q4.2(E=Outliers) shows that there is no significant difference between repair methods in both R1 and R2.
+	}
+	\item {
+		\textbf{Q5:} Table ~\ref{tab:benchmark-results}:Q5(E=Outliers) shows the result of Q5. In R1,
+		most negative flags are from “Credit” and “KDD” datasets. In R2, all of negative flags are from “Credit”. EEG and Sensor have more
+		“P” flags than other datasets. This echoes our interpretation in Q1 that the impact of outliers on ML models largely depends on the
+		error distribution in the dataset.
+	}
+\end{itemize}
+
+\section{Missing Values} \label{sec:missing-values}
+
+\begin{enumerate}
+	\item{Cleaning missing values by imputation are more likely
+		to improves the performance or achieves similar performance as deleting missing values.
+	}
+	\item {
+		With model selection and imputation method selection, ML models tend to be more robust to missing values.
+	}
+\end{enumerate}
+
+As mentioned in section ~\ref{sec:scenarios}, we only consider one scenario (BD)
+for missing values. Therefore, we do not run Q2 for missing values.
+
+\begin{itemize}
+	\item {
+		\textbf{Q1:} Table ~\ref{tab:benchmark-results}:Q1(E=Missing Values) shows the results of Q1
+		for missing values. The result of R1 exhibits that cleaning missing
+		values by imputation mostly improves the performance or achieves
+		similar performance as deleting missing values. But there are still
+		few “N” flags, which indicates that imputation can sometimes hurt
+		the performance. The reason is that imputation is simply an approximation of ground truth. If the imputation is distant from ground truth, it may introduce bias to data and reduce the performance of ML.
+		
+		The results of R2 and R3 show that, with model selection, “N”
+		flags are eliminated and the percentage of “S” flags increases. There-
+		fore, ML becomes more robust to missing values.
+	}
+	\item {
+		\textbf{Q3:} Table ~\ref{tab:benchmark-results}:Q3(E=Missing Values) presents the results of Q3.
+		Only Naive Bayes has “N” flags. Therefore, Naive Bayes is the most vulnerable model to missing value imputation. Other models have similar results.
+	}
+	\item {
+		\textbf{Q4.2:} Table ~\ref{tab:benchmark-results}:Q4.2(E=Missing Values) shows the results for
+		Q4.2. In both R1 and R2, different imputation methods have similar results. Therefore, different imputation methods have similar impacts.
+	}
+	\item {
+		\textbf{Q5:} Table ~\ref{tab:benchmark-results}:Q5(E=Missing Values) shows the results of Q5.
+		In R1, “USCensus” has much less “P” flags and more “N” flags than other datasets. The reason may be that the imputation in this dataset is distant from ground truth. All of flags in “KDD” are “P”, which indicates that imputation in this dataset may be close to ground truth. R2 and R3 show that with the model selection the negative impact in “UScensus” caused by missing value imputation
+		is eliminated.
+	}
+\end{itemize}
+
+
+\section{Summary of Key Insights} \label{sec:summary-of-key-insights}
+
+\textbf{Data cleaning does not necessarily improve the quality of downstream ML models.} We see from the result analyses that
+applying cleaning methods blindly could negatively impact model performances. 
+Cleaning methods could introduce biases and sometimes this bias is larger than the original bias:
+
+\begin{enumerate}
+	\item {
+		It is unclear that if cleaning duplicates could bring either positive or negative impacts,
+		defining a better duplicate injection protocol is key.
+	}
+	\item {
+		Cleaning outliers mostly have no impact or positive impact on ML, but some-
+		times it may negatively affect ML.The effects are highly dependent
+		on detection and repair techniques.	
+	} 
+	\item {
+		If the imputation of missing values is distant from ground truth, it may introduce bias to data
+		and reduce the performance of ML.
+	}
+\end{enumerate}
+
+\textbf{Interpretation of the experimental results} should take into the following factors: the errors and their distributions on the datasets (which are unknown), the correctness of the cleaning algorithms (which are also unknown without ground truth), and the internal structures of the ML models (which can be hard to interpret for some models). Since these factors are jointly at work, it could be hard to interpret the results:
+
+\begin{enumerate}
+	\item {
+		Cleaning \textit{inconsistency} in both training and test sets is unlikely to produce negative impacts on the ML model performance. Dataset choice and dirtiness in key features matter.
+	}
+	\item {
+		Dataset choices and how to inject duplicates when combining the datasets are crucial in the experiment setups of duplicates.
+	}
+	\item {
+		Class distribution has a huge impact on how mislabels
+		should be cleaned.
+	} 
+\end{enumerate}
+
+\textbf{Performing model selection can significantly increase the robustness of impacts of cleaning on ML.} This effect has been identified in cleaning all error types. In particular, the negative effect of
+data cleaning can be eliminated by selecting the best ML model.
+
+\textbf{Performing cleaning algorithm selection further increases the robustness of impacts of cleaning on ML. }This effect has been identified in cleaning all the error types. Since the data cleaning techniques are dependent of error distributions in datasets, no single cleaning algorithm is the best, and any future joint cleaning and
+ML work must devise “adaptive” cleaning solutions.
+
+Before the conclusion, as we understand that only implementation of machine learning algorithms to datasets do not enough to increases data quality by itself. So that on next section, we are going to focused on the data quality verification methods.  
+
+
+
+
