@@ -18,7 +18,146 @@ and indicator that data quality issues are real and increasingly important (the 
     \graphicspath{{Chapter1/Figs/Vector/}{Chapter1/Figs/}}
 \fi
 
-\section{Introduction to the Concept of Data Quality}
+
+
+\section{Data Quality: Wrangling and the Big Data Life Cycle}
+
+When talking about data quality in this document, it is done referring to the degree in
+which data fits to serve for its aimed purpose ~\cite{MargaretRouse}, for example, how well a medical
+record allows a nurse to identify the medicine that should be given to a patient, where
+“well” comprises, among general qualities, how accurate, complete, up to date, valid
+and consistent ~\cite{DAMA2013} is the information so that the task can be successfully achieved.
+There are several processes required to asses and improve data quality, which include data extraction, data profiling, data cleansing and data integration ~\cite{JagadishGehrkeLabrindisPapakonstantinou}, as the
+major ones; altogether in “the process by which the data required by an application is
+identified, extracted, cleaned and integrated, to yield a data set that is suitable for exploration and analysis” ~\cite{NormanPaton} is known as Data Wrangling. 
+Figure \ref{fig:img_big_data_life_cycle} shows how each process is placed within the big data life 
+cycle ~\cite{ComputingResearchAssociation} 
+~\cite{JagadishGehrkeLabrindisPapakonstantinou}, where data profiling is the step in which this research contributes to.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.3]{big_data_life_cycle}
+	\caption{The big data life cycle}
+	\label{fig:img_big_data_life_cycle}
+\end{figure}
+
+
+\begin{table}[H]
+	\caption{Big data life cycle processes definitions I.}
+	\label{table:big_data_life_cyle_processes_definition_I}
+	\centering
+	\begin{tabular}{p{4.0cm} p{3.1cm} p{7cm}}
+		\toprule
+		\textbf{Major Process} & \textbf{Process included} & \textbf{Description} \\ 
+		\bottomrule
+		DATA ACQUISITION & Data identification & Data has to be first generated from the
+		real world, then converted to electrical signals so it can then be recorded
+		in a machine. This process is called data acquisition  ~\cite{ComputingResearchAssociation}. Identifying
+		data means to provide useful metadata about its provenance, intended use, recording place and motivation,
+		etc. ~\cite{Dataone2016} ~\cite{Microsoft2016}. \\
+		DATA EXTRACTION AND CLEANSING &  Data extraction & This is the process in which data from
+		source systems is selected and transformed into a suitable type of data according to its purpose, e.g. coordinates from a set of stored satellite images ~\cite{ComputingResearchAssociation}.    
+		\\
+		& \\ &  Data profiling & This refers to generating convenient metadata to 
+		support measurements against quality settings previously established, and to contribute towards
+		“well known data”, clearing up the structure, content and/or relationships among the data. E.g. data types,data domains, timeliness, completeness, statistics, etc.~\cite{Sandra2015} ~\cite{Kimball2008}.
+		\\
+		& \\ & Data cleansing & Also known as cleaning or scrubbing.
+		Requires solving errors found in invalid, inconsistent, incomplete or duplicated data so the quality of the data
+		can be improved. To find the errors this process relies on profiling information ~\cite{Sandra2015} ~\cite{Erhard2000}.
+		\\ 
+		DATA INTEGRATION, AGGREGATION AND REPRESENTATION & Data integration & Integrating data involves combining data from multiple sources into one,
+		meaningful and valuable set of data ~\cite{Lenzerini2002} ~\cite{Halevy2006} ~\cite{Sandra2015}.
+		\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\caption{Big data life cycle processes definitions II.}
+	\label{table:big_data_life_cyle_processes_definition_II}
+	\centering
+	\begin{tabular}{p{4.0cm} p{3.1cm} p{7cm}}
+		\toprule
+		\textbf{Major Process} & \textbf{Process included} & \textbf{Description} \\ 
+		\bottomrule   
+		& \\ &  Data storing & To preserve integrated data understandable, maintaining its quality, and
+		adequacy to its purpose, it is also required to develop a suitable storage
+		architecture design, taking into account the type of database suitableness (e.g. relational, non-relational),
+		the capacities of the database management system, etc., among all the alternatives in which data could be stored. ~\cite{ComputingResearchAssociation}
+		\\
+		& \\ & Data visualization & Typically one step before analysis
+		techniques. This process is about applying a graphical representation to
+		the data, aimed at providing ease at future usage, transformation and understanding ~\cite{Fayyad2002} ~\cite{Ware2012} ~\cite{Philip2014}.
+		\\ 
+		MODELING ANALYZING & Statistics \&\ machine learning & This concerns about stating facts in
+		this context, from a given dataset, by interpreting data and providing a numerical picture of it, as well as using computer systems that emulate the human learning process, saving new information and outcomes,
+		closely related to artificial intelligence (AI). Parallel statistics algorithms have been proposed to approach big data ~\cite{Ryszard2013}~\cite{PhilipChen2014}.
+		\\
+		& \\ & Data mining & This process involves techniques to
+		find latent valuable information, revealing patterns, cause-effect relations, implicit facts, etc., to hold up
+		data analysis ~\cite{Chandrasekar2001} ~\cite{Philip2014} .
+		\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\caption{Big data life cycle processes definitions III.}
+	\label{table:big_data_life_cyle_processes_definition_III}
+	\centering
+	\begin{tabular}{p{4.0cm} p{3.1cm} p{7cm}}
+		\toprule
+		\textbf{Major Process} & \textbf{Process included} & \textbf{Description} \\ 
+		\bottomrule   
+		& \\ & Data analysis & A task done by the perceptual and
+		cognitive system of an analyst, although nowadays machine learning
+		and AI techniques can also be used. This is the ultimate phase in the process of obtaining the value from the
+		data, by finding the significance on the insights provided by, for example,
+		correlations or graphical representations. ~\cite{Ware2012}
+		\\
+		INTERPRETATION & Understand and verify results & This is the phase in which the information obtained is used and trans-
+		formed into a decision that could lead
+		to a tangible value (e.g. economic gaining, marketing advantages, scientific progress ), differing each time
+		according to the context on which it has been obtained and its purpose This phase also comprises retracing
+		the results obtained, verifying them and testing them in several use cases
+		~\cite{ComputingResearchAssociation}.
+		\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+In order to support the value characteristic of the data it is important to satisfy
+high quality conditions of the large data sets ~\cite{ZhuCai2015}, where quality could be measured
+by its dimensions, having completeness, uniqueness, timeliness, validity, accuracy and
+consistency considered as the six core ones ~\cite{DAMA2013}, among other identified dimensions,
+such as reputation, security, transactability, accesibility and interpretability ~\cite{Pipino2002} ~\cite{McGilvary2008}.
+The processes, technologies and techniques aimed at obtaining the value from big
+data, are known as big data analytics ~\cite{Kwon2014}, applied in several ambits, such as health
+care, social sciences, environmental and natural resources area, business and economic
+domains, and technology fields. Recently, big data quality has been approached from a
+big data analytics point of view ~\cite{Kambatla2014} ~\cite{Hazen2014} ~\cite{Lavalle2011}. Some studies might conclude that data
+quality is not a bigger challenge than the lack of knowledge from analysts to implement 
+
+the correct methods to manage big data value ~\cite{Lavalle2011}, however, data management is an
+inherent phase of the big data analytics, and it involves the capacity to gather, integrate
+and analyze data as well, where data quality should not be considered as a separate
+phase.
+The Data Warehousing Institute estimated low quality data cost U.S. businesses
+more than 600 billion USD per annum ~\cite{Eckerson2002}. The U.S. Postal Service estimated that
+wrong data cost 1.5 billion USD in 2013 from mailpieces that could not been delivered
+to the given addresses, facing data quality problems from around 158 billion mailpieces
+in that single year. Data quality management strategies were recommended to increase
+address information accuracy, timeliness and completeness ~\cite{USAPostService2014}. In big data, “low”
+error rates translate into millions of faults annually, where the risk is to lose 10-25\%\ of
+the total revenues from it ~\cite{Eckerson2002}.
+Big data quality requires multidisciplinary participation to progress ~\cite{Hazen2014} and propel the development of simple and low-cost data quality techniques, reduce the cost of
+poor quality data, the data error rate, and the need of data cleansing processes which
+involve investing not only budget, but time and effort to manage. IS research is demanded to collaborate with data wrangling insights and advances, working together
+with statistical experts to leverage the techniques involved, where domain specific authorities are needed to set the data analytics management, which should support the
+right value retrieval out of relevant problems from each area ~\cite{Hazen2014}.
+
+\section{The Concept of Data Quality}
 
 From a research perspective, data quality has been addressed in different
 areas, including statistics, management, and computer science. Statisticians were the first to investigate some of the problems related to data quality, by
@@ -67,144 +206,7 @@ ages (of accuracy, completeness, etc.). The prioritized data elements are
 referred to as critical data elements (CDEs).
 
 
-\section{Data Quality: Wrangling and the Big Data Life Cycle}
-
-When talking about data quality in this document, it is done referring to the degree in
-which data fits to serve for its aimed purpose ~\cite{MargaretRouse}, for example, how well a medical
-record allows a nurse to identify the medicine that should be given to a patient, where
-“well” comprises, among general qualities, how accurate, complete, up to date, valid
-and consistent ~\cite{DAMA2013} is the information so that the task can be successfully achieved.
-There are several processes required to asses and improve data quality, which include data extraction, data profiling, data cleansing and data integration ~\cite{JagadishGehrkeLabrindisPapakonstantinou}, as the
-major ones; altogether in “the process by which the data required by an application is
-identified, extracted, cleaned and integrated, to yield a data set that is suitable for exploration and analysis” ~\cite{NormanPaton} is known as Data Wrangling. 
-Figure \ref{fig:img_big_data_life_cycle} shows how each process is placed within the big data life 
-cycle ~\cite{ComputingResearchAssociation} 
-~\cite{JagadishGehrkeLabrindisPapakonstantinou}, where data profiling is the step in which this research contributes to.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=.3]{big_data_life_cycle}
-    \caption{The big data life cycle}
-    \label{fig:img_big_data_life_cycle}
-\end{figure}
-
-
-\begin{table}[H]
-    \caption{Big data life cycle processes definitions I.}
-    \label{table:big_data_life_cyle_processes_definition_I}
-    \centering
-    \begin{tabular}{p{4.0cm} p{3.1cm} p{7cm}}
-    \toprule
-    \textbf{Major Process} & \textbf{Process included} & \textbf{Description} \\ 
-    \bottomrule
-    DATA ACQUISITION & Data identification & Data has to be first generated from the
-    real world, then converted to electrical signals so it can then be recorded
-    in a machine. This process is called data acquisition  ~\cite{ComputingResearchAssociation}. Identifying
-    data means to provide useful metadata about its provenance, intended use, recording place and motivation,
-    etc. ~\cite{Dataone2016} ~\cite{Microsoft2016}. \\
-    DATA EXTRACTION AND CLEANSING &  Data extraction & This is the process in which data from
-    source systems is selected and transformed into a suitable type of data according to its purpose, e.g. coordinates from a set of stored satellite images ~\cite{ComputingResearchAssociation}.    
-    \\
-    & \\ &  Data profiling & This refers to generating convenient metadata to 
-    support measurements against quality settings previously established, and to contribute towards
-    “well known data”, clearing up the structure, content and/or relationships among the data. E.g. data types,data domains, timeliness, completeness, statistics, etc.~\cite{Sandra2015} ~\cite{Kimball2008}.
-    \\
-    & \\ & Data cleansing & Also known as cleaning or scrubbing.
-    Requires solving errors found in invalid, inconsistent, incomplete or duplicated data so the quality of the data
-    can be improved. To find the errors this process relies on profiling information ~\cite{Sandra2015} ~\cite{Erhard2000}.
-    \\ 
-    DATA INTEGRATION, AGGREGATION AND REPRESENTATION & Data integration & Integrating data involves combining data from multiple sources into one,
-    meaningful and valuable set of data ~\cite{Lenzerini2002} ~\cite{Halevy2006} ~\cite{Sandra2015}.
-    \\
-    \bottomrule
-\end{tabular}
-\end{table}
-
-\begin{table}[H]
-    \caption{Big data life cycle processes definitions II.}
-    \label{table:big_data_life_cyle_processes_definition_II}
-    \centering
-    \begin{tabular}{p{4.0cm} p{3.1cm} p{7cm}}
-    \toprule
-    \textbf{Major Process} & \textbf{Process included} & \textbf{Description} \\ 
-    \bottomrule   
-    & \\ &  Data storing & To preserve integrated data understandable, maintaining its quality, and
-    adequacy to its purpose, it is also required to develop a suitable storage
-    architecture design, taking into account the type of database suitableness (e.g. relational, non-relational),
-    the capacities of the database management system, etc., among all the alternatives in which data could be stored. ~\cite{ComputingResearchAssociation}
-    \\
-    & \\ & Data visualization & Typically one step before analysis
-    techniques. This process is about applying a graphical representation to
-    the data, aimed at providing ease at future usage, transformation and understanding ~\cite{Fayyad2002} ~\cite{Ware2012} ~\cite{Philip2014}.
-    \\ 
-    MODELING ANALYZING & Statistics \&\ machine learning & This concerns about stating facts in
-    this context, from a given dataset, by interpreting data and providing a numerical picture of it, as well as using computer systems that emulate the human learning process, saving new information and outcomes,
-    closely related to artificial intelligence (AI). Parallel Parallel statistics algorithms have been proposed to approach big data ~\cite{Ryszard2013}~\cite{PhilipChen2014}.
-    \\
-    & \\ & Data mining & This process involves techniques to
-    find latent valuable information, revealing patterns, cause-effect relations, implicit facts, etc., to hold up
-    data analysis ~\cite{Chandrasekar2001} ~\cite{Philip2014} .
-    \\
-    \bottomrule
-\end{tabular}
-\end{table}
-
-\begin{table}[H]
-    \caption{Big data life cycle processes definitions III.}
-    \label{table:big_data_life_cyle_processes_definition_III}
-    \centering
-    \begin{tabular}{p{4.0cm} p{3.1cm} p{7cm}}
-    \toprule
-    \textbf{Major Process} & \textbf{Process included} & \textbf{Description} \\ 
-    \bottomrule   
-    & \\ & Data analysis & A task done by the perceptual and
-    cognitive system of an analyst, although nowadays machine learning
-    and AI techniques can also be used. This is the ultimate phase in the process of obtaining the value from the
-    data, by finding the significance on the insights provided by, for example,
-    correlations or graphical representations. ~\cite{Ware2012}
-    \\
-    INTERPRETATION & Understand and verify results & This is the phase in which the information obtained is used and trans-
-    formed into a decision that could lead
-    to a tangible value (e.g. economic gaining, marketing advantages, scientific progress ), differing each time
-    according to the context on which it has been obtained and its purpose This phase also comprises retracing
-    the results obtained, verifying them and testing them in several use cases
-    ~\cite{ComputingResearchAssociation}.
-    \\
-    \bottomrule
-\end{tabular}
-\end{table}
-
-In order to support the value characteristic of the data it is important to satisfy
-high quality conditions of the large data sets ~\cite{ZhuCai2015}, where quality could be measured
-by its dimensions, having completeness, uniqueness, timeliness, validity, accuracy and
-consistency considered as the six core ones ~\cite{DAMA2013}, among other identified dimensions,
-such as reputation, security, transactability, accesibility and interpretability ~\cite{Pipino2002} ~\cite{McGilvary2008}.
-The processes, technologies and techniques aimed at obtaining the value from big
-data, are known as big data analytics ~\cite{Kwon2014}, applied in several ambits, such as health
-care, social sciences, environmental and natural resources area, business and economic
-domains, and technology fields. Recently, big data quality has been approached from a
-big data analytics point of view ~\cite{Kambatla2014} ~\cite{Hazen2014} ~\cite{Lavalle2011}. Some studies might conclude that data
-quality is not a bigger challenge than the lack of knowledge from analysts to implement 
-
-the correct methods to manage big data value ~\cite{Lavalle2011}, however, data management is an
-inherent phase of the big data analytics, and it involves the capacity to gather, integrate
-and analyze data as well, where data quality should not be considered as a separate
-phase.
-The Data Warehousing Institute estimated low quality data cost U.S. businesses
-more than 600 billion USD per annum ~\cite{Eckerson2002}. The U.S. Postal Service estimated that
-wrong data cost 1.5 billion USD in 2013 from mailpieces that could not been delivered
-to the given addresses, facing data quality problems from around 158 billion mailpieces
-in that single year. Data quality management strategies were recommended to increase
-address information accuracy, timeliness and completeness ~\cite{USAPostService2014}. In big data, “low”
-error rates translate into millions of faults annually, where the risk is to lose 10-25\%\ of
-the total revenues from it ~\cite{Eckerson2002}.
-Big data quality requires multidisciplinary participation to progress ~\cite{Hazen2014} and propel the development of simple and low-cost data quality techniques, reduce the cost of
-poor quality data, the data error rate, and the need of data cleansing processes which
-involve investing not only budget, but time and effort to manage. IS research is demanded to collaborate with data wrangling insights and advances, working together
-with statistical experts to leverage the techniques involved, where domain specific authorities are needed to set the data analytics management, which should support the
-right value retrieval out of relevant problems from each area ~\cite{Hazen2014}.
-
-\section{Big Data and Parallelism}
+\section{The Specificity of DQ in Big Data}
 
 The term big data itself comprises a deeper meaning, being not only a term to be
 defined but the name of a phenomenon and an emerging discipline ~\cite{Diebold2012}. 
@@ -231,9 +233,9 @@ to be done when facing a smaller size of data compared to another ~\cite{Magoula
 techniques to process it, is not longer an option. 
 
 The above led to define big data not only regarding size, but taking into account
-another identified characteristics, known as the “V’s of big data” ~\cite{Marr2015} : Volume, Velocity, Variety, Veracity and Value; where Volume refers to the data size, Velocity
-evokes the high speed of change and fast generation of data, Variety relates to the different type of data (structured, unstructured and semistructured), Veracity is the
-degree of trustworthiness of the data (quality and accuracy) and Value indicates the
+another identified characteristics, known as the “V’s of big data” ~\cite{Marr2015} : Volume, Velocity, Variety, Veracity and Value; where Volume refers to the data size, 
+Velocity evokes the high speed of change and fast generation of data, Variety relates to the different type of data (structured, unstructured and semistructured), 
+Veracity is the degree of trustworthiness of the data (quality and accuracy) and Value indicates the
 worth or benefit of gathering, storing, processing and analyzing the data.
 
 Because of the nature of big data, traditional approaches to managing data are not
@@ -246,12 +248,6 @@ several smaller machines than high performance computer systems (HPC), because o
 the higher cost scaling-up represents, and considering the support that new paradigms
 provide by avoiding the necessity to communicate data, but having the processing ap-publications running where the data is, which proposes a significant performance advantage ~\cite{Tekiner2013}, trading off performance in certain degree for a better cost-benefit ratio.
 
-Distributed and parallel computation are two major ways of processing big data,
-where a distributed system communicates and coordinates their processes without a
-global clock, through messages, and in a component’s independence working as single system ~\cite{Tanenbaum2007}, and parallel computing is a term generally used to identify those
-processes carried out simultaneously by numerous processors, intended to reduce the runtime ~\cite{Almasi1988}. Besides solely parallel, distributed or a mixture of both, new techniques
-are being developed and selected towards aiding the whole big data life cycle. 
-Recent studies target “granular computing, cloud computing, biological computing systems and quantum computing” ~\cite{PhilipChen2014} as the emergent areas, theories and techniques for big data.
 
 \section{Why Data Quality is Relevant}
 

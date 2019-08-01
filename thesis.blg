@@ -358,45 +358,45 @@ while executing---line 1098 of file apalike.bst
 Too many commas in name 1 of "Z. Zhao, L. De Stefani, E. Zgraggen, C. Binnig, E. Upfal, and T. Kraska" for entry Zhao2017
 while executing---line 1098 of file apalike.bst
 Warning--empty booktitle in Zhao2017
-You've used 94 entries,
+You've used 91 entries,
             1935 wiz_defined-function locations,
-            1006 strings with 18324 characters,
-and the built_in function-call counts, 32069 in all, are:
-= -- 3230
-> -- 994
-< -- 109
-+ -- 352
-- -- 303
-* -- 2151
-:= -- 5478
-add.period$ -- 296
-call.type$ -- 94
-change.case$ -- 597
-chr.to.int$ -- 89
-cite$ -- 144
-duplicate$ -- 1523
-empty$ -- 2258
-format.name$ -- 493
-if$ -- 6502
+            988 strings with 17867 characters,
+and the built_in function-call counts, 30919 in all, are:
+= -- 3122
+> -- 940
+< -- 107
++ -- 334
+- -- 285
+* -- 2053
+:= -- 5275
+add.period$ -- 287
+call.type$ -- 91
+change.case$ -- 575
+chr.to.int$ -- 86
+cite$ -- 141
+duplicate$ -- 1481
+empty$ -- 2179
+format.name$ -- 468
+if$ -- 6280
 int.to.chr$ -- 6
 int.to.str$ -- 0
-missing$ -- 91
-newline$ -- 474
-num.names$ -- 278
-pop$ -- 641
+missing$ -- 86
+newline$ -- 459
+num.names$ -- 269
+pop$ -- 615
 preamble$ -- 1
-purify$ -- 621
+purify$ -- 597
 quote$ -- 0
-skip$ -- 1280
+skip$ -- 1250
 stack$ -- 0
-substring$ -- 1803
-swap$ -- 301
+substring$ -- 1733
+swap$ -- 298
 text.length$ -- 19
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 516
+type$ -- 502
 warning$ -- 48
-while$ -- 221
+while$ -- 213
 width$ -- 0
-write$ -- 1156
+write$ -- 1119
 (There were 137 error messages)

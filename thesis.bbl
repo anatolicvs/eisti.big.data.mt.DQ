@@ -17,11 +17,6 @@
 A.~Kleiner, A.~Talwalkar, P.~S. and Jordan, M. (2012).
 \newblock The big data bootstrap.
 
-\bibitem[Almasi and Gottlieb, 1988]{Almasi1988}
-Almasi, G.~S. and Gottlieb, A. (1988).
-\newblock {\em Highly Parallel Computing}.
-\newblock Benjamin-Cummings Pub. Co.
-
 \bibitem[Alon~Halevy and Ordille, 2006]{Halevy2006}
 Alon~Halevy, A.~R. and Ordille, J. (2006).
 \newblock Data integration: the teenage years.
@@ -190,12 +185,6 @@ Hatton, J.~A.
 \newblock
   \url{https://www.kaggle.com/jacksapper/company-sentiment-by-location}.
 \newblock Accessed: 2019-07-30.
-
-\bibitem[Heinrich et~al., 2018]{Heinrich:2018:RDQ:3155015.3148238}
-Heinrich, B., Hristova, D., Klier, M., Schiller, A., and Szubartowicz, M.
-  (2018).
-\newblock Requirements for data quality metrics.
-\newblock {\em J. Data and Information Quality}, 9(2):12:1--12:32.
 
 \bibitem[I.~Caballero and Piattini, 2014]{Caballero}
 I.~Caballero, M.~S. and Piattini, M. (2014).
@@ -450,11 +439,6 @@ Stone, L. (1979).
 \bibitem[T.~Hastie and Zou, 2009]{Hastie2009}
 T.~Hastie, S.~Rosset, J.~Z. and Zou, H. (2009).
 \newblock {\em Multi-class adaboost. Statistics and its Interfac}.
-
-\bibitem[Tanenbaum and Steen, 2007]{Tanenbaum2007}
-Tanenbaum, A.~S. and Steen, M.~V. (2007).
-\newblock {\em Distributed systems}.
-\newblock Prentice-Hall.
 
 \bibitem[Tekiner and Keane, 2013]{Tekiner2013}
 Tekiner, F. and Keane, J.~A. (2013).

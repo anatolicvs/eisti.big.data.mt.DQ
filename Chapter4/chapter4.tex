@@ -70,7 +70,7 @@ the differences between these three relations.
 	\label{table:nettoyage_ml}
 \end{table}
 
-Even for one error type, they might appear in a dataset in various distributions and hence affect ML models in complicated ways/ To study the impact of the real-world error types and distribution on ML models, we mostly use real-world-dataset with real errors, and we apply various cleaning methods to detect and repair the errors in them.
+Even for one error type, they might appear in a dataset in various distributions and hence affect ML models in complicated ways. To study the impact of the real-world error types and distribution on ML models, we mostly use real-world-dataset with real errors, and we apply various cleaning methods to detect and repair the errors in them.
 
 
 \begin{itemize}
@@ -113,26 +113,18 @@ considered in an experiment in \textit{R2}.
 Every tuple of R2 represents a hypothesis or an experiment: how does cleaning some type of error using a detection method and a repair method affect the best
 ML model for a given dataset? 
 
-\textit{R3} further eliminates the cleaning
-method (detection and repair) attributes. In this case, in addition
-to model selection, we also try different cleaning methods and select the cleaning method that results in the best validation accuracy
-as the cleaning method to be considered in an experiment in \textit{R3}.
+\textit{R3} further eliminates the cleaning method (detection and repair) attributes. In this case, in addition
+to model selection, we also try different cleaning methods and select the cleaning method that results in the best validation accuracy as the cleaning method to be considered in an experiment in \textit{R3}.
 Every tuple of \textit{R3} represents a hypothesis or an experiment: how
 does the best cleaning method affect the predictive performance of
 the best model for a given dataset?
 
-All three relations can also be extended with other attributes that are associated with an experiment, which may help obtain insights
-and interpret the results, such as the accuracy scores before and
+All three relations can also be extended with other attributes that are associated with an experiment, which may help obtain insights and interpret the results, such as the accuracy scores before and
 after cleaning and p-values of hypothesis testing associated with
 each experiment.
 
 
 \section{Analysis Methodology}\label{sec:analysis-methodology}
-
-are associated with an experiment, which may help obtain insights
-and interpret the results, such as the accuracy scores before and
-after cleaning and p-values of hypothesis testing associated with
-each experiment in Table  ~\ref{table:nettoyage_ml} . 
 
 We first fix the error type and group by flags. The percentage of each type of flag indicates the general impact of cleaning this type of error on ML. For example,
 if flag “P” dominates in the error type outliers, it indicates cleaning outliers generally improves the performance of ML. Then we
@@ -174,14 +166,14 @@ We formally present the SQL query templates as follows, where E $\in$ {inconsist
 \end{lstlisting}
 
 \textbf{Q4: Clean Method (Not applicable to R3 or E $\in$ { inconsistencies, duplicates, mislabels}, where only one cleaning method is applied}
-\begin{lstlisting}[language=SQL, caption=Q4.1:Clean Method]
+\begin{lstlisting}[language=SQL, caption=Q4.1:Detect Method]
 	SELECT detect_method, flag, COUNT(*)
 	FROM R
 	WHERE error_type = E
 	GROUP BY detect_method, flag
 \end{lstlisting}
 
-\begin{lstlisting}[language=SQL, caption=Q4.2:Clean Method]
+\begin{lstlisting}[language=SQL, caption=Q4.2:Repair Method]
 	SELECT repair_method, flag, COUNT(*)
 	FROM R
 	WHERE error_type = E
@@ -197,7 +189,7 @@ We formally present the SQL query templates as follows, where E $\in$ {inconsist
 
 \section{Design of Benchmark}
 
-Based on NettoyageML Relational Schema, we design NettoyageML Benchmark by specifying the domain of each key attribute.In the following sections we present all datasets, error types, cleaning methods, ML models, and cleaning scenarios we consider in the benchmark.
+Based on NettoyageML Relational Schema, we design NettoyageML Benchmark by specifying the domain of each key attribute. In the following sections we present all datasets, error types, cleaning methods, ML models, and cleaning scenarios we consider in the benchmark.
 
 \section{Error Types and Cleaning Methods}
 We consider five error types that are prevalent in the real-world
@@ -268,7 +260,7 @@ We use two methods to repair numerical outliers in the datasets.
 		\textbf{Deletion:} Records with outliers entries are removed from the datasets.
 	}
 	\item {
-		\textbf{Imputation:}Outliers entries are imputed. We consider three
+		\textbf{Imputation:} Outliers entries are imputed. We consider three
 		types of imputation:  \textbf{mean}, \textbf{median} and \textbf{mode}.
 	}
 \end{itemize}
@@ -292,7 +284,7 @@ label. Our protocol in injecting class noise follows the recommendation in ~\cit
 \section{Datasets}
 Collected 13 real-world datasets from different sources to
 conduct our experiments. Each dataset contains one or more types
-of error summarized in Table ~\ref{tab:dataset-and-error-types}  For mislabels, we cannot find existing real-world datasets with both mislabels and ground truth. Since it is difficult to clean mislabels without ground truth (we do not know whether a label is mislabeled unless we have ground truth or domain knowledge), we injected mislabels in three real-world datasets.
+of error summarized in Table ~\ref{tab:dataset-and-error-types}. For mislabels, we cannot find existing real-world datasets with both mislabels and ground truth. Since it is difficult to clean mislabels without ground truth (we do not know whether a label is mislabeled unless we have ground truth or domain knowledge), we injected mislabels in three real-world datasets.
 
 -\\
 \linebreak
@@ -337,7 +329,7 @@ of error summarized in Table ~\ref{tab:dataset-and-error-types}  For mislabels, 
 
 \item {
 	\textbf{Company: ~\cite{Hatton2019}} The original dataset contains over 2.5 million records
-	about companies including company names and locations. Because of its large size, we randomly sampled 5% records (128,889
+	about companies including company names and locations. Because of its large size, we randomly sampled 5\% records (128,889
 	records) from the original dataset. Each record has seven attributes including company name, country, city, etc. The classification task
 	is to predict whether the company sentiment is negative or not. This dataset contains inconsistent company names.
 }
@@ -425,7 +417,7 @@ sensor 1 and sensor 2 and sampled the dataset to include 1 observation per hour,
 
 \section{ML Models}
 
-We select seven classical and competitive classification algorithms in our experiments, including \textbf{Logistic Regression, KNN,Decision Tree, Random Forest, Adaboost, XGBoost and Naive Bayes}.
+We select seven classical and competitive classification algorithms in our experiments, including \textbf{Logistic Regression, KNN, Decision Tree, Random Forest, Adaboost, XGBoost and Naive Bayes}.
 We used \textbf{scikit-learn} ~\cite{Scikit-learn:2011} to train models. Each model is described
 below.
 
