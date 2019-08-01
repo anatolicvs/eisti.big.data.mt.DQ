@@ -1042,3 +1042,78 @@ In Section .. we summarize the key insights.
 	\caption{Test Accuracy Scores in Scenarios BD and CD of 20 Splits for Five Error Types}
 	\label{fig:Test_Accuracy_Scores_in_Scenarios_BD_and_CD_of_20_Splits_for_Five_Error_Types}
 \end{figure}
+
+\begin{landscape}
+\begin{table}
+	\centering
+	\caption{Benchmark Results(Organized by Query)}
+	\label{tab:BENC}
+	\renewcommand{\arraystretch}{2}	
+	\def\arraystretch{1.5}
+	\resizebox{\textwidth}{!}{%
+	\begin{tabular}{|l|lll|} 
+		\hline
+		\multirow{2}{*}{Q1}                      
+		 & 
+		 \centering
+		 \begin{tabular}{llll}
+		 	\multicolumn{4}{l}{Q1(E=Inconsistencies)} \\ \hline
+		 	\multicolumn{1}{|l|}{R} & \multicolumn{1}{l|}{P} & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{N} \\ \hline
+		 	\multicolumn{1}{|l|}{R1} & \multicolumn{1}{l|}{14.29\% (8)} & \multicolumn{1}{l|}{85.71\% (48)} & \multicolumn{1}{l|}{0\%(0)} \\ \hline
+		 	\multicolumn{1}{|l|}{R2} & \multicolumn{1}{l|}{5.0\% (2)} & \multicolumn{1}{l|}{75.0\% (6)} & \multicolumn{1}{l|}{0\%(0)} \\ \hline
+		 	\multicolumn{1}{|l|}{R3} & \multicolumn{1}{l|}{37.5\% (3)} & \multicolumn{1}{l|}{62.5\% (5)} & \multicolumn{1}{l|}{0\%(0)} \\ \hline
+		 \end{tabular}						  								 							  
+		& 										  	
+		\centering
+		\begin{tabular}{llll}
+			\multicolumn{4}{l}{Q1(E=Duplicates)} \\ \hline
+			\multicolumn{1}{|l|}{R} & \multicolumn{1}{l|}{P} & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{N} \\ \hline
+			\multicolumn{1}{|l|}{R1} & \multicolumn{1}{l|}{17.86\% (10)} & \multicolumn{1}{l|}{71.43\% (40)} & \multicolumn{1}{l|}{10.71\% (6)} \\ \hline
+			\multicolumn{1}{|l|}{R2} & \multicolumn{1}{l|}{12.5\% (1)} & \multicolumn{1}{l|}{62.5\% (5)} & \multicolumn{1}{l|}{25.0\% (2)} \\ \hline
+			\multicolumn{1}{|l|}{R3} & \multicolumn{1}{l|}{25.0\% (2)} & \multicolumn{1}{l|}{50.0\% (4)} & \multicolumn{1}{l|}{25.0\% (2)} \\ \hline
+		\end{tabular}											   
+												  	 
+		& 
+		\begin{tabular}{llll}
+			\multicolumn{4}{l}{Q1(E=Mislabels)} \\ \hline
+			\multicolumn{1}{|l|}{R} & \multicolumn{1}{l|}{P} & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{N} \\ \hline
+			\multicolumn{1}{|l|}{R1} & \multicolumn{1}{l|}{59.52\% (75)} & \multicolumn{1}{l|}{26.19\% (33)} & \multicolumn{1}{l|}{14.29\% (18)} \\ \hline
+			\multicolumn{1}{|l|}{R2} & \multicolumn{1}{l|}{61.11\% (11)} & \multicolumn{1}{l|}{27.78\% (5)} & \multicolumn{1}{l|}{11.11\% (2)} \\ \hline
+			\multicolumn{1}{|l|}{R3} & \multicolumn{1}{l|}{61.11\% (11)} & \multicolumn{1}{l|}{27.78\% (5)} & \multicolumn{1}{l|}{11.11\% (2)} \\ \hline
+		\end{tabular}
+		\\							                         
+		& 
+		\begin{tabular}{llll}
+			\multicolumn{4}{l}{Q1(E=Outliers)} \\ \hline
+			\multicolumn{1}{|l|}{R} & \multicolumn{1}{l|}{P} & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{N} \\ \hline
+			\multicolumn{1}{|l|}{R1} & \multicolumn{1}{l|}{31.55\% (265)} & \multicolumn{1}{l|}{57.02\% (479)} & \multicolumn{1}{l|}{11.43\% (96)} \\ \hline
+			\multicolumn{1}{|l|}{R2} & \multicolumn{1}{l|}{33.33\% (40)} & \multicolumn{1}{l|}{60\% (72)} & \multicolumn{1}{l|}{6.67\% (8)} \\ \hline
+			\multicolumn{1}{|l|}{R3} & \multicolumn{1}{l|}{30\% (3)} & \multicolumn{1}{l|}{70\% (7)} & \multicolumn{1}{l|}{0\% (0)} \\ \hline
+		\end{tabular}
+		& 
+		\begin{tabular}{llll}
+			\multicolumn{4}{l}{Q1(E=Missing Values)} \\ \hline
+			\multicolumn{1}{|l|}{R} & \multicolumn{1}{l|}{P} & \multicolumn{1}{l|}{S} & \multicolumn{1}{l|}{N} \\ \hline
+			\multicolumn{1}{|l|}{R1} & \multicolumn{1}{l|}{61.51\% (155)} & \multicolumn{1}{l|}{34.92\% (88)} & \multicolumn{1}{l|}{3.57\% (9)} \\ \hline
+			\multicolumn{1}{|l|}{R2} & \multicolumn{1}{l|}{50.00\% (18)} & \multicolumn{1}{l|}{50.00\% (18)} & \multicolumn{1}{l|}{0.00\% (0)} \\ \hline
+			\multicolumn{1}{|l|}{R3} & \multicolumn{1}{l|}{50.00\% (3)} & \multicolumn{1}{l|}{50.00\% (3)} & \multicolumn{1}{l|}{0.00\% (0)} \\ \hline
+		\end{tabular}
+		&                       
+		\\ 
+		\cline{1-1}
+		\multirow{2}{*}{Q2}                       &   &   & \multicolumn{1}{c|}{}  \\
+		&   &   &                        \\ 
+		\cline{1-1}
+		\multicolumn{1}{|c|}{\multirow{2}{*}{Q3}} &   &   &                        \\
+		\multicolumn{1}{|c|}{}                    &   &   &                        \\ 
+		\cline{1-1}
+		\multirow{2}{*}{Q4}                       &   &   &                        \\
+		&   &   &                        \\ 
+		\cline{1-1}
+		\multirow{2}{*}{Q5}                       &   &   &                        \\
+		&   &   &                        \\
+		\hline
+	\end{tabular}
+}
+\end{table}
+\end{landscape}
