@@ -489,7 +489,7 @@ below.
 Given a dataset with a train/test split, and a cleaning method,
 we can have different model performance depending on where the
 cleaning is performed. 
-Table ~\ref{tab:where-cleaning-is-performed } shows the four cases: 
+Table ~\ref{tab:where-cleaning-is-performed} shows the four cases: 
 \textbf{Case A} represents a model built using the original dirty training set and tested on
 the original dirty test set; 
 \textbf{Case B} represents a model built using the
@@ -538,7 +538,7 @@ as follows:
 
 \begin{itemize}
 	\item {
-	Scenario “BD”. This shows the effects of cleaning dirty data in the
+	\textbf{Scenario “BD”}. This shows the effects of cleaning dirty data in the
 	training set when models are evaluated on the clean test set. This
 	is reflective of the real-world model building phase, where we are
 	given a dirty training set and we would like to know whether we
@@ -574,9 +574,7 @@ as follows:
 
 \textbf{Special Handling for Missing Values.} 
 Missing values need special attention; they occur when no value is stored for a variable in an observation. We cannot train models when some data is missing. 
-Thus, Cases A and B in Table ~\ref{tab:where-cleaning-is-performed} are not available for missing values. Instead of comparing dirty and cleaned datasets, 
-
-we compare the difference between a deletion dataset (a dataset with missing values deleted) and an imputation dataset (a dataset with missing values imputed). 
+Thus, Cases A and B in Table ~\ref{tab:where-cleaning-is-performed} are not available for missing values. Instead of comparing dirty and cleaned datasets, we compare the difference between a deletion dataset (a dataset with missing values deleted) and an imputation dataset (a dataset with missing values imputed). 
 
 The four cases for missing values are shown in Table ~\ref{tab:where-cleaning-is-performed-missing-values }. 
 We only consider the “BD” scenario for missing values, which captures the difference of imputing and deleting training samples while testing the model performance in the imputed test set. 
@@ -587,9 +585,7 @@ imputation methods.
 
 We have defined the domain of each key attribute. We call each
 valid assignment of key attributes an experiment specification. By
-definition, the experiment specification for $a$ tuple $t$ in relation
-
-is $ t[R - Flag]$, where $R \in \{R1, R2, R3\} $. For example in Table ~\ref{table:experiment-specifications} $s_{1}$, $s_{2}$ and $s_{3}$ are there experiment specifications in $R1$, $R2$ and $R3$, respectively.
+definition, the experiment specification for $a$ tuple $t$ in relation is $t[R - Flag]$, where $R \in \{R1, R2, R3\} $. For example in Table ~\ref{table:experiment-specifications} $s_{1}$, $s_{2}$ and $s_{3}$ are there experiment specifications in $R1$, $R2$ and $R3$, respectively.
 
 \begin{table}[H]	
 	\leftskip=3em
@@ -644,7 +640,7 @@ of metrics through following steps:
 \begin{enumerate}
 	\item {
 		\textbf{Split dataset.} We first split dataset randomly into a training
-		and a test set with a $70/30$ ratio.
+		and a test set with  $70/30$ ratio.
 	}
 	\item {
 		\textbf{Clean dataset.} We clean the error in the training set and test
@@ -653,13 +649,6 @@ of metrics through following steps:
 		as mean and standard deviation, are computed only on the
 		training set and used to clean both training and test set.
     }
-	\item {
-		\textbf{Training ML models.} If the scenario is BD, we train two ML
-		models, one on dirty training set and one on clean training
-		set. If the scenario is \textbf{CD}, we only train one ML model on the
-		clean training set. We tune hyper-parameters of ML models
-		using random search and 5-fold cross validation.
-	}
 	\item {
 		\textbf{Training ML models.} If the scenario is BD, we train two ML
 		models, one on dirty training set and one on clean training
@@ -850,7 +839,7 @@ To avoid the occasionality caused by a train/test split, we randomly split each 
 	\centering
 	\begin{tabular}{|c|l|l|c|l|l|}
 		\hline
-		Split Seed & \multicolumn{1}{c|}{B} & \multicolumn{1}{c|}{D} & Split Seed & \multicolumn{1}{c|}{b} & \multicolumn{1}{c|}{D} \\ \hline
+		Split Seed & \multicolumn{1}{c|}{B} & \multicolumn{1}{c|}{D} & Split Seed & \multicolumn{1}{c|}{B} & \multicolumn{1}{c|}{D} \\ \hline
 		v144 & 0.632488 & 0.657321 & v5192 & 0.631954 & 0.67401 \\ \hline
 		v235 & 0.634757 & 0.668625 & v5374 & 0.638362 & 0.676992 \\ \hline
 		v2516 & 0.625812 & 0.666266 & v5396 & 0.641032 & 0.672452 \\ \hline
@@ -1604,7 +1593,7 @@ Cleaning methods could introduce biases and sometimes this bias is larger than t
 	}
 	\item {
 		Cleaning outliers mostly have no impact or positive impact on ML, but some-
-		times it may negatively affect ML.The effects are highly dependent
+		times it may negatively affect ML. The effects are highly dependent
 		on detection and repair techniques.	
 	} 
 	\item {
@@ -1634,7 +1623,7 @@ data cleaning can be eliminated by selecting the best ML model.
 \textbf{Performing cleaning algorithm selection further increases the robustness of impacts of cleaning on ML. }This effect has been identified in cleaning all the error types. Since the data cleaning techniques are dependent of error distributions in datasets, no single cleaning algorithm is the best, and any future joint cleaning and
 ML work must devise “adaptive” cleaning solutions.
 
-Before the conclusion, as we understand that only implementation of machine learning algorithms to datasets do not enough to increases data quality by itself. So that on next section, we are going to focused on the data quality verification methods.  
+Before the conclusion, as we understand that only implementation of machine learning algorithms to datasets do not enough to increase data quality by itself. So that on next section, we are going to focused on the data quality verification methods.  
 
 
 
