@@ -21,7 +21,7 @@ i.e., the error types to be cleaned and the cleaning methods; some factors depen
 process, i.e., the model types used; and some factors depend on where the cleaning is performed during the ML process. Hence, in order to comprehensively investigate the impacts, we need to consider data cleaning an ML jointly in our experiments.
 
 
-\section{The NettoyageML ~\cite{Nettoyage2019} Schema}  
+\section{The NettoyageML Schema}  
 
 The NettoyageML relational schema consists of three relations as shown in Table ~\ref{table:nettoyage_ml} . Firstly will introduced the attributes of NettoyageML relational models, and then will explained 
 the differences between these three relations.
@@ -335,7 +335,7 @@ of error summarized in Table ~\ref{tab:dataset-and-error-types}. For mislabels, 
 }
 
 \item {
-	\textbf{Credit: ~\cite{creditdataset2019}}
+	\textbf{Credit: ~\cite{Creditdataset2019}}
 	This dataset consists of 150,000 credit data with 10
 	attributes including monthly income, age, then number of dependents, etc. The classification task for this dataset is to predict whether
 	a client will experience financial distress in the next two years. This
@@ -489,7 +489,7 @@ below.
 Given a dataset with a train/test split, and a cleaning method,
 we can have different model performance depending on where the
 cleaning is performed. 
-Table ~\ref{tab:where-cleaning-is-performed } shows the four cases: 
+Table ~\ref{tab:where-cleaning-is-performed} shows the four cases: 
 \textbf{Case A} represents a model built using the original dirty training set and tested on
 the original dirty test set; 
 \textbf{Case B} represents a model built using the
@@ -1035,7 +1035,7 @@ In Section ~\ref{sec:summary-of-key-insights} we summarize the key insights.
 \end{figure}
 
 \begin{landscape}
-\begin{table}[h]
+\begin{table}[ht]
 	\centering
 	\caption{Benchmark Results(Organized by Query)}
 	\label{tab:benchmark-results}
@@ -1515,19 +1515,14 @@ In Section ~\ref{sec:summary-of-key-insights} we summarize the key insights.
 \begin{itemize}
 	\item {
 		\textbf{Q1:} Table ~\ref{tab:benchmark-results}:Q1(E=Outliers) shows the results of Q1 for outliers.
-		The results of R1 indicate that cleaning outliers mostly have no impact or positive impact on ML, but sometimes it may negatively
-		affect ML. This is because outlier detection and repair are not completely accurate. The detection methods are usually based on the
-		assumptions of the error distribution, which may not be the underlying authentic distribution. Some outliers may be true data instead
-		of errors although they are distant from other instances. Cleaning
+		The results of R1 indicate that cleaning outliers mostly have no impact or positive impact on ML, but sometimes it may negatively affect ML. This is because outlier detection and repair are not completely accurate. The detection methods are usually based on the assumptions of the error distribution, which may not be the underlying authentic distribution. Some outliers may be true data instead of errors although they are distant from other instances. Cleaning
 		such data will distort the true distribution of the dataset, which results in negative impact on ML.
 		The results of R2 and R3 show that with the model selection and with the cleaning method selection the percentage of flag “N” decreases to 0 and the percentage of “S” increases, while the flag “P”
-		remains at the similar percentage. This indicates that using model selection and cleaning method selection can eliminate the negative
-		impact of cleaning outliers and improve the robustness without losing too much benefit.
+		remains at the similar percentage. This indicates that using model selection and cleaning method selection can eliminate the negative impact of cleaning outliers and improve the robustness without losing too much benefit.
 	}
 	\item {
 		\textbf{Q2:} Table ~\ref{tab:benchmark-results}:Q1(E=Outliers) shows the results of Q2 for outliers. 
-		In R1, R2 and R3, BD and CD have similar percentage scores of “P”, “S” and “N”. This indicates that cleaning outliers in the
-		training and test sets have similar impacts on ML models.
+		In R1, R2 and R3, BD and CD have similar percentage scores of “P”, “S” and “N”. This indicates that cleaning outliers in the training and test sets have similar impacts on ML models.
 	}
 	\item {
 		\textbf{Q3:} Table ~\ref{tab:benchmark-results}:Q3(E=Outliers) shows the results of Q3 for outliers. KNN has more “P” flags, less “N” and “S” flags than other models. Therefore, KNN is the most sensitive model to outliers
