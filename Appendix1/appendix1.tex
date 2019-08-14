@@ -1,132 +1,102 @@
 %!TEX root = ../thesis.tex
 % ******************************* Thesis Appendix A ****************************
-\chapter{How to install \LaTeX} 
+\chapter{How to use NettoyageML} 
 
-\section*{Windows OS}
+\begin{flushleft}
+	This is the EISTI.NettoyageML Benchmark for Joint Data Cleaning and Machine Learning. 
+	The codebase is located in: \url{https://github.com/aytacozkan/EISTI.NettoyageML}
+\end{flushleft}
 
-\subsection*{TeXLive package - full version}
-\begin{enumerate}
-\item	Download the TeXLive ISO (2.2GB) from\\
-\href{https://www.tug.org/texlive/}{https://www.tug.org/texlive/}
-\item	Download WinCDEmu (if you don't have a virtual drive) from \\
-\href{http://wincdemu.sysprogs.org/download/}
-{http://wincdemu.sysprogs.org/download/}
-\item	To install Windows CD Emulator follow the instructions at\\
-\href{http://wincdemu.sysprogs.org/tutorials/install/}
-{http://wincdemu.sysprogs.org/tutorials/install/}
-\item	Right click the iso and mount it using the WinCDEmu as shown in \\
-\href{http://wincdemu.sysprogs.org/tutorials/mount/}{
-http://wincdemu.sysprogs.org/tutorials/mount/}
-\item	Open your virtual drive and run setup.pl
-\end{enumerate}
+\section{Basic Usage}
 
-or
+\subsection*{Run Experiments}
 
-\subsection*{Basic MikTeX - \TeX~ distribution}
-\begin{enumerate}
-\item	Download Basic-MiK\TeX (32bit or 64bit) from\\
-\href{http://miktex.org/download}{http://miktex.org/download}
-\item	Run the installer 
-\item	To add a new package go to Start >> All Programs >> MikTex >> Maintenance (Admin) and choose Package Manager
-\item	Select or search for packages to install
-\end{enumerate}
-
-\subsection*{TexStudio - \TeX~ editor}
-\begin{enumerate}
-\item	Download TexStudio from\\
-\href{http://texstudio.sourceforge.net/\#downloads}
-{http://texstudio.sourceforge.net/\#downloads} 
-\item	Run the installer
-\end{enumerate}
-
-\section*{Mac OS X}
-\subsection*{MacTeX - \TeX~ distribution}
-\begin{enumerate}
-\item	Download the file from\\
-\href{https://www.tug.org/mactex/}{https://www.tug.org/mactex/}
-\item	Extract and double click to run the installer. It does the entire configuration, sit back and relax.
-\end{enumerate}
-
-\subsection*{TexStudio - \TeX~ editor}
-\begin{enumerate}
-\item	Download TexStudio from\\
-\href{http://texstudio.sourceforge.net/\#downloads}
-{http://texstudio.sourceforge.net/\#downloads} 
-\item	Extract and Start
-\end{enumerate}
+\begin{flushleft}
+	To run experiments, download and unzip the 
+	\href{https://drive.google.com/file/d/1BdLZAyp5KSvj8AdL2by9bNkRxX8po1FL/view?usp=sharing}{datasets}. 
+	Place it under the project home directory and execute the following command from the project home directory:
+\end{flushleft}
 
 
-\section*{Unix/Linux}
-\subsection*{TeXLive - \TeX~ distribution}
-\subsubsection*{Getting the distribution:}
-\begin{enumerate}
-\item	TexLive can be downloaded from\\
-\href{http://www.tug.org/texlive/acquire-netinstall.html}
-{http://www.tug.org/texlive/acquire-netinstall.html}.
-\item	TexLive is provided by most operating system you can use (rpm,apt-get or yum) to get TexLive distributions
-\end{enumerate}
+\begin{lstlisting}[language=python]
+		python3 main.py --run_experiments [--dataset <name>] \
+		\[--cpu <num_cpu>][--log]
+\end{lstlisting}
 
-\subsubsection*{Installation}
-\begin{enumerate}
-\item	Mount the ISO file in the mnt directory
-\begin{verbatim}
-mount -t iso9660 -o ro,loop,noauto /your/texlive####.iso /mnt
-\end{verbatim}
+\subsubsection*{Options}
 
-\item	Install wget on your OS (use rpm, apt-get or yum install)
-\item	Run the installer script install-tl.
-\begin{verbatim}
-	cd /your/download/directory
-	./install-tl
-\end{verbatim}
-\item	Enter command `i' for installation
-
-\item	Post-Installation configuration:\\
-\href{http://www.tug.org/texlive/doc/texlive-en/texlive-en.html\#x1-320003.4.1}
-{http://www.tug.org/texlive/doc/texlive-en/texlive-en.html\#x1-320003.4.1} 
-\item	Set the path for the directory of TexLive binaries in your .bashrc file
-\end{enumerate}
-
-\subsubsection*{For 32bit OS}
-For Bourne-compatible shells such as bash, and using Intel x86 GNU/Linux and a default directory setup as an example, the file to edit might be \begin{verbatim}
-edit $~/.bashrc file and add following lines
-PATH=/usr/local/texlive/2011/bin/i386-linux:$PATH; 
-export PATH 
-MANPATH=/usr/local/texlive/2011/texmf/doc/man:$MANPATH;
-export MANPATH 
-INFOPATH=/usr/local/texlive/2011/texmf/doc/info:$INFOPATH;
-export INFOPATH
-\end{verbatim}
-\subsubsection*{For 64bit OS}
-\begin{verbatim}
-edit $~/.bashrc file and add following lines
-PATH=/usr/local/texlive/2011/bin/x86_64-linux:$PATH;
-export PATH 
-MANPATH=/usr/local/texlive/2011/texmf/doc/man:$MANPATH;
-export MANPATH 
-INFOPATH=/usr/local/texlive/2011/texmf/doc/info:$INFOPATH;
-export INFOPATH
-
-\end{verbatim}
+\begin{itemize}
+	\item {
+		\textbf{--dataset:} the experiment dataset. If not specified, the program will run experiments on all datasets.
+	}
+	\item {
+		\textbf{--cpu:} the number of cpu used for experiment. Default is 1.
+	}
+	\item {
+	\textbf{--log:} whether to log experiment process.
+	}
+\end{itemize}
 
 
+\subsubsection*{Output}
 
-%\subsection{Installing directly using Linux packages} 
-\subsubsection*{Fedora/RedHat/CentOS:}
-\begin{verbatim} 
-sudo yum install texlive 
-sudo yum install psutils 
-\end{verbatim}
+The experimental results for each dataset will be saved in `/result` directory as a json file named as <dataset name>\_result.json. Each result is a key-value pair. The key is a string in format "<dataset><split seed><error type><clean method><ML model><random search seed>". The value is a set of key-value pairs for each evaluation metric and result. Our experimental results are provided in `result.zip`.
 
 
-\subsubsection*{SUSE:}
-\begin{verbatim}
-sudo zypper install texlive
-\end{verbatim}
+\subsection*{Run Analysis}
+To run analysis for populating relations described in the paper, unzip \textbf{`result.zip`} and execute the following command from the project home directory:
+
+\begin{lstlisting}[language=python]
+		python3 main.py --run_analysis [--alpha <value>]
+\end{lstlisting}
+
+\subsubsection*{Options}
+
+\begin{itemize}
+	\item {
+	\textbf{--alpha:} the significance level for multiple hypothesis test. Default is 0.05.	
+}
+\end{itemize}
 
 
-\subsubsection*{Debian/Ubuntu:}
-\begin{verbatim} 
-sudo apt-get install texlive texlive-latex-extra 
-sudo apt-get install psutils
-\end{verbatim}
+\subsubsection*{Output}
+The relations R1, R2 and R3 will be saved in \textbf{`/analysis`} directory. Our analysis results are provided in `analysis.zip`.
+
+
+\section{Extend Domain of Attributes}
+
+\subsection*{Add new datasets}
+
+To add a new dataset, first, create a new folder with dataset name under \textbf{`/data`} and create a `raw` folder under the new folder.  The `raw` folder must contain raw data named \textbf{`raw.csv`}. For dataset with inconsistencies, it must also contain the inconsistency-cleaned version data named \textbf{`inconsistency\_clean\_raw.csv`}. For dataset with mislabels, it must also contain the mislabel-cleaned version data named \textbf{`mislabel\_clean\_raw.csv`}. The structure of the directory looks like:
+
+
+\dirtree{%
+	.1 /.
+	.2 data.
+	.3 new\_dataset.
+	.4 raw.
+	.5 raw.csv.
+	.5 inconsistency\_clean\_raw.csv (for dataset with inconsistencies).
+	.5 mislabel\_clean\_raw.csv (for dataset with mislabels).
+}
+
+Then add a dictionary to \textbf{`/schema/dataset.py`} and append it to \textbf{`datasets`} array at the end of the file.
+
+The new dictionary must contain the following keys:
+
+\begin{lstlisting}[language=xml]
+data_dir: the name of the dataset.
+error_types: a list of error types that the dataset contains.
+label: the label of ML task.
+\end{lstlisting}
+
+The following keys are optional:
+
+\begin{lstlisting}[language=xml]
+class_imbalance: whether the dataset is class imbalanced.
+categorical_variables: a list of categorical attributes.
+text_variables: a list of text attributes.
+key_columns: a list of key columns used for deduplication.
+drop_variables: a list of irrelevant attributes.
+\end{lstlisting}
+
