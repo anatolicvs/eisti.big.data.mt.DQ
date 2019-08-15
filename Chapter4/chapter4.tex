@@ -1634,13 +1634,13 @@ Examples of data quality issues are:
 	}
 \end{itemize}
 
-In this chapter, we introduce Deequ, an open source tool developed and used at Amazon. Deequ allows you to calculate data quality metrics on your dataset,define and verify data quality constraints, and be informed about changes in the data distribution. Instead of implementing checks and verification algorithms on your own, you can focus on describing how your data should look. 
-Deequ supports you by suggesting checks for you. Deequ is implemented on top of Apache Spark and is designed to 
+In this section, we introduce Deequ ~\cite{Schelter:2018:ALD:3229863.3275547}, an open source tool developed and used at Amazon. Deequ ~\cite{Schelter:2018:ALD:3229863.3275547} allows you to calculate data quality metrics on your dataset,define and verify data quality constraints, and be informed about changes in the data distribution. Instead of implementing checks and verification algorithms on your own, you can focus on describing how your data should look. 
+Deequ ~\cite{Schelter:2018:ALD:3229863.3275547} supports you by suggesting checks for you. Deequ ~\cite{Schelter:2018:ALD:3229863.3275547} is implemented on top of Apache Spark and is designed to 
 scale with large datasets (think billions of rows) that typically live in a distributed filesystem or a data warehouse.
 
 \subsection{Deequ at Amazon}
 
-Deequ is being used internally at Amazon for verifying the quality of many large production datasets. Dataset producers can add and edit data quality constraints. The system computes data quality metrics on a regular basis (with every new version of a dataset), verifies constraints defined by dataset producers, and publishes datasets to consumers in case of success. In error cases, dataset publication can be stopped, and producers are notified to take action. Data quality issues do not propagate to consumer data pipelines, reducing their blast radius.
+Deequ ~\cite{Schelter:2018:ALD:3229863.3275547} is being used internally at Amazon for verifying the quality of many large production datasets. Dataset producers can add and edit data quality constraints. The system computes data quality metrics on a regular basis (with every new version of a dataset), verifies constraints defined by dataset producers, and publishes datasets to consumers in case of success. In error cases, dataset publication can be stopped, and producers are notified to take action. Data quality issues do not propagate to consumer data pipelines, reducing their blast radius.
 \subsection{Overview of Deequ}
 
 To use Deequ, let's look at its main components (Figure ~\ref{fig:deeaqu})
@@ -1650,7 +1650,7 @@ To use Deequ, let's look at its main components (Figure ~\ref{fig:deeaqu})
 		\textbf{Metrics Computation} — Deequ computes data quality metrics, that is, statistics such as completeness, maximum, or correlation. Deequ uses Spark to read from sources such as Amazon S3, and to compute metrics through an optimized set of aggregation queries. You have direct access to the raw metrics computed on the data.
 	}
 \item {
-	\textbf{Constraint Verification} — As a user, you focus on defining a set of data quality constraints to be verified. Deequ takes care of deriving the required set of metrics to be computed on the data. Deequ generates a data quality report, which contains the result of the constraint verification.
+	\textbf{Constraint Verification} — As a user, you focus on defining a set of data quality constraints to be verified. Deequ ~\cite{Schelter:2018:ALD:3229863.3275547} takes care of deriving the required set of metrics to be computed on the data. Deequ generates a data quality report, which contains the result of the constraint verification.
 }
 \item {
 	\textbf{Constraint Suggestion} — You can choose to define your own custom data quality constraints, or use the automated constraint suggestion methods that profile the data to infer useful constraints.
@@ -1663,6 +1663,8 @@ To use Deequ, let's look at its main components (Figure ~\ref{fig:deeaqu})
 	\caption{Overview of Deequ components.}
 	\label{fig:deeaqu}
 \end{figure}
+
+
 
 
 
