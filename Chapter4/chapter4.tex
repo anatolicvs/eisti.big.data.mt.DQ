@@ -20,7 +20,6 @@ The impact of the dirt data and data cleaning on ML in a dataset depends on a nu
 i.e., the error types to be cleaned and the cleaning methods; some factors depend on the ML
 process, i.e., the model types used; and some factors depend on where the cleaning is performed during the ML process. Hence, in order to comprehensively investigate the impacts, we need to consider data cleaning an ML jointly in our experiments.
 
-
 \section{The NettoyageML Schema}  
 
 The NettoyageML relational schema consists of three relations as shown in Table ~\ref{table:nettoyage_ml} . Firstly will introduced the attributes of NettoyageML relational models, and then will explained 
@@ -1617,6 +1616,54 @@ data cleaning can be eliminated by selecting the best ML model.
 ML work must devise “adaptive” cleaning solutions.
 
 Before the conclusion, as we understand that only implementation of machine learning algorithms to datasets do not enough to increase data quality by itself. So that on next section, we are going to focused on the data quality verification methods.  
+
+\section{Unit Tests' for Data} \label{sec:unit-test-for-data}
+
+We generally write unit tests for our code, but do we also test your data? Incorrect or malformed data can have a large impact on production systems. 
+Examples of data quality issues are:
+
+\begin{itemize}
+	\item {Missing values can lead to failures in production system that require non-null values (NullPointerException).
+	}	
+	\item {
+		Changes in the distribution of data can lead to unexpected outputs of machine learning models.
+	}
+	\item {
+		Aggregations of incorrect data can lead to wrong business decisions.
+	}
+\end{itemize}
+
+In this section, we introduce Deequ ~\cite{Schelter:2018:ALD:3229863.3275547}, an open source tool developed and used at Amazon. Deequ ~\cite{Schelter:2018:ALD:3229863.3275547} allows you to calculate data quality metrics on your dataset,define and verify data quality constraints, and be informed about changes in the data distribution. Instead of implementing checks and verification algorithms on your own, you can focus on describing how your data should look. 
+Deequ ~\cite{Schelter:2018:ALD:3229863.3275547} supports you by suggesting checks for you. Deequ ~\cite{Schelter:2018:ALD:3229863.3275547} is implemented on top of Apache Spark and is designed to 
+scale with large datasets (think billions of rows) that typically live in a distributed filesystem or a data warehouse.
+
+\subsection{Deequ at Amazon}
+
+Deequ ~\cite{Schelter:2018:ALD:3229863.3275547} is being used internally at Amazon for verifying the quality of many large production datasets. Dataset producers can add and edit data quality constraints. The system computes data quality metrics on a regular basis (with every new version of a dataset), verifies constraints defined by dataset producers, and publishes datasets to consumers in case of success. In error cases, dataset publication can be stopped, and producers are notified to take action. Data quality issues do not propagate to consumer data pipelines, reducing their blast radius.
+\subsection{Overview of Deequ}
+
+To use Deequ, let's look at its main components (Figure ~\ref{fig:deeaqu})
+
+\begin{itemize}
+	\item {
+		\textbf{Metrics Computation} — Deequ computes data quality metrics, that is, statistics such as completeness, maximum, or correlation. Deequ uses Spark to read from sources such as Amazon S3, and to compute metrics through an optimized set of aggregation queries. You have direct access to the raw metrics computed on the data.
+	}
+\item {
+	\textbf{Constraint Verification} — As a user, you focus on defining a set of data quality constraints to be verified. Deequ ~\cite{Schelter:2018:ALD:3229863.3275547} takes care of deriving the required set of metrics to be computed on the data. Deequ generates a data quality report, which contains the result of the constraint verification.
+}
+\item {
+	\textbf{Constraint Suggestion} — You can choose to define your own custom data quality constraints, or use the automated constraint suggestion methods that profile the data to infer useful constraints.
+}
+\end{itemize}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.4]{deeaqu}
+	\caption{Overview of Deequ components.}
+	\label{fig:deeaqu}
+\end{figure}
+
+
 
 
 
