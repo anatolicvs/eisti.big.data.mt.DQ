@@ -1664,8 +1664,32 @@ To use Deequ, let's look at its main components (Figure ~\ref{fig:deeaqu})
 	\label{fig:deeaqu}
 \end{figure}
 
+\section{Conclusions}
 
+This research paper proposes the NettoyageML that works the impact of data cleaning on ML that regarding to discussed that data quality dimensions through the paper. 
 
+We also observed that only machine learning approaches does not enough to increase quality of data. To increases accuracy of machine learning models of data, we should implement the 
+data quality dimensions with real-time verification tools and framework like Amazon's Deequ framework. 
+Particularly by using this approaches that help us to reduce junk and mislabeled data sizes on our databases.
 
+We list some research directions; 
 
+\begin{enumerate}
+	\item  {Extending the NettoyageML Benchmark, while it represents the most comprehensive work on the subject to date, there are many 
+		interesting future extensions. For example we need more datasets with diverse error distributions, especially for the missing values and outliers as the current NettoyageML has no ground truth 
+		for these error types.
+	}
 
+	\item {
+		Identifying the Biases Introduced in Data Cleaning. As discussed, cleaning does not necessarily 
+		help and can sometimes  even harm model performance. To decided  whether a given cleaning method should be applied to an ML task.
+		We need to detect whether the cleaning process introduce more biases than the dirtiness itself, that is an interesting research point for next researcher.
+	}
+
+	\item {
+		Holistic cleaning for NettoyageML currently considers each error type that is described separately 
+		as a first step to understand how cleaning effects ML. Real-world datasets often exhibit multiple 
+		error types and they interact in non-t rival ways.
+		Whether the benefits of cleaning are sub-linear, compositional, or super-liner remains an open question.
+	}
+\end{enumerate}
